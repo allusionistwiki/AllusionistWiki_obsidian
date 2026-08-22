@@ -1,0 +1,19 @@
+# ---- Python ----
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# ---- Obsidian ローカル状態（ワークスペース/UI設定。本文はwiki/で管理）----
+.obsidian/
+
+# ---- OS / エディタ ----
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+*.bak
+
+# ---- GraphRAG 生成出力（後述スクリプトで生成）----
+.graphrag/
+outputs/
+**/output/
