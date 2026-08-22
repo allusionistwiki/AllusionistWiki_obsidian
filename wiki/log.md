@@ -78,3 +78,14 @@ eplace_file）や shell のリテラルから直接参照不可。**ASCII パス
 - **既知の修正**：episodes/index.md の進捗欄に `raw/` が `aw/` にバイト欠落した壊れがあったのを復元。
 - lint確認：ch006/ch006 reflection の `[[ ]]` はすべて実ファイル（キール／コルセスカ等、既存ページ）へ解決。新切れリンクなし。
 - 次タスク：第007話（魔女と狂犬）以降の生成。raw/ に 241 ファイル（220話＋21断章）残る。
+
+## 2026-08-22（allusions/ の再構成 + mysteries/ 追加）
+- **背景**：別エージェントが文脈消失前に全 allusions をユーザー図面どおり再構成中→手渡し文档で引き継ぎ。図面＝ `Allusions/` を `Mythology/`・`Literature/`・`Foreshadowing/` に分割、各 Mythology／Literature に `external/`（実世界）＋`internal/`（作中内部）を用意、`mysteries/`（未解決謎のタスク管理）を新設。
+- **前回の完了分を引き継ぎ**：ディレクトリ構造・各カテゴリ `_index.md`・`allusions/index.md` の書き換えは済み。本次第で残りを完結。
+- **mysteries/ を新規作成**（`index.md`・`Open_Questions.md`・`Resolved.md`）。
+  - `Open_Questions.md`：未解決謎表（謎｜初出話｜典拠｜状態｜仮説・備考）。既存 episode 疑問ノートから根拠ある3〜5問をシード（アズーリアの黒い左手+金鎖／愚神vs槍神／正体不明の声「頭を良くしてあげるよ」等）。ページ番号が不確なら話数のみで引用し、偽頁作りは回避。
+- **壊れた参照を修正**：`Literature/external/` へ移動した2ページ（ハイデガー『存在と時間』・徳川家康・三方原の戦い）のヘッダ blockquote を `allusions/external/` → `allusions/Literature/external/` 更新。あわせて ch004.md の着目リンク（旧 `allusions/external/` → `Literature/external/`）も修正。
+- **設計書 CLAUDE.md を実態へ反映**：§1 ディレクトリ構造（allusions の新構造＋mysteries追加）、§3 ページ種別フィールド（allusions の2軸分類・Foreshadowing・mysteries の定義）を更新。
+- **wiki/index.md**：コア層に `謎：mysteries/` リンクを追加。
+- **lint確認**：本変更に係る `[[ ]]`／`[text](path)` はすべて実ファイル／実ディレクトリへ解決（Python で相対パス解決＋コードポイント一致を確認）。既存の28の「切れ」は全て `_example_pre_rebuild/`（旧誤字退避版）と CLAUDE.md/log.md の概念リンクのみ＝本次第の範囲外。
+- **次タスク**：この再構成をコミット。以降 episode 生成（第004話〜）を続行。

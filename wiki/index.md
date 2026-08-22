@@ -21,6 +21,7 @@ Obsidian vault。[../CLAUDE.md](../CLAUDE.md) が設計書(schema)。
 ## コア層（核心）
 - **引喩**：[allusions/](wiki/allusions/) — 徳川家康・三方原の戦い・ハイデガー『存在と時間』
 - **アナロジー**：[analogies/recursion-map.md](wiki/analogies/recursion-map.md) — ch001/ch002（殺し/介錯・名の掌握・第三勢力介入）の反復構造を記録中
+- **謎**：[mysteries/](wiki/mysteries/) — 未解決の謎・伏線のタスク管理（Open_Questions.md / Resolved.md）
 - **感想**：[reflections/by-episode/](wiki/reflections/by-episode/) — ch001〜ch006 生成済み
 
 ## 登場人物（事実層）
