@@ -34,3 +34,16 @@ eflections/by-episode/ch001.md。
   - 日本語リテラルは shell に渡さず、**コードポイント(`\uXXXX`)ベース**で構築・置換。
   - 確認も Python で生文字列を抽出（`find`/スライス）しコードポイント表示。
   - 公式のエンコード根本対策は spelling-verification SKILL.md の「補足」→ **`$env:PYTHONUTF8=1`** が推奨（`PYTHONIOENCODING` より包括）。同ドキュメントを根拠元として参照。
+
+## 2026-08-22（GraphRAG ツールの導入・不具合修正）
+- **Git管理**：wiki vault を git レポジトリ化（初度コミット dda7fe6）。`.gitignore` で `.graphrag/`・`__pycache__/`・`.obsidian/` を除外。`graphrag_tool/` を追跡対象に追加。
+- **GraphRAG**（`graphrag_tool/graphrag_search.py`）を導入。外部APIキー不要・標準ライブラリのみ・オフライン動作。
+  - 手法：BM25（Markdown チャンク）＋ リンクグラフの BFS 文脈拡張。
+  - **4不具合を修正**：
+    1. BM25 `__init__` で `tf[t][d]` でドキュメント用 list を dict キーに指定 → `TypeError`（crash）。df のみの計算に変更（tf は再計算関数で利用）。
+    2. `math.log` を使用だが `import math` 欠落 → `NameError`。追加。
+    3. `search()` が `n_files` を返さず `main()` で `KeyError`。返り値に追加。
+    4. `--json` 時にステータス行が stdout に混入し JSON を壊す → `if not args.json:` で保護し純粋な JSON を出力。
+  - **グラフ実体化**：本 vault は `[[...]]` ではなく `[text](url)` の markdown リンクを使用（`[[...]]` 0件）。`extract_targets()` で両方を抽出・basename 解決により辺を構築。67辺・20ノードが確認でき、リーフページからの近傍展開（depth3で8ページ）で文脈拡張が動作することを確認。
+- **検証**：`python graphrag_search.py --query "..." --json` で BM25 ランキング＋グラフ拡張が正常動作。`py_compile` 通る。
+- **環境メモ**：本 vault はパスの日本語（リ=U+30RIA）により shell/ツールから直接参照不可。回避策：PowerShell 変数で `$f.FullName` 取得後使用、ファイル操作は ASCII パスの作業ディレクトリへ binary copy で行う。日本語出力は `[Console]::OutputEncoding=UTF8` ＋ `Out-File -Encoding utf8`（BOM 付）または `utf-16`/`utf-8-sig` で読み取り。
