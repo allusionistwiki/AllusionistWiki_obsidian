@@ -1,4 +1,4 @@
-# 操作履歴（追記のみ）
+﻿# 操作履歴（追記のみ）
 ## 2026-08-22（再始動・第001話生成）
 - **正解フォルダ（幻想再帰のアリュージョニスト-wiki）をp1から再構成**。
   - 設計書 CLAUDE.md・spelling-verification スキルは既存。旧誤字フォルダ内容の退避済み（_example_pre_rebuild/）。
@@ -47,3 +47,21 @@ eflections/by-episode/ch001.md。
   - **グラフ実体化**：本 vault は `[[...]]` ではなく `[text](url)` の markdown リンクを使用（`[[...]]` 0件）。`extract_targets()` で両方を抽出・basename 解決により辺を構築。67辺・20ノードが確認でき、リーフページからの近傍展開（depth3で8ページ）で文脈拡張が動作することを確認。
 - **検証**：`python graphrag_search.py --query "..." --json` で BM25 ランキング＋グラフ拡張が正常動作。`py_compile` 通る。
 - **環境メモ**：本 vault はパスの日本語（リ=U+30RIA）により shell/ツールから直接参照不可。回避策：PowerShell 変数で `$f.FullName` 取得後使用、ファイル操作は ASCII パスの作業ディレクトリへ binary copy で行う。日本語出力は `[Console]::OutputEncoding=UTF8` ＋ `Out-File -Encoding utf8`（BOM 付）または `utf-16`/`utf-8-sig` で読み取り。
+## 2026-08-22（GraphRAG セマンティック融合のバグ修正・検証・環境記録）
+- **_rrf() の IndexError を修正**（コミット 4fac776）。
+  - **根本原因**：RRF 融合関数 _rrf() が出力リストを**エントリ数**(out = [0.0] * len(ranks_a))でサイズ指定し、**チャンクインデックス**でアクセスしていた。_to_ranks() は正スコアのドキュメントのみ省略するため、拡張クエリ（anks_b）だけで正値を持つチャンクがインデックス外 → IndexError: list index out of range で crash。
+  - **修正**：出力を**両マップの最大キー +1**でサイズ指定し、combined[i] が chunk_meta[i] と位置アラインメントすることを保証（ページマージが依存）。defaultdict 置換はアラインメントを壊すため避けた。
+- **セマンティック融合の検証**（6 クエリ・BM25 のみ vs 融合 を比較）：全クエリで crash 解消。**実益あり**と確認。
+  - ヲルヲーラ：専用 characters/ヲルヲーラ.md が先頭へ浮上（BM25 の場合は ch003 の奥に隠れていた）。
+  - 時間干涉 因果殺し：関連する ガドール.md を追加取得（BM25 の場合は見逃し）。
+  - その他は同一の関連ページ群を改善された順序で返す。
+  - 手法：co-occurrence クエリ拡張 + RRF（BM25 と融合）。外部 API キー不要・標準ライブラリのみ。既定 SEMANTIC_ENABLED=True（ON）、--no-semantic で無効。
+- **グラフの更新方法**（新規ドキュメント化）：
+  - インデックスは初回のみ構築し .graphrag/index.json にキャッシュ。**ソース変更は content_hash() で自動検出**され、次回の実行で自動的に再構築される。
+  - 手動再構築：.graphrag/ を削除して次回実行（またはクエリを再度実行）。
+  - グラフ源：本 vault は [text](url) の markdown リンクを知識グラフ辺として利用（[[...]] は 0 件）。wiki/ と aw/ がインデックス対象、.git・.obsidian・.agents・_example_pre_rebuild・graphrag_tool は除外。
+  - CLI：python graphrag_tool/graphrag_search.py --query "..." [--top N] [--depth N] [--json]（既定 depth=1）。
+- **環境面の変化・新規律（本次第で適用・今後も準拠）**：
+  - **エンコード根本対策**：Python の stdout を UTF-8 に固定。**$env:PYTHONUTF8=1** を推奨（PYTHONIOENCODING=utf-8 より包括）。これで 殺（U+6D89）等 cp932 で書けない文字も出力可能。
+  - **編集ワークフロー**：本 vault パスは日本語（リ=U+30RIA）のため、file tool（edit_file_tool/eplace_file）や shell のリテラルから直接参照不可。**ASCII パスの作業ディレクトリへ binary copy したコピーで編集・実行**し、完了後 Copy-Item で vault へ上書き戻し（UTF-8 を保持）。
+  - **メモ**：[System.IO.File]::CopyFile はこの shell では未対応 → Copy-Item を使用。存在確認は Test-Path（Test-Item ではない）。diff/同一性確認は SHA で。
