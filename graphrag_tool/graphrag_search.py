@@ -46,6 +46,9 @@ SKIP_DIRS = {".git", ".obsidian", ".agents", "_example_pre_rebuild", "graphrag_t
 # インデックス対象のトップフォルダ
 INDEXABLE_TOP = ("wiki", "raw")
 
+# Semantic retrieval (co-occurrence expansion + RRF) default ON. --no-semantic to disable.
+SEMANTIC_ENABLED = True
+
 MAX_CHUNK_CHARS = 512          # チャンク最大長
 DEFAULT_DEPTH = 1              # グラフ近傍展開の深さ（ hops ）
 
@@ -296,6 +299,18 @@ def build_index():
                     adj[a].add(b)
                     edge_count += 1
 
+    # Co-occurrence model (distributional semantics / query expansion, stdlib only).
+    COC_TOP = 64
+    _cooccur = defaultdict(Counter)
+    for _docs in chunk_docs:
+        _terms = [t for t, _ in Counter(_docs).most_common(80)]
+        for _a in _terms:
+            for _b in _terms:
+                if _a != _b:
+                    _cooccur[_a][_b] += 1
+    cooccur = {t: {nb: cnt for nb, cnt in c.most_common(COC_TOP)}
+               for t, c in _cooccur.items()}
+
     idx = {
         "hash": content_hash(),
         "chunks": chunks,
@@ -305,6 +320,7 @@ def build_index():
         "entities": sorted(entities),
         "edge_count": edge_count,
         "n_files": len(files),
+        "cooccur": cooccur,
     }
     return idx
 
@@ -344,6 +360,53 @@ def expand_graph(adj, seeds, depth):
     return result
 
 
+def _cooccur_expand(qtoks, cooccur, top_k=8, min_weight=1):
+    """Expand query with top co-occurring terms (distributional, stdlib only)."""
+    out = list(dict.fromkeys(qtoks))
+    extra = {}
+    for t in qtoks:
+        for nb, w in cooccur.get(t, {}).items():
+            if w < min_weight or nb in qtoks:
+                continue
+            extra[nb] = extra.get(nb, 0) + min(int(w), 99)
+    for nb, _ in Counter(extra).most_common(top_k):
+        out.append(nb)
+    return out
+
+
+def _to_ranks(scores):
+    """Rank positive scores descending (1-based)."""
+    ranked = sorted(range(len(scores)), key=lambda i: -scores[i])
+    ranks = {}
+    r = 0
+    for i in ranked:
+        if scores[i] <= 0:
+            break
+        r += 1
+        ranks[i] = r
+    return ranks
+
+
+def _rrf(ranks_a, ranks_b=None, k=60):
+    """Reciprocal Rank Fusion over one or two rank maps.
+
+    Keys are chunk *indices*, so size the output to cover the highest index in
+    either map (not the entry count) to keep combined[i] position-aligned with
+    chunk_meta[i].
+    """
+    keys = list(ranks_a.keys())
+    if ranks_b:
+        keys += list(ranks_b.keys())
+    size = max(keys) + 1 if keys else 0
+    out = [0.0] * size
+    for i, r in ranks_a.items():
+        out[i] += 1.0 / (k + r)
+    if ranks_b:
+        for i, r in ranks_b.items():
+            out[i] += 1.0 / (k + r)
+    return out
+
+
 def snippet(text, n=160):
     return (text[:n] + "…") if len(text) > n else text
 
@@ -358,9 +421,16 @@ def search(query, depth=None):
     qtoks = tok.tokenize(query)
     scores = _bm25_scores(bm25, qtoks)
 
+    # Semantic expansion (co-occurrence query expansion) + RRF fusion.
+    # Disabled or no model -> identical to plain BM25.
+    combined = list(scores)
+    if SEMANTIC_ENABLED and idx.get("cooccur"):
+        eqtoks = _cooccur_expand(qtoks, idx["cooccur"])
+        combined = _rrf(_to_ranks(scores), _to_ranks(_bm25_scores(bm25, eqtoks)), k=60)
+
     # 同一チャンク（同一ファイル）のスコアをマージしてページランクも兼ねる
     page_score = defaultdict(float)
-    for i, s in enumerate(scores):
+    for i, s in enumerate(combined):
         if s > 0:
             page_score[idx["chunk_meta"][i][0]] += s
 
@@ -380,8 +450,8 @@ def search(query, depth=None):
         "top_pages": [{"path": p, "score": round(s, 3),
                        "snippet": snippet(idx["chunk_meta"][i][1])}
                       for i, (p, s) in enumerate(
-                          sorted(((idx["chunk_meta"][i][0], scores[i])
-                                  for i in range(len(scores)) if scores[i] > 0),
+                          sorted(((idx["chunk_meta"][i][0], combined[i])
+                                  for i in range(len(combined)) if combined[i] > 0),
                                  key=lambda x: -x[1])[:6])],
         "augmented": augmented,
     }
@@ -397,6 +467,10 @@ def main():
     ap.add_argument("--depth", type=int, default=DEFAULT_DEPTH,
                     help=f"グラフ近傍展開の深さ（default={DEFAULT_DEPTH}）")
     ap.add_argument("--json", action="store_true", help="出力をJSONにする")
+    import sys as _sys
+    if "--no-semantic" in _sys.argv or os.environ.get("GRAG_NO_SEMANTIC") == "1":
+        global SEMANTIC_ENABLED
+        SEMANTIC_ENABLED = False
     args = ap.parse_args()
 
     res = search(args.query, depth=args.depth)
