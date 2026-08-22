@@ -1,4 +1,4 @@
-﻿# 操作履歴（追記のみ）
+# 操作履歴（追記のみ）
 ## 2026-08-22（再始動・第001話生成）
 - **正解フォルダ（幻想再帰のアリュージョニスト-wiki）をp1から再構成**。
   - 設計書 CLAUDE.md・spelling-verification スキルは既存。旧誤字フォルダ内容の退避済み（_example_pre_rebuild/）。
@@ -49,7 +49,8 @@ eflections/by-episode/ch001.md。
 - **環境メモ**：本 vault はパスの日本語（リ=U+30RIA）により shell/ツールから直接参照不可。回避策：PowerShell 変数で `$f.FullName` 取得後使用、ファイル操作は ASCII パスの作業ディレクトリへ binary copy で行う。日本語出力は `[Console]::OutputEncoding=UTF8` ＋ `Out-File -Encoding utf8`（BOM 付）または `utf-16`/`utf-8-sig` で読み取り。
 ## 2026-08-22（GraphRAG セマンティック融合のバグ修正・検証・環境記録）
 - **_rrf() の IndexError を修正**（コミット 4fac776）。
-  - **根本原因**：RRF 融合関数 _rrf() が出力リストを**エントリ数**(out = [0.0] * len(ranks_a))でサイズ指定し、**チャンクインデックス**でアクセスしていた。_to_ranks() は正スコアのドキュメントのみ省略するため、拡張クエリ（anks_b）だけで正値を持つチャンクがインデックス外 → IndexError: list index out of range で crash。
+  - **根本原因**：RRF 融合関数 _rrf() が出力リストを**エントリ数**(out = [0.0] * len(ranks_a))でサイズ指定し、**チャンクインデックス**でアクセスしていた。_to_ranks() は正スコアのドキュメントのみ省略するため、拡張クエリ（
+anks_b）だけで正値を持つチャンクがインデックス外 → IndexError: list index out of range で crash。
   - **修正**：出力を**両マップの最大キー +1**でサイズ指定し、combined[i] が chunk_meta[i] と位置アラインメントすることを保証（ページマージが依存）。defaultdict 置換はアラインメントを壊すため避けた。
 - **セマンティック融合の検証**（6 クエリ・BM25 のみ vs 融合 を比較）：全クエリで crash 解消。**実益あり**と確認。
   - ヲルヲーラ：専用 characters/ヲルヲーラ.md が先頭へ浮上（BM25 の場合は ch003 の奥に隠れていた）。
@@ -59,9 +60,21 @@ eflections/by-episode/ch001.md。
 - **グラフの更新方法**（新規ドキュメント化）：
   - インデックスは初回のみ構築し .graphrag/index.json にキャッシュ。**ソース変更は content_hash() で自動検出**され、次回の実行で自動的に再構築される。
   - 手動再構築：.graphrag/ を削除して次回実行（またはクエリを再度実行）。
-  - グラフ源：本 vault は [text](url) の markdown リンクを知識グラフ辺として利用（[[...]] は 0 件）。wiki/ と aw/ がインデックス対象、.git・.obsidian・.agents・_example_pre_rebuild・graphrag_tool は除外。
+  - グラフ源：本 vault は [text](url) の markdown リンクを知識グラフ辺として利用（[[...]] は 0 件）。wiki/ と 
+aw/ がインデックス対象、.git・.obsidian・.agents・_example_pre_rebuild・graphrag_tool は除外。
   - CLI：python graphrag_tool/graphrag_search.py --query "..." [--top N] [--depth N] [--json]（既定 depth=1）。
 - **環境面の変化・新規律（本次第で適用・今後も準拠）**：
   - **エンコード根本対策**：Python の stdout を UTF-8 に固定。**$env:PYTHONUTF8=1** を推奨（PYTHONIOENCODING=utf-8 より包括）。これで 殺（U+6D89）等 cp932 で書けない文字も出力可能。
-  - **編集ワークフロー**：本 vault パスは日本語（リ=U+30RIA）のため、file tool（edit_file_tool/eplace_file）や shell のリテラルから直接参照不可。**ASCII パスの作業ディレクトリへ binary copy したコピーで編集・実行**し、完了後 Copy-Item で vault へ上書き戻し（UTF-8 を保持）。
+  - **編集ワークフロー**：本 vault パスは日本語（リ=U+30RIA）のため、file tool（edit_file_tool/
+eplace_file）や shell のリテラルから直接参照不可。**ASCII パスの作業ディレクトリへ binary copy したコピーで編集・実行**し、完了後 Copy-Item で vault へ上書き戻し（UTF-8 を保持）。
   - **メモ**：[System.IO.File]::CopyFile はこの shell では未対応 → Copy-Item を使用。存在確認は Test-Path（Test-Item ではない）。diff/同一性確認は SHA で。
+
+## 2026-08-22（第006話 幕間『悪夢』生成）
+- **第006話（幕間『悪夢』, pp.306–310、約5ページ）完結**：episodes/ch006.md・reflections/by-episode/ch006.md を新規生成。
+  - 要約：アキラの明晰夢・死の反復（地獄のような第五階層での無限ループ）→ 青い造花の庭園での自己俯瞰 → 渇望の正体を「未来へ繋いでくれたものから解放されたいという矛盾した意思」と定義 → 正体不明の声（「アクラくん、私が、頭を良くしてあげるよ」）による意識の解体・覚醒。
+  - 引喩：デカルトの夢の論証／悪魔の仮説（明晰夢から cogito の不確実性へ＝【相当有力】）、馬鹿は死んだ治らない（ことわざ）、ロック的自我理論（記憶による同一性）。
+  - 新キャラクターページは不要（正体不明の声は未命名・要検証で疑問ノートのみ記録）。アキラのトラウマ描写なので characters/キール.md 等への追記は範囲外と判断。
+- 更新：wiki/index.md（第006話行追加＋感想を「ch001〜ch006」へ）、wiki/episodes/index.md（第006話行・arc bullet追加＋進捗「6話」へ）。
+- **既知の修正**：episodes/index.md の進捗欄に `raw/` が `aw/` にバイト欠落した壊れがあったのを復元。
+- lint確認：ch006/ch006 reflection の `[[ ]]` はすべて実ファイル（キール／コルセスカ等、既存ページ）へ解決。新切れリンクなし。
+- 次タスク：第007話（魔女と狂犬）以降の生成。raw/ に 241 ファイル（220話＋21断章）残る。
