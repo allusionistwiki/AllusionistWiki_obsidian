@@ -153,3 +153,20 @@
 - `edit_file_tool`/`replace_file` は入力バイトを正確に保持（新字体化・化けなし）。実本文編集の**標準経路**。
 - 削除も shell の `Remove-Item` で承認不要。テンポラリーファイルは1本集約・実行後に削除で摩擦ゼロ。
 
+### 8.4 git コミットの事実と更新手順（2025年実機検証）
+- **git は `shell_command` 経由のみ実行可能**。`run_python`サンドボックスはホストFSにアクセス不可・プロセス実行不可（`emscripten does not support processes`）。
+- `shell_command` は原則**承認popupが出る**（一過性の場合もあり、実機では1回で完了）。git自体は承認不要。
+- **.ps1 に日本語パスリテラルを書くと cp932 で化ける**（例: `…アリュージョニスト-wiki` が壊れる）。日本語パスは **UTF-8 ファイルから読む**方式を取る。
+- **git は PATH に入らない** → `$env:Path += ';C:\Program Files\Git\cmd'` が必要。
+- コミットメッセージの日本語も cp932 で化ける → **UTF-8 ファイル（`-MsgFile`）渡し**または `\uXXXX`。
+
+#### 更新手順（推奨：手動 = popup ゼロ）
+作業Dir に `_commit.ps1`（ASCIIのみ）・`_repo.txt`（vaultパス・UTF-8）・`_msg.txt`（メッセージ・UTF-8）を置く。vault は作業Dirのサブフォルダだがリポジトリ外なのでこれらは wiki を汚さない。
+```powershell
+cd C:\Users\d5dx\Downloads\Code
+& { Set-ExecutionPolicy -Scope Process Bypass; .\_commit.ps1 -All -MsgFile _msg.txt }
+```
+- 特定ファイルのみ: `._commit.ps1 -Paths "CLAUDE.md","wiki/episodes/ch001.md" -MsgFile _msg.txt`
+- 私（harness）経由でも可。popup が出れば測定扱い。
+- `_commit.ps1` は内部で `$env:Path` に Git を追加し、`_repo.txt` の vault パスを `git -C` で指定する（化けなし）。
+
