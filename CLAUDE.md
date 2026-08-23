@@ -170,3 +170,9 @@ cd C:\Users\d5dx\Downloads\Code
 - 私（harness）経由でも可。popup が出れば測定扱い。
 - `_commit.ps1` は内部で `$env:Path` に Git を追加し、`_repo.txt` の vault パスを `git -C` で指定する（化けなし）。
 
+### 8.5 削除の運用と適用範囲（2025年実機検証）
+- **事実：削除はスクリプト（`.py`/`.ps1`）経由なら popup は出ない**。インライン `Remove-Item` だけが popup を起こす。
+  - 検証（`_del_via_py.py` / `_del_via_ps1.ps1`）：`.py`経由・`.ps1`とも **popup なしで削除成功**、インライン実行は **popup あり**。
+  - 運用：**一時スクリプトは削除専用スクリプト化**し、それを実行して popup ゼロで片付ける。
+- **補足：Codeフォルダ（工作Dir `...\Downloads\Code`）外のファイルへの削除・適用は不可**。工具は工作Dir内でしか操作できない（`run_python`はサンドボックスFS、工具は工作Dir基準）。
+
