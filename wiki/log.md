@@ -1,4 +1,6 @@
 # 操作履歴（追記のみ）
+## 2026-08-25（生成の優先順位を「ch001から順に埋める」へ明確化）
+- **ユーザー依頼**：wiki/index.md の「生成の優先順位（次世代）」を、**ch001 から順番に各話の ⏳ フォルダを埋めていくのが最優先**と明確化した。ch024 以降の新話生成はこの各話の埋め込み（再確認）を優先しつつ進める。
 ## 2026-08-25（Foreshadowing を allusions/ から mysteries/ へ移動・状態表示を細分化）
 - **ユーザー依頼**：`allusions/Foreshadowing/` を `mysteries/Foreshadowing/` へ git mv で移動した。
 - **参照更新**：allusions/index.md（Foreshadowing参照を削除・関連層を更新）、mysteries/index.md（構成に Foreshadowing/ を追加）、mysteries/Foreshadowing/_index.md（ヘッダを新場所へ）、CLAUDE.md（§1 ディレクトリ構造・§3 ページ種別を更新）、wiki/index.md（コア層に Foreshadowing を反映）。

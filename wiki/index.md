@@ -75,7 +75,7 @@ Obsidian vault。[../CLAUDE.md](../CLAUDE.md) が設計書(schema)。
 - ⏳ **未確認（リセット）**：characters・terminology・allusions・analogies・foreshadowing・open_questions・resolved。実際に抜けが多いため各話の進行度合いをリセットし、要再確認。再確認が済んだ話から ✅ へ更新する。
 
 ### 生成の優先順位（次世代）
-episode・reflection は ch024 へ延伸しつつ、⏳（未確認）の各フォルダを**話ごとに再確認**して ✅ を埋める。例：ch001 から順に characters/terminology/allusions/analogies/foreshadowing/open_questions/resolved の該当内容を確認・追記し、各話の ⏳ を ✅ へ更新する。
+**ch001 から順番に、各話の ⏳（未確認）フォルダを埋めていくのが最優先**。episode・reflection は既に ✅（ch001〜ch023）なので、まず ch001 から順に characters/terminology/allusions/analogies/foreshadowing/open_questions/resolved の該当内容を確認・追記し、各話の ⏳ を ✅ へ更新する。ch024 以降の新話生成は、この各話の埋め込み（再確認）を優先しつつ進める。
 
 ## コア層（核心）
 - **引喩**：[allusions/](allusions/) — 徳川家康・三方原の戦い・ハイデガー『存在と時間』・サントーヴ『デカルトの思弁』とフランケンシュタイン
