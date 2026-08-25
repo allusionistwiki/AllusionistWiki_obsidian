@@ -3,9 +3,9 @@
 > 本作の**未解決の謎／伏線**をタスク管理のように整理する層。事実ページ（characters/world/terminology）や引喩とは異なり、「まだ確定していないこと」を可視化することが目的。幻覚汚染防止のため、仮説は必ずラベル付き・典拠付きで記す。
 
 ## 構成
-- [Open_Questions.md](Open_Questions.md) — **未解決の謎リスト**。初出話・典拠・状態・仮説を表形式で管理。
-- [Resolved.md](Resolved.md) — **回収済みの謎ログ**。解決後に Open_Questions.md から移動（または状態を変更）してここに記録。
-- [Foreshadowing/](Foreshadowing/) — **伏線リスト**。作品中に撒かれ回収を待つ暗示／予兆を、未回収／回収済みで管理（allusions/ から移設）。
+- [[Open_Questions]] — **未解決の謎リスト**。初出話・典拠・状態・仮説を表形式で管理。
+- [[Resolved]] — **回収済みの謎ログ**。解決後に Open_Questions.md から移動（または状態を変更）してここに記録。
+- [[mysteries/Foreshadowing/|Foreshadowing/]] — **伏線リスト**。作品中に撒かれ回収を待つ暗示／予兆を、未回収／回収済みで管理（allusions/ から移設）。
 
 ## 使い方
 1. 新しい未解決謎を発見したら `Open_Questions.md` の表に1行追加（初出話・典拠は原文ベース、ページ番号は不確なら話数のみで引用）。

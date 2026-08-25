@@ -1,4 +1,10 @@
 # 操作履歴（追記のみ）
+## 2026-08-25（リンク方式を [[...]] wikilink へ統一）
+- **ユーザー依頼**：vault 内のリンクを `[[...]]` wikilink に統一した（`[text](url)` の markdown リンクを変換）。
+- **方針**：内部リンクは裸の basename 形式（`[[コルセスカ]]`）。basename 重複（ch001〜ch023 は episodes/ と reflections/ で重複、index/_index）は `[[フォルダ/ファイル]]` のパス付き。vault 外（`raw/`・`CLAUDE.md`）へのリンクは `[text](url)` の markdown 相対パスのまま（wikilink は vault 内のみ解決）。
+- **適用**：139ファイルの `[text](url)`→`[[...]]` 変換＋既存 `[[path/file.md|text]]` の裸化正規化。全 wikilink が実ファイルへ解決することを確認（残る `[text](url)` は raw/・CLAUDE.md への vault 外リンクと log.md の散文例のみ）。
+- **CLAUDE.md §5 にリンク規約を追記**。
+- **次タスク**：ch001 から順に各話の ⏳ フォルダを埋める。
 ## 2026-08-25（wiki/index.md を status.md へ改名・参照更新）
 - **ユーザー依頼**：トップカタログ兼状態管理ページ `wiki/index.md` を `wiki/status.md` へ git mv で改名した。
 - **参照更新**：CLAUDE.md（§1 ツリー・§4①・§4⑦）、wiki/episodes/index.md（`../index.md` → `../status.md`）、status.md 内の「index.md」表記を status.md へ。
@@ -125,7 +131,7 @@ eplace_file）や shell のリテラルから直接参照不可。**ASCII パス
 - **壊れた参照を修正**：`Literature/external/` へ移動した2ページ（ハイデガー『存在と時間』・徳川家康・三方原の戦い）のヘッダ blockquote を `allusions/external/` → `allusions/Literature/external/` 更新。あわせて ch004.md の着目リンク（旧 `allusions/external/` → `Literature/external/`）も修正。
 - **設計書 CLAUDE.md を実態へ反映**：§1 ディレクトリ構造（allusions の新構造＋mysteries追加）、§3 ページ種別フィールド（allusions の2軸分類・Foreshadowing・mysteries の定義）を更新。
 - **wiki/index.md**：コア層に `謎：mysteries/` リンクを追加。
-- **lint確認**：本変更に係る ```[[ ]]```／`[text](path)` はすべて実ファイル／実ディレクトリへ解決（Python で相対パス解決＋コードポイント一致を確認）。既存の28の「切れ」は全て `_example_pre_rebuild/`（旧誤字退避版）と CLAUDE.md/log.md の概念リンクのみ＝本次第の範囲外。
+- **lint確認**：本変更に係る ```[[ ]]```／`[path](url)` はすべて実ファイル／実ディレクトリへ解決（Python で相対パス解決＋コードポイント一致を確認）。既存の28の「切れ」は全て `_example_pre_rebuild/`（旧誤字退避版）と CLAUDE.md/log.md の概念リンクのみ＝本次第の範囲外。
 - **次タスク**：この再構成をコミット。以降 episode 生成（第004話〜）を続行。
 
 ## 2026-08-22（第007話 魔女と狂犬 生成 + 小カナ壊れ修正・スキャン）

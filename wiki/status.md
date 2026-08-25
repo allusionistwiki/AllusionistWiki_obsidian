@@ -2,7 +2,7 @@
 
 Obsidian vault。[../CLAUDE.md](../CLAUDE.md) が設計書(schema)。
 
-> **2026-08-25 再始動・再確認ノート**：本ページ（status.md）をリセット・再構築した。従来のリンクが `wiki/...` プレフィックス付きで壊れていたため、**vault内相対パスへ統一**して修正。あわせて **単語登録（terminology）と謎記録（mysteries）を再確認・修正**した——terminology のグループリンク `咒術→呪術` の誤り、mysteries/Open_Questions の簡体字の混入・typo「トシューラ」、reflections 以下の `../episodes` リンク階層の誤りを修正。ch023（レジンキャストエピゴーネン）を生成・登録。根拠は [log.md](log.md)。
+> **2026-08-25 再始動・再確認ノート**：本ページ（status.md）をリセット・再構築した。従来のリンクが `wiki/...` プレフィックス付きで壊れていたため、**vault内相対パスへ統一**して修正。あわせて **単語登録（terminology）と謎記録（mysteries）を再確認・修正**した——terminology のグループリンク `咒術→呪術` の誤り、mysteries/Open_Questions の簡体字の混入・typo「トシューラ」、reflections 以下の `../episodes` リンク階層の誤りを修正。ch023（レジンキャストエピゴーネン）を生成・登録。根拠は [[log]]。
 
 ## 概要
 - 作品：『幻想再帰のアリュージョニスト』（作者：最近／N9073CA／小説家になろう系、PDF総8450ページ）
@@ -35,12 +35,12 @@ Obsidian vault。[../CLAUDE.md](../CLAUDE.md) が設計書(schema)。
 | 幕間『棒（ワンド）』 | 棒（ワンド） | pp.1028–1082 | [raw/022](../raw/022_棒ワンド_01.md) | ✅ 生成済み |
 | 第023話（２－１７） | レジンキャストエピゴーネン | pp.1083–1134 | [raw/023](../raw/023_レジンキャストエピゴーネン_01.md) | ✅ 生成済み |
 
-> 話区切りの根拠：PDF本文の全角数字タイトル １－X と「幕間　『…』」。詳細は [episodes/ch001.md](episodes/ch001.md) のヘッダ参照。
+> 話区切りの根拠：PDF本文の全角数字タイトル １－X と「幕間　『…』」。詳細は [[episodes/ch001]] のヘッダ参照。
 
 ## 各話の更新状態（ステータス管理）
 
-> 各話ごとに各フォルダの生成進捗を一元管理する。✅＝生成済み・明示的に確認できる、⏳＝未確認（リセット・要再確認）。根拠は [log.md](log.md)。
-> **2026-08-25 再始動**：本次第で単語登録・謎記録を再確認・修正し、status.mdを再構築。用語は [terminology/index.md](terminology/index.md)（グループ4＋単語78）、謎は [mysteries/index.md](mysteries/index.md)（未解決15件）へ統合。
+> 各話ごとに各フォルダの生成進捗を一元管理する。✅＝生成済み・明示的に確認できる、⏳＝未確認（リセット・要再確認）。根拠は [[log]]。
+> **2026-08-25 再始動**：本次第で単語登録・謎記録を再確認・修正し、status.mdを再構築。用語は [[terminology/index]]（グループ4＋単語78）、謎は [[mysteries/index]]（未解決15件）へ統合。
 > **episode・reflections はファイルの存在で明示的に確認できるため ✅**。**characters・terminology・allusions・analogies・foreshadowing・open_questions・resolved は実際に抜けが多いため、各話の進行度合いをリセットし ⏳（未確認）** とした。今後、各話を再確認しながら ✅ を埋めていく。
 
 ### 進捗一覧（各話ごと）
@@ -78,15 +78,15 @@ Obsidian vault。[../CLAUDE.md](../CLAUDE.md) が設計書(schema)。
 **ch001 から順番に、各話の ⏳（未確認）フォルダを埋めていくのが最優先**。episode・reflection は既に ✅（ch001〜ch023）なので、まず ch001 から順に characters/terminology/allusions/analogies/foreshadowing/open_questions/resolved の該当内容を確認・追記し、各話の ⏳ を ✅ へ更新する。ch024 以降の新話生成は、この各話の埋め込み（再確認）を優先しつつ進める。
 
 ## コア層（核心）
-- **引喩**：[allusions/](allusions/) — 徳川家康・三方原の戦い・ハイデガー『存在と時間』・サントーヴ『デカルトの思弁』とフランケンシュタイン
-- **アナロジー**：[analogies/recursion-map.md](analogies/recursion-map.md) — ch001/ch002（殺し/介錯・名の掌握・第三勢力介入）の反復構造を記録中
-- **謎・伏線**：[mysteries/index.md](mysteries/index.md) — 未解決の謎・伏線のタスク管理。[Open_Questions.md](mysteries/Open_Questions.md) は15件（ch001×2/ch006×3/ch021×2/ch022×4/ch023×4）未回収、[Resolved.md](mysteries/Resolved.md) は0、[Foreshadowing/](mysteries/Foreshadowing/) は伏線リスト。詳細は [mysteries/index.md](mysteries/index.md)
-- **感想**：[reflections/by-episode/](reflections/by-episode/) — ch001〜ch023 生成済み
+- **引喩**：[[allusions/]] — 徳川家康・三方原の戦い・ハイデガー『存在と時間』・サントーヴ『デカルトの思弁』とフランケンシュタイン
+- **アナロジー**：[[recursion-map]] — ch001/ch002（殺し/介錯・名の掌握・第三勢力介入）の反復構造を記録中
+- **謎・伏線**：[[mysteries/index]] — 未解決の謎・伏線のタスク管理。[[Open_Questions]] は15件（ch001×2/ch006×3/ch021×2/ch022×4/ch023×4）未回収、[[Resolved]] は0、[[mysteries/Foreshadowing/|Foreshadowing/]] は伏線リスト。詳細は [[mysteries/index]]
+- **感想**：[[reflections/by-episode/]] — ch001〜ch023 生成済み
 
 ## 登場人物（事実層）
 [[品森晶（アキラ）]] · [[キール]] · [[カイン]] · [[ロウ・カーイン]] · [[テール]] · [[アズーリア・ヘレゼクシュ]] · [[トッド]] · [[マフス]] · [[トリシューラ]] · [[ヲルヲーラ]] · [[イェレイド]] · [[マーネロア]] · [[ガドール]]·[[コルセスカ]]·[[ロドウィ・フーシィ・インギィ]] · [[トライデント]] · [[キロン]] · [[レオ]] · [[クレアノーズ（空虚大公）]]
 
 ## 世界観・用語
-用語は [terminology/index.md](terminology/index.md) で統合（グループ4・単語78）。テーマ別グループ＋単語（原子語）一覧へ接続。
-- グループ：[呪術と力体系](terminology/groups/呪術と力体系.md) · [宇宙論と世界構造](terminology/groups/宇宙論と世界構造.md) · [種と勢力・外世界人](terminology/groups/種と勢力・外世界人.md) · [組織と市場](terminology/groups/組織と市場.md)
-- 単語（一覧）：[terminology/index.md](terminology/index.md)（78語をスクリプト生成で全リンク接続）
+用語は [[terminology/index]] で統合（グループ4・単語78）。テーマ別グループ＋単語（原子語）一覧へ接続。
+- グループ：[[呪術と力体系]] · [[宇宙論と世界構造]] · [[種と勢力・外世界人]] · [[組織と市場]]
+- 単語（一覧）：[[terminology/index]]（78語をスクリプト生成で全リンク接続）
