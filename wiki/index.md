@@ -30,6 +30,7 @@ Obsidian vault。[../CLAUDE.md](../CLAUDE.md) が設計書(schema)。
 | 第019話（幕間） | 涙の価値（第019話・幕間） | pp.874–920 | raw/019_涙の価値_01.md | ✅ 生成済み |
 | 第020話（２－１５） | そんなことよりゲームをしよう | pp.921–974 | raw/020_そんなことよりゲームをしよう_01.md | ✅ 生成済み |
 | 第021話（２－１６） | 鏡（ミラージュ） | pp.975–1026 | raw/021_鏡ミラージュ_01.md | ✅ 生成済み |
+| 幕間『棒（ワンド）』 | 棒（ワンド） | pp.1028–1082 | raw/022_棒ワンド_01.md | ✅ 生成済み |
 
 > 話区切りの根拠：PDF本文の全角数字タイトル １－X と「幕間　『…』」。詳細は [episodes/ch001.md](wiki/episodes/ch001.md) のヘッダ参照。
 
@@ -40,26 +41,26 @@ Obsidian vault。[../CLAUDE.md](../CLAUDE.md) が設計書(schema)。
 ### 進捗一覧
 | フォルダ | 内容 | 状態 | 完了カバレッジ | 次タスク / 備考 |
 |---|---|---|---|---|
-| `episodes/` | 1話ごと：要約＋人物＋引喩＋感想概要＋疑問ノート | ✅ 生成済み | ch001〜ch021 | ch022以降を順次生成（rawは220話＋21断章） |
-| `reflections/by-episode/` | 1話ごとの解釈層の感想（事実と分離） | ✅ 生成済み | ch001〜ch021 | ch022以降を順次生成 |
-| `characters/` | 個人・組織・勢力の事実ページ | ✅ 生成済み | ch011〜ch021で新規人物を追加（ch021はクレアノーズ） | 新話の新規登場人物・勢力を順次生成 |
-| `terminology/` | 用語glossary（groups＋単語） | ✅ 生成済み | ch011〜ch021で多数の新規用語を追加（ch021は使い魔選択理論） | 新語をテーマページへ順次追記・統合 |
-| `allusions/` | 引喩・暗示リソース（神話／文学／伏線） | ⏳ 待機（新ページ1件追加） | ch001〜ch010＋翼無きレメスと槍神 | ch020以降の引喩を順次解析・追加 |
-| `analogies/` | 展開の相似/相違（再帰構造） | ⏳ 未更新 | recursion-map.md（ch001〜ch010） | 新話の反復/転倒構造を順次追記 |
-| `mysteries/` | 未解決の謎・伏線のタスク管理 | ✅ 更新済み | Open_Questions（ch021の謎2件を追加） | 新話の疑問を順次追加・整理 |
+| `episodes/` | 1話ごと：要約＋人物＋引喩＋感想概要＋疑問ノート | ✅ 生成済み | ch001〜ch022 | ch023以降を順次生成（rawは220話＋21断章） |
+| `reflections/by-episode/` | 1話ごとの解釈層の感想（事実と分離） | ✅ 生成済み | ch001〜ch022 | ch023以降を順次生成 |
+| `characters/` | 個人・組織・勢力の事実ページ | ✅ 生成済み | ch011〜ch022で新規人物＋既出追記（ch022はキロン再臨） | 新話の新規登場人物・勢力を順次生成 |
+| `terminology/` | 用語glossary（groups＋単語） | ✅ 生成済み | ch011〜ch022で多数の新規用語を追加（ch022は悪夢の泡・第五階層の裏側） | 新語をテーマページへ順次追記・統合 |
+| `allusions/` | 引喩・暗示リソース（神話／文学／伏線） | ✅ 新ページ追加済み | ch001〜ch022＋サントーヴ・フランケンシュタイン | ch020以降の引喩を順次解析・追加 |
+| `analogies/` | 展開の相似/相違（再帰構造） | ✅ 更新済み | recursion-map.md（ch018/ch022の転生者殺し・前世記憶の反復を追加） | 新話の反復/転倒構造を順次追記 |
+| `mysteries/` | 未解決の謎・伏線のタスク管理 | ✅ 更新済み | Open_Questions（ch021の謎2件＋ch022の謎4件を追加） | 新話の疑問を順次追加・整理 |
 
 ### レジェンド
 - ✅ **生成済み**：該当範囲のページ生成が完了し、lint（```[[ ]]```切れ0・事実行に典拠・感想分離・推測ラベル）済み。episode・reflection は「明示的に更新が確認できる」ため生成済み扱い。
 - ⏳ **待機（未更新）**：既存ファイルは存在するも、新話由来の新規生成・系統追記が未着手。本次第で「未更新」として管理し、順次生成する。
 
 ### 生成の優先順位（次世代）
-episode・reflection を ch012 へ延伸しつつ、各待機フォルダを話に沿って順次生成する。例：ch012 を生成 → `episodes/ch012.md` ＋ `reflections/by-episode/ch012.md` ＋ 新規 character/terminology/allusion/analogies/mystery を追記。
+episode・reflection を ch023 へ延伸しつつ、各待機フォルダを話に沿って順次生成する。例：ch023 を生成 → `episodes/ch023.md` ＋ `reflections/by-episode/ch023.md` ＋ 新規 character/terminology/allusion/analogies/mystery を追記。
 
 ## コア層（核心）
 - **引喩**：[allusions/](wiki/allusions/) — 徳川家康・三方原の戦い・ハイデガー『存在と時間』
 - **アナロジー**：[analogies/recursion-map.md](wiki/analogies/recursion-map.md) — ch001/ch002（殺し/介錯・名の掌握・第三勢力介入）の反復構造を記録中
 - **謎**：[mysteries/](wiki/mysteries/) — 未解決の謎・伏線のタスク管理（Open_Questions.md / Resolved.md）
-- **感想**：[reflections/by-episode/](wiki/reflections/by-episode/) — ch001〜ch021 生成済み
+- **感想**：[reflections/by-episode/](wiki/reflections/by-episode/) — ch001〜ch022 生成済み
 
 ## 登場人物（事実層）
 [[品森晶（アキラ）]] · [[キール]] · [[カイン]] · [[ロウ・カーイン]] · [[テール]] · [[アズーリア・ヘレゼクシュ]] · [[トッド]] · [[マフス]] · [[トリシューラ]] · [[ヲルヲーラ]] · [[イェレイド]] · [[マーネロア]] · [[ガドール]]·[[コルセスカ]]·[[ロドウィ・フーシィ・インギィ]] · [[トライデント]]
