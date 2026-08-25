@@ -46,8 +46,8 @@ Obsidian vault。[../CLAUDE.md](../CLAUDE.md) が設計書(schema)。
 ### 進捗一覧（各話ごと）
 | 話 | episode | reflections | characters | terminology | allusions | analogies | foreshadowing | open_questions | resolved |
 |---|---|---|---|---|---|---|---|---|---|
-| ch001 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| ch002 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
+| ch001 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| ch002 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | ch003 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
 | ch004 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
 | ch005 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
