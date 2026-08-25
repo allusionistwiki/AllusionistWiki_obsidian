@@ -13,10 +13,8 @@
 - **Literature/（文学・思想・歴史へのオマージュ）**
   - [external/](Literature/external/) — 実世界的な文学作品・哲学・史実への参照。
   - [internal/](Literature/internal/) — 作中内部の他作品・他話への文学オマージュ。
-- **Foreshadowing/（伏線リスト）** — 作品中に撒かれ、回収を待つ暗示／予兆。未回収／回収済みで管理。[詳細](Foreshadowing/)
-
 ## 関連層
-- [analogies/recursion-map.md](../analogies/recursion-map.md) — 引喩の「反復／転倒／否定」構造。Foreshadowing と連携。
-- [mysteries/](../mysteries/) — 未解決の謎（タスク管理のように扱う）。回収済みは mysteries/Resolved.md へ。
+- [analogies/recursion-map.md](../analogies/recursion-map.md) — 引喩の「反復／転倒／否定」構造。
+- [mysteries/](../mysteries/) — 未解決の謎・伏線のタスク管理（Open_Questions.md／Resolved.md／Foreshadowing/）。
 
 <!-- 新規引喩ページは、元ネタが実世界なら external／作中内部なら internal に、カテゴリ別 Mythology／Literature へ追加。 -->

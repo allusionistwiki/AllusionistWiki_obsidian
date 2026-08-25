@@ -1,6 +1,6 @@
 # Foreshadowing（伏線リスト）
 
-> allusions/Foreshadowing/（核心層）：作品中に撒かれ、回収を待つ**伏線・予兆・暗示**をリスト化したもの。**未_recovery／回収済み**でタスク管理のように扱う。本作の「再帰」構造と密接に関わる。analogies/recursion-map.md（反復構造）と連携。
+> mysteries/Foreshadowing/（核心層）：作品中に撒かれ、回収を待つ**伏線・予兆・暗示**をリスト化したもの。**未回収／回収済み**でタスク管理のように扱う。本作の「再帰」構造と密接に関わる。analogies/recursion-map.md（反復構造）と連携。また [Open_Questions.md](../Open_Questions.md)（未解決の謎）と連携する。
 
 ## 未回収（未収）
 | 伏線 | 初出話 | 典拠 | 予想される回収 | 備考 |

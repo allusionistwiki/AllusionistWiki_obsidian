@@ -41,46 +41,46 @@ Obsidian vault。[../CLAUDE.md](../CLAUDE.md) が設計書(schema)。
 
 > 各話ごとに各フォルダの生成進捗を一元管理する。✅＝生成済み・明示的に確認できる、⏳＝未確認（リセット・要再確認）。根拠は [log.md](log.md)。
 > **2026-08-25 再始動**：本次第で単語登録・謎記録を再確認・修正し、index.mdを再構築。用語は [terminology/index.md](terminology/index.md)（グループ4＋単語78）、謎は [mysteries/index.md](mysteries/index.md)（未解決15件）へ統合。
-> **episode・reflections はファイルの存在で明示的に確認できるため ✅**。**characters・terminology・allusions・analogies・mysteries は実際に抜けが多いため、各話の進行度合いをリセットし ⏳（未確認）** とした。今後、各話を再確認しながら ✅ を埋めていく。
+> **episode・reflections はファイルの存在で明示的に確認できるため ✅**。**characters・terminology・allusions・analogies・foreshadowing・open_questions・resolved は実際に抜けが多いため、各話の進行度合いをリセットし ⏳（未確認）** とした。今後、各話を再確認しながら ✅ を埋めていく。
 
 ### 進捗一覧（各話ごと）
-| 話 | episode | reflections | characters | terminology | allusions | analogies | mysteries |
-|---|---|---|---|---|---|---|---|
-| ch001 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| ch002 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| ch003 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| ch004 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| ch005 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| ch006 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| ch007 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| ch008 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| ch009 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| ch010 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| ch011 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| ch012 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| ch013 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| ch014 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| ch015 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| ch016 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| ch017 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| ch018 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| ch019 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| ch020 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| ch021 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| ch022 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
-| ch023 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
+| 話 | episode | reflections | characters | terminology | allusions | analogies | foreshadowing | open_questions | resolved |
+|---|---|---|---|---|---|---|---|---|---|
+| ch001 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
+| ch002 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
+| ch003 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
+| ch004 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
+| ch005 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
+| ch006 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
+| ch007 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
+| ch008 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
+| ch009 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
+| ch010 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
+| ch011 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
+| ch012 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
+| ch013 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
+| ch014 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
+| ch015 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
+| ch016 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
+| ch017 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
+| ch018 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
+| ch019 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
+| ch020 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
+| ch021 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
+| ch022 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
+| ch023 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
 
 ### レジェンド
 - ✅ **生成済み**：ファイルの存在で明示的に確認できる（episode・reflections）。
-- ⏳ **未確認（リセット）**：characters・terminology・allusions・analogies・mysteries。実際に抜けが多いため各話の進行度合いをリセットし、要再確認。再確認が済んだ話から ✅ へ更新する。
+- ⏳ **未確認（リセット）**：characters・terminology・allusions・analogies・foreshadowing・open_questions・resolved。実際に抜けが多いため各話の進行度合いをリセットし、要再確認。再確認が済んだ話から ✅ へ更新する。
 
 ### 生成の優先順位（次世代）
-episode・reflection は ch024 へ延伸しつつ、⏳（未確認）の各フォルダを**話ごとに再確認**して ✅ を埋める。例：ch001 から順に characters/terminology/allusions/analogies/mysteries の該当内容を確認・追記し、各話の ⏳ を ✅ へ更新する。
+episode・reflection は ch024 へ延伸しつつ、⏳（未確認）の各フォルダを**話ごとに再確認**して ✅ を埋める。例：ch001 から順に characters/terminology/allusions/analogies/foreshadowing/open_questions/resolved の該当内容を確認・追記し、各話の ⏳ を ✅ へ更新する。
 
 ## コア層（核心）
 - **引喩**：[allusions/](allusions/) — 徳川家康・三方原の戦い・ハイデガー『存在と時間』・サントーヴ『デカルトの思弁』とフランケンシュタイン
 - **アナロジー**：[analogies/recursion-map.md](analogies/recursion-map.md) — ch001/ch002（殺し/介錯・名の掌握・第三勢力介入）の反復構造を記録中
-- **謎**：[mysteries/index.md](mysteries/index.md) — 未解決の謎・伏線のタスク管理。[Open_Questions.md](mysteries/Open_Questions.md) は15件（ch001×2/ch006×3/ch021×2/ch022×4/ch023×4）未回収、[Resolved.md](mysteries/Resolved.md) は0。詳細は [mysteries/index.md](mysteries/index.md)
+- **謎・伏線**：[mysteries/index.md](mysteries/index.md) — 未解決の謎・伏線のタスク管理。[Open_Questions.md](mysteries/Open_Questions.md) は15件（ch001×2/ch006×3/ch021×2/ch022×4/ch023×4）未回収、[Resolved.md](mysteries/Resolved.md) は0、[Foreshadowing/](mysteries/Foreshadowing/) は伏線リスト。詳細は [mysteries/index.md](mysteries/index.md)
 - **感想**：[reflections/by-episode/](reflections/by-episode/) — ch001〜ch023 生成済み
 
 ## 登場人物（事実層）

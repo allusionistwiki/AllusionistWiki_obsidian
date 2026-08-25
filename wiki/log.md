@@ -1,4 +1,9 @@
 # 操作履歴（追記のみ）
+## 2026-08-25（Foreshadowing を allusions/ から mysteries/ へ移動・状態表示を細分化）
+- **ユーザー依頼**：`allusions/Foreshadowing/` を `mysteries/Foreshadowing/` へ git mv で移動した。
+- **参照更新**：allusions/index.md（Foreshadowing参照を削除・関連層を更新）、mysteries/index.md（構成に Foreshadowing/ を追加）、mysteries/Foreshadowing/_index.md（ヘッダを新場所へ）、CLAUDE.md（§1 ディレクトリ構造・§3 ページ種別を更新）、wiki/index.md（コア層に Foreshadowing を反映）。
+- **状態表示の細分化**：wiki/index.md の各話ごと表の `mysteries` 列を、`foreshadowing`・`open_questions`・`resolved` の3列に分割して細かく管理するよう変更（episode・reflections 以外は ⏳ リセットのまま）。
+- **次タスク**：⏳（未確認）の各フォルダ（foreshadowing/open_questions/resolved 含む）を話ごとに再確認して ✅ を埋める。
 ## 2026-08-25（index.mdの状態管理を各話ごとへ変更・episode/reflections以外をリセット）
 - **ユーザー依頼**：`wiki/index.md` の「各フォルダの更新状態」を**各話ごとの更新状態**へ変更した。
 - **方針**：episode・reflections はファイルの存在で明示的に確認できるため ✅。characters・terminology・allusions・analogies・mysteries は実際に抜けが多いため、**各話の進行度合いをリセットし ⏳（未確認）** とした。今後、各話を再確認しながら ✅ を埋めていく（ch001〜ch023 の各話ごと表）。
