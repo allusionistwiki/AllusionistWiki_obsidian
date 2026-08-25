@@ -28,7 +28,7 @@
     ├── terminology/     # ★用語glossary（術語・固有名詞を**世界観まで記述できる程度に詳細**。グループ＋単語の2階層。用語は[[...]]リンク必須）
     │   ├── groups/                    # グループ概要ページ（日本語ファイル名）
     │   │   └── <グループ>.md
-    │   └── 单词（一覧）/               # 単語（原子語）ページ群（フラット、グループからリンク）
+    │   └── 単語（一覧）/               # 単語（原子語）ページ群（フラット、グループからリンク）
     │       └── <用語>.md
     ├── allusions/       # ★核心層：引喩・暗示リソース（元ネタ種別で分類）
     │   ├── index.md
@@ -50,7 +50,7 @@
         └── by-theme/    # テーマ別
 ```
 
-> ※ `terminology/` はグループフォルダ（`groups/`）と単語フォルダ（`单词（一覧）/`）の2階層構成。用語・グループの追加・分割は必要に応じて見直・追加可。
+> ※ `terminology/` はグループフォルダ（`groups/`）と単語フォルダ（`単語（一覧）/`）の2階層構成。用語・グループの追加・分割は必要に応じて見直・追加可。
 
 ## 2. 命名規約（必須）
 | 種別 | 名前 | 例 |
@@ -92,7 +92,7 @@
 各ページは以下のフィールドを持つ：
 - **原典の説明**（正確に・出典付き＝ここが既存wikiを上回る部分）
 - **本作での使われ方**（どの話・どの場で・何を意図したと読みうるか）
-- **[[関連エピソード]]** ワイルink
+- **[[関連エピソード]]** wikilink
 - 確度ラベル：`【確定】【相当有力】【推測・要検証】`
 ### mysteries/（未解決の謎・タスク管理）
 - **Open_Questions.md**：未解決の謎一覧（謎｜初出話｜典拠｜状態｜仮説・備考）。ページ番号が不確なら話数のみで引用し、偽の頁番号を作らない。
@@ -118,7 +118,7 @@
    - `characters/`：個人・組織・勢力（初出/名称バリエート/外見・能力/所属・関係/目的/典拠）。推測内面は `> [!] 解釈` で分離。
    - `terminology/`：**用語glossary**（術語・固有名詞を**世界観まで記述できる程度に詳細**にテーマ別ページに列挙。簡潔な定義＋その用語が立つ世界構造との関連。一項目が短く実務的なこちらへ)。新規用語は該当テーマページへ追記 or terminology/index.md へリンク追加。**各用語は[[...]]リンク必須**。未確定は「要検証」ラベル。
    - **初出判定**：本作で初めて登場・単なる再出でない場合のみ新規作成。既存あれば作り直さず追記。
-5. **引喩解析**（allusions / analogies）：**allusions/external/** は実世界の神話／文学／思想／歴史への引喩、**原典説明は正確に・出典付き**。allusions/in-work/ は本作内部の参照・踏襲。**analogies/recursion-map.md** は「どの話がどの話を反復/転倒/否定するか」を辺で表現。**LLMの世界知識+推論が必須**（頻度抽出だけでは「オジデウス神話のパロディ」は判別不可）。
+5. **引喩解析**（allusions / analogies）：**external**（`Mythology/external/`, `Literature/external/`）は実世界の神話／文学／思想／歴史への引喩、**原典説明は正確に・出典付き**。**internal**（`Mythology/internal/`, `Literature/internal/`）は本作内部の参照・踏襲。**analogies/recursion-map.md** は「どの話がどの話を反復/転倒/否定するか」を辺で表現。**LLMの世界知識+推論が必須**（頻度抽出だけでは「オジデウス神話のパロディ」は判別不可）。
 6. **感想**（reflections/by-episode/chNNN.md）：主観的読後感・美学判断・仮説。**冒頭に「解釈層であること」を明記**、事実と混同しない。
 7. **lint → index/log更新 → commit**（§5）：全 `[[ ]]` が実ファイルへ解決（切れ0）、事実行に典拠あり、感想/事実分離済み、推測はラベル付き、raw不変を確認。`wiki/status.md` と `wiki/episodes/index.md` を更新し、`wiki/log.md` に操作エントリを追記。vault は git 管理・変更をコミット（新ブランチは `bionic/` プレフィックス）。
 
@@ -156,7 +156,7 @@
 ### 8.3 更新・コミットと削除
 - **git コミットは恒久ヘルパー `_commit.ps1`（ASCIIのみ）＋ `_repo.txt`（vaultパス・UTF-8）＋ `_msg.txt`（メッセージ・UTF-8）**で行う。git は `shell_command` 経由のみ実行可能（PATH に入らない→`_commit.ps1` が `$env:Path` に Git を自動追加）。
 - コミットメッセージ日本語は UTF-8 ファイル（`-MsgFile`）渡し。
-- 手順（工作Di `C:/Users/d5dx/Downloads/Code` から）：`Set-ExecutionPolicy -Scope Process Bypass` の後、`_commit.ps1 -All -MsgFile _msg.txt`。特定ファイルのみなら `_commit.ps1 -Paths "CLAUDE.md","wiki/episodes/ch001.md" -MsgFile _msg.txt`。
+- 手順（作業Dir `C:/Users/d5dx/Downloads/Code` から）：`Set-ExecutionPolicy -Scope Process Bypass` の後、`_commit.ps1 -All -MsgFile _msg.txt`。特定ファイルのみなら `_commit.ps1 -Paths "CLAUDE.md","wiki/episodes/ch001.md" -MsgFile _msg.txt`。
 - **削除**：一時スクリプト等の削除は、インライン PowerShell の `Remove-Item` を避け、Python（`python -c` またはスクリプト）で行うと popup を回避できる。
 
 ### 8.4 文字の品質管理（typo・誤変換・簡体字混入）
