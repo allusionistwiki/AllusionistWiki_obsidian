@@ -2,7 +2,7 @@
 
 Obsidian vault。[../CLAUDE.md](../CLAUDE.md) が設計書(schema)。
 
-> **2026-08-25 再始動・再確認ノート**：本ページ（status.md）をリセット・再構築した。従来のリンクが `wiki/...` プレフィックス付きで壊れていたため、**vault内相対パスへ統一**して修正。あわせて **単語登録（terminology）と謎記録（mysteries）を再確認・修正**した——terminology のグループリンク `咒術→呪術` の誤り、mysteries/Open_Questions の簡体字の混入・typo「トシューラ」、reflections 以下の `../episodes` リンク階層の誤りを修正。ch023（レジンキャストエピゴーネン）を生成・登録。根拠は [[log]]。
+> **2026-08-25 再始動・再確認ノート**：本ページ（status.md）をリセット・再構築した。従来のリンクが `wiki/...` プレフィックス付きで壊れていたため、**vault内相対パスへ統一**して修正。あわせて **単語登録（terminology）と謎記録（mysteries）を再確認・修正**した——terminology のグループリンク `呪術→呪術` の誤り、mysteries/Open_Questions の簡体字の混入・typo「トシューラ」、reflections 以下の `../episodes` リンク階層の誤りを修正。ch023（レジンキャストエピゴーネン）を生成・登録。根拠は [[log]]。
 
 ## 概要
 - 作品：『幻想再帰のアリュージョニスト』（作者：最近／N9073CA／小説家になろう系、PDF総8450ページ）
