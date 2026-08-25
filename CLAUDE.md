@@ -165,22 +165,23 @@
 
 ### 8.4 文字の品質管理（typo・誤変換・簡体字混入）
 - **typo／誤変換・簡体字混入を発見したら、一文ずつ手動で修正せず `fix_typo.py` を使う**（鉄則）。これは vault 内の全 `.md` を再帰スキャンし、既知の誤記を一括置換する再利用スクリプト。
-- スクリプト：`C:/Users/d5dx/Downloads/Code/fix_typo.py`（工作Dir・ASCII名なので cp932 で化けない）
+- スクリプト：`幻想再帰のアリュージョニスト-wiki/fix_typo.py`（vault内・git管理。ファイル名はASCIIなので cp932 で化けない）
 - **使い方**（PowerShell）：
   ```powershell
   $env:PYTHONUTF8=1
+  cd 幻想再帰のアリュージョニスト-wiki   # vaultルート（fix_typo.py がある場所）
   # サマリー（何が残っているか確認）
-  python fix_typo.py --report <vaultパス>
+  python fix_typo.py --report wiki
   # 詳細レポート（行番号付き、dry-run）
-  python fix_typo.py --scan <vaultパス>
+  python fix_typo.py --scan wiki
   # 一括置換（実際に上書き）
-  python fix_typo.py --fix <vaultパス>
+  python fix_typo.py --fix wiki
   ```
 - **既定で検出・置換する誤記**（置換ルールは外部JSON `typo_rules.json` に定義）：
   - トリシーラ → トリシューラ（`シ(U+30B7)ー(U+30FC)ユ(U+30E5)` が正。`セ(U+30BB)` は誤り）
   - 单词 → 単語、候选人 → 候補者、价值 → 価値、选择 → 選択
   - 简体会字（时→時・单→単・词→詞・价→価・选→選など、JIS に存在しない文字）
-- **置換ルールの場所（拡張方法）**：既定の置換ルールは外部JSON `C:/Users/d5dx/Downloads/Code/typo_rules.json` に定義（形式 `[ [検索文字列, 置換文字列, 説明], ... ]`）。ルールの追加・変更はこのファイルを編集する。`fix_typo.py` は起動時にこのファイルを読み込む。別ファイルを指定する場合は `--rules custom_rules.json` で上書き。
+- **置換ルールの場所（拡張方法）**：既定の置換ルールは外部JSON `幻想再帰のアリュージョニスト-wiki/typo_rules.json`（vault内・git管理）に定義（形式 `[ [検索文字列, 置換文字列, 説明], ... ]`）。ルールの追加・変更はこのファイルを編集する。`fix_typo.py` は起動時に同じディレクトリのこのファイルを読み込む。別ファイルを指定する場合は `--rules custom_rules.json` で上書き。
 - **運用フロー**：新規生成後（§4⑦）とコミット前に必ず `--scan` でクリーン確認。問題があれば `--fix` → 再スキャンでゼロを確認してからコミット。`候`・`人`・`体`・`会`・`社` など簡体と日本語で同一字形の文字は**判定対象から除外**する（検出も置換もしない）。単字で簡体/日本語を区別できないため、簡体字判定は `SIMPLIFIED_ONLY_CHARS`（JIS に存在しない文字）に限定する。
 
 ### 8.5 コンテキスト圧縮への対応（設計書の再確認と依頼）
