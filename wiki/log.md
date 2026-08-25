@@ -1,4 +1,13 @@
 # 操作履歴（追記のみ）
+## 2026-08-25（頁番号の規約を pp = leaf−1 へ統一・全面移行）
+- **検証**：PDF実体（gensousaiki.pdf）から、leaf N の印刷頁番号が N−1 であることを確認（leaf 4→3、108→107、1028→1027、1084→1083 等）。**pp = leaf−1 が正解**と確定。
+- **移行（ユーザー依頼・全面C）**：pp = leaf で誤っていた ch001〜ch008・ch022 の頁番号を、全ファイルで −1 に統一した。
+  - エピソード見出し（ch001-008・ch022）の「PDF頁範囲」を pp = leaf−1 に修正（leaf は raw 実測値へ）。
+  - カタログ表（status.md・episodes/index.md）の頁範囲を修正。
+  - 本文引用（episodes/reflections/characters/terminology/mysteries/allusions 等）を一括 −1。
+  - 境界の 398・1083 は ch009/ch023 への正解参照のためシフト対象外（確認済み）。
+- **正しい話（ch009〜ch021・ch023）は変更なし**。log.md は履歴のため変更せず。
+- **次タスク**：ch001 から順に各話の ⏳ フォルダを埋める。
 ## 2026-08-25（リンク方式を [[...]] wikilink へ統一）
 - **ユーザー依頼**：vault 内のリンクを `[[...]]` wikilink に統一した（`[text](url)` の markdown リンクを変換）。
 - **方針**：内部リンクは裸の basename 形式（`[[コルセスカ]]`）。basename 重複（ch001〜ch023 は episodes/ と reflections/ で重複、index/_index）は `[[フォルダ/ファイル]]` のパス付き。vault 外（`raw/`・`CLAUDE.md`）へのリンクは `[text](url)` の markdown 相対パスのまま（wikilink は vault 内のみ解決）。
