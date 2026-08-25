@@ -1,4 +1,8 @@
 # 操作履歴（追記のみ）
+## 2026-08-25（wiki/index.md を status.md へ改名・参照更新）
+- **ユーザー依頼**：トップカタログ兼状態管理ページ `wiki/index.md` を `wiki/status.md` へ git mv で改名した。
+- **参照更新**：CLAUDE.md（§1 ツリー・§4①・§4⑦）、wiki/episodes/index.md（`../index.md` → `../status.md`）、status.md 内の「index.md」表記を status.md へ。
+- **次タスク**：ch001 から順に各話の ⏳ フォルダを埋めていく。
 ## 2026-08-25（生成の優先順位を「ch001から順に埋める」へ明確化）
 - **ユーザー依頼**：wiki/index.md の「生成の優先順位（次世代）」を、**ch001 から順番に各話の ⏳ フォルダを埋めていくのが最優先**と明確化した。ch024 以降の新話生成はこの各話の埋め込み（再確認）を優先しつつ進める。
 ## 2026-08-25（Foreshadowing を allusions/ から mysteries/ へ移動・状態表示を細分化）

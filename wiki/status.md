@@ -2,7 +2,7 @@
 
 Obsidian vault。[../CLAUDE.md](../CLAUDE.md) が設計書(schema)。
 
-> **2026-08-25 再始動・再確認ノート**：本ページ（index.md）をリセット・再構築した。従来のリンクが `wiki/...` プレフィックス付きで壊れていたため、**vault内相対パスへ統一**して修正。あわせて **単語登録（terminology）と謎記録（mysteries）を再確認・修正**した——terminology のグループリンク `咒術→呪術` の誤り、mysteries/Open_Questions の簡体字の混入・typo「トシューラ」、reflections 以下の `../episodes` リンク階層の誤りを修正。ch023（レジンキャストエピゴーネン）を生成・登録。根拠は [log.md](log.md)。
+> **2026-08-25 再始動・再確認ノート**：本ページ（status.md）をリセット・再構築した。従来のリンクが `wiki/...` プレフィックス付きで壊れていたため、**vault内相対パスへ統一**して修正。あわせて **単語登録（terminology）と謎記録（mysteries）を再確認・修正**した——terminology のグループリンク `咒術→呪術` の誤り、mysteries/Open_Questions の簡体字の混入・typo「トシューラ」、reflections 以下の `../episodes` リンク階層の誤りを修正。ch023（レジンキャストエピゴーネン）を生成・登録。根拠は [log.md](log.md)。
 
 ## 概要
 - 作品：『幻想再帰のアリュージョニスト』（作者：最近／N9073CA／小説家になろう系、PDF総8450ページ）
@@ -40,7 +40,7 @@ Obsidian vault。[../CLAUDE.md](../CLAUDE.md) が設計書(schema)。
 ## 各話の更新状態（ステータス管理）
 
 > 各話ごとに各フォルダの生成進捗を一元管理する。✅＝生成済み・明示的に確認できる、⏳＝未確認（リセット・要再確認）。根拠は [log.md](log.md)。
-> **2026-08-25 再始動**：本次第で単語登録・謎記録を再確認・修正し、index.mdを再構築。用語は [terminology/index.md](terminology/index.md)（グループ4＋単語78）、謎は [mysteries/index.md](mysteries/index.md)（未解決15件）へ統合。
+> **2026-08-25 再始動**：本次第で単語登録・謎記録を再確認・修正し、status.mdを再構築。用語は [terminology/index.md](terminology/index.md)（グループ4＋単語78）、謎は [mysteries/index.md](mysteries/index.md)（未解決15件）へ統合。
 > **episode・reflections はファイルの存在で明示的に確認できるため ✅**。**characters・terminology・allusions・analogies・foreshadowing・open_questions・resolved は実際に抜けが多いため、各話の進行度合いをリセットし ⏳（未確認）** とした。今後、各話を再確認しながら ✅ を埋めていく。
 
 ### 進捗一覧（各話ごと）
