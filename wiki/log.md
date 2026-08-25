@@ -1,4 +1,8 @@
 # 操作履歴（追記のみ）
+## 2026-08-25（index.mdの状態管理を各話ごとへ変更・episode/reflections以外をリセット）
+- **ユーザー依頼**：`wiki/index.md` の「各フォルダの更新状態」を**各話ごとの更新状態**へ変更した。
+- **方針**：episode・reflections はファイルの存在で明示的に確認できるため ✅。characters・terminology・allusions・analogies・mysteries は実際に抜けが多いため、**各話の進行度合いをリセットし ⏳（未確認）** とした。今後、各話を再確認しながら ✅ を埋めていく（ch001〜ch023 の各話ごと表）。
+- **次タスク**：⏳（未確認）の各フォルダを話ごとに再確認して ✅ を埋める。
 ## 2026-08-25（ch023「レジンキャストエピゴーネン」生成・index.md再構築・単語/謎記録の再確認修正）
 - **再始動・再確認（ユーザー依頼）**：ch023までを再確認し、単語登録（terminology）・謎記録（mysteries）の不具合を修正、`wiki/index.md` をリセット・再構築した。
 - **リンク切れの一括修正（実リンク）**：`wiki/index.md` の `wiki/...` プレフィックス付きリンク（index.md自身がwiki内にあるため全て壊れ）をvault内相対パスへ統一。reflections/by-episode 以下の `../episodes/` → `../../episodes/`（1階層不足）、episodes/index.md の `../raw/` → `../../raw/`、episodes/ch020〜022 の `by-episode/` → `../reflections/by-episode/`、episodes/ch015 の `anis.md` → `アニス.md`、allusions/Literature/external の `../../episodes/` → `../../../episodes/`、episodes/ch004 の `../../allusions/` → `../allusions/` を修正。vault全体で実リンク切れ0（残存はlog.mdの散文例のみ＝非実リンク）。
