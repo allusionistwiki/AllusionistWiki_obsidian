@@ -43,6 +43,9 @@ def get_default_rules() -> list:
     print(f"⚠ 既定ルールファイルが見つかりません: {DEFAULT_RULES_FILE}", file=sys.stderr)
     return []
 
+# 既定の除外（履歴ファイルは「当時の記録」。自動置換せず、訂正は手動で注記付き行う）
+DEFAULT_EXCLUDES = ['log.md']
+
 # 簡体字専用文字のリスト（日本語のJIS第1・2水準には存在しない）
 # これらが混入していたら確実に簡体字混入
 SIMPLIFIED_ONLY_CHARS = {
@@ -89,6 +92,17 @@ def scan_file(filepath: Path, replacements: list) -> dict:
                 found[comment.split(':')[0]] += count
                 issues.append((i, line.strip()[:200], search, replace, comment))
 
+    # JIS X 0208（cp932）非在来漢字＝簡体・繁体混入の自動検出
+    non_jis = {}
+    for ch in text:
+        o = ord(ch)
+        if not (0x3400 <= o <= 0x4DBF or 0x4E00 <= o <= 0x9FFF or 0xF900 <= o <= 0xFAFF):
+            continue
+        try:
+            ch.encode('cp932')
+        except UnicodeEncodeError:
+            non_jis[ch] = non_jis.get(ch, 0) + 1
+
     # 簡体字専用文字の検出
     simp_found = {}
     for ch, name in SIMPLIFIED_ONLY_CHARS.items():
@@ -99,15 +113,30 @@ def scan_file(filepath: Path, replacements: list) -> dict:
         'lines': len(lines),
         'replacements': dict(found),
         'simplified_chars': simp_found,
+        'non_jis': non_jis,
         'issues': issues,
     }
 
 
-def scan_directory(target: Path, replacements: list, recursive=True) -> dict:
+def is_excluded(path: Path, target: Path, excludes: list) -> bool:
+    """除外指定（パスの部分文字列）に一致するか。"""
+    if not excludes:
+        return False
+    try:
+        rel = str(Path(path).relative_to(target)).replace('\\', '/')
+    except ValueError:
+        rel = str(path).replace('\\', '/')
+    return any(x and x in rel for x in excludes)
+
+
+def scan_directory(target: Path, replacements: list, recursive=True, excludes=None) -> dict:
     """ディレクトリ内の全.mdファイルをスキャン。"""
     if not target.exists():
         print(f"❌ 存在しません: {target}", file=sys.stderr)
         sys.exit(1)
+
+    if excludes is None:
+        excludes = DEFAULT_EXCLUDES
 
     if target.is_file():
         return scan_file(target, replacements)
@@ -116,14 +145,15 @@ def scan_directory(target: Path, replacements: list, recursive=True) -> dict:
     total_files = 0
     files_with_issues = 0
 
-    files = sorted(target.rglob('*.md')) if recursive else sorted(target.glob('*.md'))
+    all_files = sorted(target.rglob('*.md')) if recursive else sorted(target.glob('*.md'))
+    files = [f for f in all_files if not is_excluded(f, target, excludes)]
 
     for f in files:
         r = scan_file(f, replacements)
         if 'error' in r:
             results[str(f)] = r
             continue
-        if r['replacements'] or r['simplified_chars']:
+        if r['replacements'] or r['simplified_chars'] or r.get('non_jis'):
             results[str(f)] = r
             files_with_issues += 1
         total_files += 1
@@ -142,8 +172,10 @@ def apply_replacements(text: str, replacements: list) -> str:
     return text
 
 
-def fix_directory(target: Path, replacements: list, recursive=True) -> dict:
-    """ディレクトリ内の全.mdファイルを置換して上書き。"""
+def fix_directory(target: Path, replacements: list, recursive=True, excludes=None) -> dict:
+    """ディレクトリ内の全.mdファイルを置換して上書き（excludes 一致は変更しない）。"""
+    if excludes is None:
+        excludes = DEFAULT_EXCLUDES
     if not target.exists():
         print(f"❌ 存在しません: {target}", file=sys.stderr)
         sys.exit(1)
@@ -157,7 +189,8 @@ def fix_directory(target: Path, replacements: list, recursive=True) -> dict:
     files_fixed = []
     total_changes = 0
 
-    files = sorted(target.rglob('*.md')) if recursive else sorted(target.glob('*.md'))
+    all_files = sorted(target.rglob('*.md')) if recursive else sorted(target.glob('*.md'))
+    files = [f for f in all_files if not is_excluded(f, target, excludes)]
 
     for f in files:
         text = f.read_text(encoding='utf-8')
@@ -193,6 +226,8 @@ def format_report(scan_result: dict, replacements: list, mode: str):
                 total_counts[k] += v
             for k, v in f_result.get('simplified_chars', {}).items():
                 total_counts[f'[簡体字] {k}'] += v
+            for k, v in f_result.get('non_jis', {}).items():
+                total_counts[f'[JIS非在来] U+{ord(k):04X}'] += v
 
         if total_counts:
             print("── 全体集計 ──")
@@ -212,6 +247,11 @@ def format_report(scan_result: dict, replacements: list, mode: str):
             if f_result.get('simplified_chars'):
                 print(f"     ⚠ 簡体字検出:")
                 for ch, count in f_result['simplified_chars'].items():
+                    print(f"       {ch} (U+{ord(ch):04X}): {count}件")
+
+            if f_result.get('non_jis'):
+                print(f"     ⚠ JIS X 0208 非在来漢字（簡体・繁体混入疑い）:")
+                for ch, count in f_result['non_jis'].items():
                     print(f"       {ch} (U+{ord(ch):04X}): {count}件")
 
             if f_result.get('replacements'):
@@ -325,8 +365,15 @@ def main():
     parser.add_argument('--check', metavar='<file>', help='単一ファイルの簡体字チェック')
     parser.add_argument('--report', metavar='<dir>', help='簡潔なサマリーレポート')
     parser.add_argument('--rules', metavar='<json>', help='カスタム置換ルールJSONファイル')
+    parser.add_argument('--exclude', metavar='<path-part>',
+                        help='除外パスの部分一致（カンマ区切り）。既定は log.md。"none" で無効化')
     parser.add_argument('--json', action='store_true', help='結果をJSONで出力')
     args = parser.parse_args()
+
+    if args.exclude is not None:
+        excludes = [] if args.exclude.lower() == 'none' else [x for x in args.exclude.split(',') if x]
+    else:
+        excludes = DEFAULT_EXCLUDES
 
     # 置換ルール読み込み（既定は外部JSON typo_rules.json、--rules で上書き）
     replacements = get_default_rules()
@@ -335,7 +382,7 @@ def main():
 
     if args.scan:
         target = Path(args.scan)
-        result = scan_directory(target, replacements)
+        result = scan_directory(target, replacements, excludes=excludes)
         if args.json:
             # issuesは巨大なのでJSON出力から除外
             clean = {k: v for k, v in result.items()}
@@ -348,7 +395,7 @@ def main():
 
     elif args.fix:
         target = Path(args.fix)
-        result = fix_directory(target, replacements)
+        result = fix_directory(target, replacements, excludes=excludes)
         print(f"✅ {result['total_changes']}件の置換を {len(result['files'])}ファイルに適用")
         if result['files']:
             print("\n変更済みファイル:")
@@ -366,7 +413,7 @@ def main():
 
     elif args.report:
         target = Path(args.report)
-        result = scan_directory(target, replacements)
+        result = scan_directory(target, replacements, excludes=excludes)
         format_summary(result)
 
     else:
