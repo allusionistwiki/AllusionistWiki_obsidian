@@ -1,1 +1,9 @@
-wiki(episodes/index): ch061・ch062の話一覧／arc分類／進捗（62話）を補完
+wiki(ch063): 『黒百合の子供たち』生成＋用語9・キャラ更新・謎+4・伏線/再帰追加・leaf頁番号監査
+
+- episodes/ch063.md・reflections/by-episode/ch063.md 新規生成（raw/063、leaf 2581〜）
+- 新用語9ファイル（アタヴィズム／成し得ぬ盾／第零の位階／言理飛翔／隔世／雲霞の鎧／ヲルヴォーレの雷火／プロトプラズマ収束弾／別種の死人）＋既存5ファイル典拠訂正
+- characters更新8（リーナ・ミルーニャ・ナト・ハルティール・サジェリミーナ・クエスドレム・ディセクター・プリエステラ・メイファーラ）＋ミブリナ・ゾラ・クロウサー新stub
+- Open_Questions +4（190→194）、status.md・episodes/index.md 更新
+- Foreshadowing/_index に伏線6行、recursion-map に再帰辺4本追加
+- ch063全典拠のleaf頁番号監査完了（b8 tracker）、terminology index 249件・節見出し無カウント化
+- lint 問題0件
