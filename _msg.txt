@@ -1,1 +1,1 @@
-wiki(ch085): 幕間『食い千切られた左腕』バッチ — エピソード・感想新規、OQ+5=291（既存断章行を部分回収へ）、伏線1移動+4追加、recursion-map+3辺、terminology新規2＋更新2、characters新規1（グラッフィアカーネ）＋追記6、leaf/章対応の再点検結果を記録
+wiki(ch087): 幕間『トリシューラ・カムバック』バッチ — エピソード・感想新規、OQ+6=303（月の偽者行を部分回収）、伏線5追加+1移動、recursion-map+3辺、characters追記10、status/index/log更新
