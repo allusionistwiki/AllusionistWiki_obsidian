@@ -95,3 +95,4 @@
 - [[承認理論（Constitutive Theory of Statehood・国家承認）]]
 - [[ダモクレスの剣（Sword of Damocles・常時脅威の座）]]
 - [[断頭台と十三階段（Guillotine・フランス革命・青ひげ）]]
+- [[剣詩舞（Kenjibu・身体芸術としての呪文）]]
