@@ -93,3 +93,4 @@
 - [[天眼石（アイアゲート・パワーストーン）]]
 - [[天与の王権と占星術（Divine Right of Kings・星詠み）]]
 - [[承認理論（Constitutive Theory of Statehood・国家承認）]]
+- [[ダモクレスの剣（Sword of Damocles・常時脅威の座）]]
