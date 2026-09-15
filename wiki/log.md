@@ -1,5 +1,11 @@
 # 操作履歴（追記のみ）
 
+## 2026-09-15（第129話 ４－４９『檻の感触だきしめて』生成）
+- **第129話（４－４９『檻の感触だきしめて』）生成**：`wiki/episodes/ch129.md`（pp.5495–5525）＋ `wiki/reflections/by-episode/ch129.md`。
+- **status.md**：エピソード表・進捗表・感想数（ch001〜ch129）を更新。
+- **episodes/index.md**：第129話の行を追加。
+- **lint**：wikilink解決確認済み。
+
 ## 2026-09-15（第128話 ４－４８『カクリ世の宴』生成）
 - **第128話（４－４８『カクリ世の宴』）生成**：`wiki/episodes/ch128.md`（pp.5475–5494）＋ `wiki/reflections/by-episode/ch128.md`。
 - **status.md**：エピソード表・進捗表・感想数（ch001〜ch128）を更新。
