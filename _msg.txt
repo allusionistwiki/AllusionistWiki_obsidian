@@ -1,1 +1,8 @@
-wiki(ch091-ch095): 悪夢の饗宴〜予兆バッチ — エピソード・感想新規、ミヒトネッセ（トリシル八号機・遁行術・摂取）・イアテム（魔女殺しの剣・ループのイレギュラー）・リザ・ディシル・グレンダイル・ファルファレロ（ch073初出・マレブランケ・ハルベルト配下の間諜）、ルウテトのループ転生・痕跡神話全滅・ブウテト（豚変身・バチルス・サブティリス）、第五階層の異変（男性性の復権）、OQ+26=346、recursion-map+19辺、terminology新規11、status/index/log更新
+wiki(断章6-2): 微睡む太陽と月のパペットリー 生成 — pp.3545–3585
+
+- 事実層: wiki/episodes/断章6-2.md（pp.3545–3585）
+- 感想層: wiki/reflections/by-episode/断章6-2.md
+- 新規用語: フレウテリス（悪夢の軍勢）/ ニガヨモギ（紋章）/ アエタイト（石の中の霊鳥）/ 霊鳥アキラ（百十一羽の猛禽）
+- 既存追記: マラード / ルバーブ / ハルハハール / シェボリズ / 冥道の幼姫（セレス）/ ラクルラール / ドルネスタンルフ / マロゾロンド
+- cumulative: status / episodes/index / log / recursion-map（4辺）/ Open_Questions（3行）/ terminology index・groups
+- lint: 0 broken links / typo scan clean
