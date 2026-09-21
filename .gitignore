@@ -17,3 +17,6 @@ Thumbs.db
 .graphrag/
 outputs/
 **/output/
+
+# ---- 公開リポジトリ化: 原文抽出は非公開（ローカルのみ保持）----
+raw/
