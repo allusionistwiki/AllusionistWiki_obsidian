@@ -1,7 +1,9 @@
-allusions: internal サブフォルダを M_Internal / L_Internal に改名
+断章5-1 正邪の双竜王 生成（pp.3597–3615）
 
-- Mythology/internal → Mythology/M_Internal
-- Literature/internal → Literature/L_Internal
-- M_External / L_External との命名衝突を解消（既存 external の L_/M_ プレフィックス規約に揃える）
-- 参照更新: CLAUDE.md / allusions/index.md / Mythology/_index.md / ch109.md（git mv で履歴保持）
-- mysteries 等の表の見た目崩壊修正（表内空行削除）はユーザー側で実施済み・保持
+- episodes/断章5-1.md（双竜王・竜王国・ラフディの起源譚）
+- reflections/by-episode/断章5-1.md
+- 新規人物: グレイシス（糸竜）/ メクセト（覇王・神滅具の元祖）
+- 新規用語: 怪鳥アキラ（不死の鳥・霊鳥アキラと同一と推測）
+- 既存人物追記: アルト/ダーカンシェル/ディルトーワ/バーガンディア/ヴァージル
+- 引喩: オイディプス神話（三叉槍）/寛容のパラドックス/敵の必要性
+- cumulative: status/episodes-index/terminology-index/groups/log/recursion-map/Open_Questions
