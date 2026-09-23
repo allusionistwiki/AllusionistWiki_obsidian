@@ -1,11 +1,7 @@
-CLAUDE.md: graphrag をワークフローに組み入れ（§4③ 関連ページ探索・§8.7 詳細）
+断章5-2 外なる法 生成（pp.3615–3642）
 
-- §4 ワークフローに「関連ページ探索（graphrag・検索補助）」をステップ3として追加
-  （既存ページ・関連エンティティ・既登録の相似/謎の発見の補助。事実判定の根拠にはならない）
-- §8.7 関連ページ探索（graphrag・検索補助）を新設
-  - graphrag_tool/graphrag_search.py の用途・使い方・インデックス管理を明記
-  - 位置づけ：検索・発見の補助のみ（根拠は必ず raw 原文＋原典知識）
-  - 再構築目安：全量約15秒（1489ファイル/4801チャンク/10468エッジ、2026-09-24 実測）
-- 旧ステップ番号の相互参照を修正（§4④→§4⑤、§4⑦→§4⑧）
-- §1 ディレクトリツリーの stale な allusions 命名（external/internal）を
-  改名後の M_External/M_Internal・L_External/L_Internal に修正
+- episodes/断章5-2.md + reflections/by-episode/断章5-2.md
+- 新規人物: ディーテ / ビシャマル / クルエクローキ
+- 既存人物追記: アルト / ダエモデク / グレンデルヒ＝ライニンサル / レストロオセ
+- 新規用語: 五色の騎士団 / 国民不和予防局 / 大筒（破壊の杖）/ 理想郷 / 内なる法・外なる法
+- cumulative: status / episodes/index / terminology/index / groups / log / recursion-map / Open_Questions
