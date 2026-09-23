@@ -1,7 +1,7 @@
-断章5-2 外なる法 生成（pp.3615–3642）
+断章4-1 冥道の番犬 生成（pp.3664–3685）
 
-- episodes/断章5-2.md + reflections/by-episode/断章5-2.md
-- 新規人物: ディーテ / ビシャマル / クルエクローキ
-- 既存人物追記: アルト / ダエモデク / グレンデルヒ＝ライニンサル / レストロオセ
-- 新規用語: 五色の騎士団 / 国民不和予防局 / 大筒（破壊の杖）/ 理想郷 / 内なる法・外なる法
+- episodes/断章4-1.md + reflections/by-episode/断章4-1.md
+- 新規用語: 冥道
+- 既存人物追記: サイザクタート / ヴァージル / グレンデルヒ＝ライニンサル
+- 引喩: ケルベロス（三首の犬）/ 優生学（eugenics）/ フロイトの精神分析
 - cumulative: status / episodes/index / terminology/index / groups / log / recursion-map / Open_Questions
