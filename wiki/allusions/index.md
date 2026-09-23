@@ -9,10 +9,10 @@
 
 - **Mythology/（神話モティブの元ネタ）**
   - [[allusions/Mythology/M_External/|external/]] — 実世界の神話・宗教・民話に由来する象徴・プロット。
-  - [[allusions/Mythology/internal/|internal/]] — 作中内部で反復／転倒される神話モチーフ。
+  - [[allusions/Mythology/M_Internal/|internal/]] — 作中内部で反復／転倒される神話モチーフ。
 - **Literature/（文学・思想・歴史へのオマージュ）**
   - [[allusions/Literature/L_External/|external/]] — 実世界的な文学作品・哲学・史実への参照。
-  - [[allusions/Literature/internal/|internal/]] — 作中内部の他作品・他話への文学オマージュ。
+  - [[allusions/Literature/L_Internal/|internal/]] — 作中内部の他作品・他話への文学オマージュ。
 ## 関連層
 - [[recursion-map]] — 引喩の「反復／転倒／否定」構造。
 - [[mysteries/]] — 未解決の謎・伏線のタスク管理（Open_Questions.md／Resolved.md／Foreshadowing/）。

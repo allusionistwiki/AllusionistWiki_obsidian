@@ -4,6 +4,6 @@
 
 ## サブカテゴリ
 - [[allusions/Mythology/M_External/|external/]] — 実世界の神話・宗教・民話の元ネタ。
-- [[allusions/Mythology/internal/|internal/]] — 作中内部で反復／転倒される神話モチーフ。
+- [[allusions/Mythology/M_Internal/|internal/]] — 作中内部で反復／転倒される神話モチーフ。
 
 <!-- 新規ページを外部／中内のいずれかに追加。 -->

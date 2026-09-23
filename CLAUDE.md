@@ -88,9 +88,9 @@
 ### allusions/<リソース>.md（核心層）
 引喩は**元ネタ種別（Mythology／Literature）**と**出典の所在（external＝実世界／internal＝作中内部）**の2軸で分類する。各組み合わせにサブフォルダを割り当てる。
 - **Mythology/M_External/**：実世界の神話・宗教・民話の元ネタ。
-- **Mythology/internal/**：作中内部で反復／転倒される神話モチーフ。
+- **Mythology/M_Internal/**：作中内部で反復／転倒される神話モチーフ。
 - **Literature/L_External/**：実世界的な文学作品・哲学・史実への参照。
-- **Literature/internal/**：作中内部の他作品・他話への文学オマージュ。
+- **Literature/L_Internal/**：作中内部の他作品・他話への文学オマージュ。
 各ページは以下のフィールドを持つ：
 - **原典の説明**（正確に・出典付き＝ここが既存wikiを上回る部分）
 - **本作での使われ方**（どの話・どの場で・何を意図したと読みうるか）
@@ -125,7 +125,7 @@
    - `terminology/`：**用語glossary**（術語・固有名詞を**世界観まで記述できる程度に詳細**にテーマ別ページに列挙。簡潔な定義＋その用語が立つ世界構造との関連。一項目が短く実務的なこちらへ)。新規用語は該当テーマページへ追記 or terminology/index.md へリンク追加。**各用語は[[...]]リンク必須**。未確定は「要検証」ラベル。
    - **言及時点でページ化（2026-08-30 改訂）**：人物も用語も、**原文で一度でも言及されたら即ページを作成する**（§6）。「情報が少ない」「後でまとめる」は禁止。初出か再出かは**作成可否の判定ではなく書く内容の判定**——既存ページがあれば作り直さず追記し、記載済み情報の重複登録を避ける。
    - **グループの適時整理**：用語登録のたびに `terminology/groups/` の帰属を見直し、必要なら新グループ作成・分割・統合・改名・単語ページの移し替えを行う。その際、移動した単語ページのリンクと `terminology/index.md` も更新（§3）。
-5. **引喩解析**（allusions / analogies）：**external**（`Mythology/M_External/`, `Literature/L_External/`）は実世界の神話／文学／思想／歴史への引喩、**原典説明は正確に・出典付き**。**internal**（`Mythology/internal/`, `Literature/internal/`）は本作内部の参照・踏襲。**analogies/recursion-map.md** は「どの話がどの話を反復/転倒/否定するか」を辺で表現。**LLMの世界知識+推論が必須**（頻度抽出だけでは「オジデウス神話のパロディ」は判別不可）。
+5. **引喩解析**（allusions / analogies）：**external**（`Mythology/M_External/`, `Literature/L_External/`）は実世界の神話／文学／思想／歴史への引喩、**原典説明は正確に・出典付き**。**internal**（`Mythology/M_Internal/`, `Literature/L_Internal/`）は本作内部の参照・踏襲。**analogies/recursion-map.md** は「どの話がどの話を反復/転倒/否定するか」を辺で表現。**LLMの世界知識+推論が必須**（頻度抽出だけでは「オジデウス神話のパロディ」は判別不可）。
 6. **感想**（reflections/by-episode/chNNN.md）：主観的読後感・美学判断・仮説。**冒頭に「解釈層であること」を明記**、事実と混同しない。
 7. **lint → index/log更新 → commit**（§5）：全 `[[ ]]` が実ファイルへ解決（切れ0）、事実行に典拠あり、感想/事実分離済み、推測はラベル付き、raw不変を確認。`wiki/status.md` と `wiki/episodes/index.md` を更新し、`wiki/log.md` に操作エントリを追記。vault は git 管理・変更をコミット（新ブランチは `bionic/` プレフィックス）。
 

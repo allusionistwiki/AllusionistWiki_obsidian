@@ -1,8 +1,7 @@
-wiki(断章6-2): 微睡む太陽と月のパペットリー 生成 — pp.3545–3585
+allusions: internal サブフォルダを M_Internal / L_Internal に改名
 
-- 事実層: wiki/episodes/断章6-2.md（pp.3545–3585）
-- 感想層: wiki/reflections/by-episode/断章6-2.md
-- 新規用語: フレウテリス（悪夢の軍勢）/ ニガヨモギ（紋章）/ アエタイト（石の中の霊鳥）/ 霊鳥アキラ（百十一羽の猛禽）
-- 既存追記: マラード / ルバーブ / ハルハハール / シェボリズ / 冥道の幼姫（セレス）/ ラクルラール / ドルネスタンルフ / マロゾロンド
-- cumulative: status / episodes/index / log / recursion-map（4辺）/ Open_Questions（3行）/ terminology index・groups
-- lint: 0 broken links / typo scan clean
+- Mythology/internal → Mythology/M_Internal
+- Literature/internal → Literature/L_Internal
+- M_External / L_External との命名衝突を解消（既存 external の L_/M_ プレフィックス規約に揃える）
+- 参照更新: CLAUDE.md / allusions/index.md / Mythology/_index.md / ch109.md（git mv で履歴保持）
+- mysteries 等の表の見た目崩壊修正（表内空行削除）はユーザー側で実施済み・保持
