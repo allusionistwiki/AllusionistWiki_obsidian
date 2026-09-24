@@ -1805,3 +1805,9 @@ eplace_file）や shell のリテラルから直接参照不可。**ASCII パス
 - pp.3978–4013（leaf 3979–4014、35ページ）
 - 新規 terminology 13件 / 既存 character 追記 21件
 - lint: BROKEN 0 / typo scan: clean
+
+## 2026-09-25 断章8-5 生と死（トライアンドエラー） 生成
+
+- pp.4014–4091（leaf 4015–4092、78ページ）
+- 新規 terminology 41件 / 既存 character 追記 0件（全て既存）
+- lint: BROKEN 0 / typo scan: clean

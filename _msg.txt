@@ -1,4 +1,4 @@
-断章1-3 コキュートス 生成（pp.3978–4013）
+断章8-5 生と死（トライアンドエラー） 生成（pp.4014–4091）
 
-- 新規 terminology 13件 / 既存 character 追記 21件
+- 新規 terminology 41件
 - lint: BROKEN 0 / typo scan: clean
