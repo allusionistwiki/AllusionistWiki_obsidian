@@ -1,3 +1,8 @@
+---
+created: 2026-09-15
+modified: 2026-09-22
+---
+
 # くるみ割り人形（Nutcracker・ナットクラッカー）
 
 > allusions/Literature/L_External/（核心層）。原典説明は正確に、本作への当てはめは解釈として明示。

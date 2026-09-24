@@ -1,3 +1,8 @@
+---
+created: 2026-08-22
+modified: 2026-09-24
+---
+
 # 幻想再帰のアリュージョニスト　Wiki — トップカタログ
 
 Obsidian vault。[../CLAUDE.md](../CLAUDE.md) が設計書(schema)。

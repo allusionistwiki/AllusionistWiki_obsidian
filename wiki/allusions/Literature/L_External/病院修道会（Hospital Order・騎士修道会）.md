@@ -1,3 +1,8 @@
+---
+created: 2026-09-13
+modified: 2026-09-22
+---
+
 # 病院修道会（Hospital Order・騎士修道会）
 
 > **allusions/Literature/L_External/（核心層：引喩・宗教・歴史リソース別ページ）。** 原典の説明は正確に、本作への当てはめは解釈として明示。確度ラベル付き。

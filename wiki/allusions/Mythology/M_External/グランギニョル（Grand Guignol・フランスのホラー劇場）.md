@@ -1,3 +1,8 @@
+---
+created: 2026-09-16
+modified: 2026-09-22
+---
+
 # グランギニョル（Grand Guignol・フランスのホラー劇場）
 
 > allusions/Mythology/M_External/（実世界の神話・宗教・民話・文学の元ネタ）。確度：【推測・要検証】

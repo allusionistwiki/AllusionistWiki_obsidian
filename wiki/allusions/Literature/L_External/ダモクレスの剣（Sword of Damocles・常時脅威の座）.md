@@ -1,3 +1,8 @@
+---
+created: 2026-09-14
+modified: 2026-09-22
+---
+
 # ダモクレスの剣（Sword of Damocles・常時脅威の座）
 
 > **allusions/Literature/L_External/（核心層：引喩・古典リソース別ページ）。** 原典の説明は正確に、本作への当てはめは解釈として明示。確度ラベル付き。

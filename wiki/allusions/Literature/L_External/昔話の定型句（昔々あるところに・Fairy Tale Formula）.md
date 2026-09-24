@@ -1,3 +1,8 @@
+---
+created: 2026-09-14
+modified: 2026-09-22
+---
+
 # 昔話の定型句（昔々あるところに・Fairy Tale Formula）
 
 > **allusions/Literature/L_External/（核心層：引喩・物語論リソース別ページ）。** 原典の説明は正確に、本作への当てはめは解釈として明示。確度ラベル付き。

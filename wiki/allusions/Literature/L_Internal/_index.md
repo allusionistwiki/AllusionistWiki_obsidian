@@ -1,3 +1,8 @@
+---
+created: 2026-08-22
+modified: 2026-09-24
+---
+
 # Literature · internal（作中内部の文学オマージュ）
 
 > 本作内部の他話・設定・出来事への文学的参照・踏襲・オマージュを記録する。外部実世界の引喩は [[allusions/Literature/L_External/|../external/]] へ。analogies/recursion-map.md と連携。

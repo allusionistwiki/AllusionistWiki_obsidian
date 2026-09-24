@@ -1,3 +1,8 @@
+---
+created: 2026-09-15
+modified: 2026-09-22
+---
+
 # 女性器切除（FGM・Female Genital Mutilation）
 
 > **allusions/Mythology/M_External/（核心層：引喩・民俗リソース別ページ）。** 原典の説明は正確に、本作への当てはめは解釈として明示。確度ラベル付き。

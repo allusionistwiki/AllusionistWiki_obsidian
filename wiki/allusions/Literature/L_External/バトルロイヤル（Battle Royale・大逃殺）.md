@@ -1,3 +1,8 @@
+---
+created: 2026-09-15
+modified: 2026-09-22
+---
+
 # バトルロイヤル（Battle Royale・大逃殺）
 
 > **allusions/Literature/L_External/（核心層：引喩・物語類型リソース別ページ）。** 原典の説明は正確に、本作への当てはめは解釈として明示。確度ラベル付き。

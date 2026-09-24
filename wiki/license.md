@@ -1,6 +1,8 @@
 ---
 title: ライセンス
 description: 本Wikiの分割ライセンス（CC BY-NC-SA 4.0 / CC0 / 第三者素材除外）の説明
+created: 2026-09-25
+modified: 2026-09-25
 ---
 
 # ライセンス

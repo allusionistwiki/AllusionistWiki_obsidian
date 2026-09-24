@@ -1,3 +1,8 @@
+---
+created: 2026-08-22
+modified: 2026-09-24
+---
+
 # Foreshadowing（伏線リスト）
 
 > mysteries/Foreshadowing/（核心層）：作品中に撒かれ、回収を待つ**伏線・予兆・暗示**をリスト化したもの。**未回収／回収済み**でタスク管理のように扱う。本作の「再帰」構造と密接に関わる。analogies/recursion-map.md（反復構造）と連携。また [[Open_Questions]]（未解決の謎）と連携する。

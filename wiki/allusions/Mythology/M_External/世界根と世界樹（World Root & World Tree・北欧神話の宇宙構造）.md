@@ -1,3 +1,8 @@
+---
+created: 2026-09-14
+modified: 2026-09-22
+---
+
 # 世界根と世界樹（World Root & World Tree・北欧神話の宇宙構造）
 
 > **allusions/Mythology/M_External/（核心層：引喩・北欧神話リソース別ページ）。** 原典の説明は正確に、本作への当てはめは解釈として明示。確度ラベル付き。

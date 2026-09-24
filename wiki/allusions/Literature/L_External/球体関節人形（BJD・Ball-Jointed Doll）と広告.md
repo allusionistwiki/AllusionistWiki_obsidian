@@ -1,3 +1,8 @@
+---
+created: 2026-09-14
+modified: 2026-09-22
+---
+
 # 球体関節人形（BJD・Ball-Jointed Doll）と広告
 
 > **allusions/Literature/L_External/（核心層：引喩・現代文化・玩具リソース別ページ）。** 原典の説明は正確に、本作への当てはめは解釈として明示。確度ラベル付き。

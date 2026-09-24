@@ -1,3 +1,8 @@
+---
+created: 2026-09-15
+modified: 2026-09-23
+---
+
 # 無花果の服と蛇の指輪（Genesis 3・堕落と隠蔽）
 
 > allusions/Literature/L_External/（核心層）。原典説明は正確に、本作への当てはめは解釈として明示。

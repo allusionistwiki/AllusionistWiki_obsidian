@@ -1,6 +1,8 @@
 ---
 title: 幻想再帰のアリュージョニスト Wiki
 description: 「ネットミームから現代思想まで引喩が散りばめたオカルトパンク」の多層アナロジーを典拠付きで体系化する分析Wiki
+created: 2026-08-22
+modified: 2026-09-25
 ---
 
 # 幻想再帰のアリュージョニスト Wiki
@@ -39,3 +41,4 @@ description: 「ネットミームから現代思想まで引喩が散りばめ�
 | [カクヨム](https://kakuyomu.jp/works/16816927859268545348) | 原作の連載ページ（KADOKAWA・作者：最近）。 |
 | [既存コミュニティwiki（PukiWiki）](https://wikiwiki.jp/gensousaiki/) | 既存のファンコミュニティwiki。本Wikiが「多層アナロジーの体系化」で上回る対象。 |
 | [ゆらぎの神話TRPG（atwiki）](https://w.atwiki.jp/mythosflickertrpg/pages/12.html) | 原作を題材にした二次創作TRPGのデータWiki。 |
+| [ゆらぎの神話百科事典（seesaawiki）](https://seesaawiki.jp/w/flicker2/) | 多人数で神話を創る試み『ゆらぎの神話』の用語解説サイト。 |

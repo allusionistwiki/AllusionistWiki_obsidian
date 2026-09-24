@@ -1,3 +1,8 @@
+---
+created: 2026-09-23
+modified: 2026-09-23
+---
+
 # 瘴気説と菌説（Miasma vs Germ Theory・神秘の解体）
 
 > **allusions/Literature/L_External/（核心層：引喩・歴史リソース別ページ）。** 原典の説明は正確に、本作への当てはめは解釈として明示。確度ラベル付き。

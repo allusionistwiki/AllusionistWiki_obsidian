@@ -1,3 +1,8 @@
+---
+created: 2026-09-15
+modified: 2026-09-22
+---
+
 # 処女懐胎（Virgin Birth・処女懐胎）
 
 > **allusions/Mythology/M_External/（核心層：引喩・宗教リソース別ページ）。** 原典の説明は正確に、本作への当てはめは解釈として明示。確度ラベル付き。

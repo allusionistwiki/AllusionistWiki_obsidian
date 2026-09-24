@@ -1,3 +1,8 @@
+---
+created: 2026-09-14
+modified: 2026-09-22
+---
+
 # 三枚のお札（Sanmai no Ofuda・日本民話の逃走の札）
 
 > **allusions/Literature/L_External/（核心層：引喩・日本民話リソース別ページ）。** 原典の説明は正確に、本作への当てはめは解釈として明示。確度ラベル付き。

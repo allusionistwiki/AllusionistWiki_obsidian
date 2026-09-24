@@ -1,3 +1,8 @@
+---
+created: 2026-09-22
+modified: 2026-09-22
+---
+
 # 黒死病（Black Death・交易と病拡大）
 
 > **allusions/Literature/L_External/（核心層：引喩・歴史リソース別ページ）。** 原典の説明は正確に、本作への当てはめは解釈として明示。確度ラベル付き。

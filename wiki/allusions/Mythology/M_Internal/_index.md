@@ -1,3 +1,8 @@
+---
+created: 2026-08-22
+modified: 2026-09-24
+---
+
 # Mythology · internal（作中内部の神話モチーフ）
 
 > 本作内部で反復／転倒／パロディされる神話的モチーフを記録する。外部実世界の元ネタは [[allusions/Mythology/M_External/|../external/]] へ。analogies/recursion-map.md（再帰構造）と連携。

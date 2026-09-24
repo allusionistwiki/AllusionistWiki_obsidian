@@ -1,3 +1,8 @@
+---
+created: 2026-09-14
+modified: 2026-09-22
+---
+
 # 内家拳と経絡・気功（Internal Martial Arts・中国武術の呪術合理性）
 
 > **allusions/Literature/L_External/（核心層：引喩・武術・医学リソース別ページ）。** 原典の説明は正確に、本作への当てはめは解釈として明示。確度ラベル付き。

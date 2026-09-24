@@ -1,3 +1,8 @@
+---
+created: 2026-09-14
+modified: 2026-09-22
+---
+
 # 天与の王権と占星術（Divine Right of Kings・星詠み）
 
 > **allusions/Literature/L_External/（核心層：引喩・政治思想・占星術リソース別ページ）。** 原典の説明は正確に、本作への当てはめは解釈として明示。確度ラベル付き。

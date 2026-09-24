@@ -1,3 +1,8 @@
+---
+created: 2026-09-16
+modified: 2026-09-22
+---
+
 # 書斎劇（Closet Drama・書物劇）
 
 > allusions/Literature/L_External/（核心層）。原典説明は正確に、本作への当てはめは解釈として明示。
