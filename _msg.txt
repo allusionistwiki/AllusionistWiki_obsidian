@@ -1,8 +1,7 @@
-断章4-3 栄光の手 生成（pp.3705–3730）
+断章2-1 睥睨する藍色 生成（pp.3835–3866）
 
-- episode page（87 lines）/ reflection（28 lines）
-- 新規 terminology 3 件：健康の断章・手孕説話・竜王国
-- 既存ページ追記 13 件：サイザクタート・ヴァージル・ケイト（ケートゥ）・冥道の幼姫（セレス）・ティーアードゥ・ヴィヴィ＝イヴロス・グラッフィアカーネ・レオ・ちびシューラ・グレンデルヒ＝ライニンサル・コルセスカ・六王・チリアット
-- 既存用語追記：ヒュールサス
-- cumulative 登録：status / episodes/index / log / recursion-map / Open_Questions / terminology/index / groups
-- lint 0 broken links / typo scan clean
+- episode/reflection 新規作成
+- 新規人物: フェロニア / ダウザール
+- 新規用語: 血脈 / 鎧の腕 / 猫の国 / 光妖精 / アストラル投射 / 天則剣 / 平和喪失刑 / 僣主 / 盗賊王 / サーク・ア・ムント / セレクティ
+- 既存人物追記: パーン / ミシャルヒ / クレイ＝ライニンサル / グラッフィアカーネ / コルセスカ / リーナ・ゾラ・クロウサー / ラクルラール / ガレニス
+- cumulative: status / episodes/index / log / recursion-map / Open_Questions / terminology/index / groups
