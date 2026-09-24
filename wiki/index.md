@@ -17,6 +17,7 @@ description: 「ネットミームから現代思想まで引喩が散りばめ�
 | [[allusions/index\|引喩（Allusions）]] | ★核心層：神話／文学の元ネタを external/internal で分類 |
 | [[mysteries/index\|謎と伏線]] | 未解決の謎・回収済みログ・伏線リスト |
 | [[analogies/recursion-map\|再帰マップ]] | 「どの話がどの話を反復/転倒/否定するか」を可視化 |
+| [[license\|ライセンス]] | 分割ライセンス（CC BY-NC-SA 4.0 / CC0 / 第三者素材除外）の説明 |
 
 ## 構造（事実／解釈の分離）
 

@@ -36,7 +36,7 @@ wiki/reflections/**/*.md
 - **ShareAlike（同一条件での再配布）**：改変・派生物を頒布する場合、同一の CC BY-NC-SA 4.0（または互換ライセンス）で頒布すること。
 - **No additional restrictions（追加制限の禁止）**：ライセンスが許可する利用を法的に制限する条件や技術的措置を付加してはなりません。
 
-### NonCommercial（NC）の具体的含义
+### NonCommercial（NC）の具体的含意
 
 CC BY-NC-SA 4.0 の "NC"（NonCommercial）は、「商業的利益または金銭的報酬を主たる目的とする利用」を禁じます。
 次のような利用は**商業目的に該当する恐れがあり、本ライセンスでは認められません**：
