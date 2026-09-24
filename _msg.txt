@@ -1,5 +1,4 @@
-断章1-1 熱病のような加虐が彼女の望み 生成（pp.3930–3960）
+断章1-2 集い 生成（pp.3963–3977）
 
-- 前書き（五大巨人の神話 pp.3930–3934）＋本編（pp.3935–3960）
-- 新規 terminology 18件 / 既存 character 追記 8件
+- 新規 character 3件 / 新規 terminology 9件 / 既存 character 追記 10件
 - lint: BROKEN 0 / typo scan: clean
