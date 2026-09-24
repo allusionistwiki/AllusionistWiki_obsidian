@@ -30,3 +30,12 @@ description: 「ネットミームから現代思想まで引喩が散りばめ�
 - **reflections/** — ★感想専用層（事実から物理的に分離）
 
 > 設計思想：純粋な事実ページは「原文典拠付き」を保ち、感想/解釈と厳格に分離する。推測や原文にない情報を足さない。詳細は [CLAUDE.md 設計書](https://github.com/allusionistwiki/AllusionistWiki_obsidian/blob/main/CLAUDE.md) 参照。
+
+## 関連サイト
+
+| サイト | 内容 |
+|---|---|
+| [小説家になろう](https://ncode.syosetu.com/n9073ca/) | 原作の連載ページ（作者：最近）。**本Wikiの現状データは、このサイトのPDFデータから作成している。** |
+| [カクヨム](https://kakuyomu.jp/works/16816927859268545348) | 原作の連載ページ（KADOKAWA・作者：最近）。 |
+| [既存コミュニティwiki（PukiWiki）](https://wikiwiki.jp/gensousaiki/) | 既存のファンコミュニティwiki。本Wikiが「多層アナロジーの体系化」で上回る対象。 |
+| [ゆらぎの神話TRPG（atwiki）](https://w.atwiki.jp/mythosflickertrpg/pages/12.html) | 原作を題材にした二次創作TRPGのデータWiki。 |
