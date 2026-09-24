@@ -1,8 +1,8 @@
-断章4-2 禁忌と罰 生成（pp.3686–3704）
+断章4-3 栄光の手 生成（pp.3705–3730）
 
-- episode/reflection 新規作成
-- 新規人物: ティーアードゥ（罰を司る神）
-- 新規用語: 忌民
-- 既存人物追記: サイザクタート/ヴァージル/ケイト/ヴィヴィ＝イヴロス/グラッフィアカーネ/冥道の幼姫（セレス）
-- cumulative登録: status/episodes/index/log/recursion-map/Open_Questions/terminology
-- lint: 0 broken links / typo scan: clean
+- episode page（87 lines）/ reflection（28 lines）
+- 新規 terminology 3 件：健康の断章・手孕説話・竜王国
+- 既存ページ追記 13 件：サイザクタート・ヴァージル・ケイト（ケートゥ）・冥道の幼姫（セレス）・ティーアードゥ・ヴィヴィ＝イヴロス・グラッフィアカーネ・レオ・ちびシューラ・グレンデルヒ＝ライニンサル・コルセスカ・六王・チリアット
+- 既存用語追記：ヒュールサス
+- cumulative 登録：status / episodes/index / log / recursion-map / Open_Questions / terminology/index / groups
+- lint 0 broken links / typo scan clean
