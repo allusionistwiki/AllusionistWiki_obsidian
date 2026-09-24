@@ -1,4 +1,4 @@
-断章1-2 集い 生成（pp.3963–3977）
+断章1-3 コキュートス 生成（pp.3978–4013）
 
-- 新規 character 3件 / 新規 terminology 9件 / 既存 character 追記 10件
+- 新規 terminology 13件 / 既存 character 追記 21件
 - lint: BROKEN 0 / typo scan: clean
