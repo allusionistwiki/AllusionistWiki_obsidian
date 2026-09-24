@@ -1,7 +1,6 @@
-断章2-1 睥睨する藍色 生成（pp.3835–3866）
+断章2-2 冗長性ファントムペイン 生成（pp.3867–3887）
 
 - episode/reflection 新規作成
-- 新規人物: フェロニア / ダウザール
-- 新規用語: 血脈 / 鎧の腕 / 猫の国 / 光妖精 / アストラル投射 / 天則剣 / 平和喪失刑 / 僣主 / 盗賊王 / サーク・ア・ムント / セレクティ
-- 既存人物追記: パーン / ミシャルヒ / クレイ＝ライニンサル / グラッフィアカーネ / コルセスカ / リーナ・ゾラ・クロウサー / ラクルラール / ガレニス
-- cumulative: status / episodes/index / log / recursion-map / Open_Questions / terminology/index / groups
+- 新規用語: 巨人 / エーラマーン
+- 既存人物追記: パーン / フェロニア / ミシャルヒ / ちびシューラ / レストロオセ
+- cumulative登録: status / episodes/index / log / recursion-map / Open_Questions / terminology/index / groups
