@@ -1,7 +1,8 @@
-断章4-1 冥道の番犬 生成（pp.3664–3685）
+断章4-2 禁忌と罰 生成（pp.3686–3704）
 
-- episodes/断章4-1.md + reflections/by-episode/断章4-1.md
-- 新規用語: 冥道
-- 既存人物追記: サイザクタート / ヴァージル / グレンデルヒ＝ライニンサル
-- 引喩: ケルベロス（三首の犬）/ 優生学（eugenics）/ フロイトの精神分析
-- cumulative: status / episodes/index / terminology/index / groups / log / recursion-map / Open_Questions
+- episode/reflection 新規作成
+- 新規人物: ティーアードゥ（罰を司る神）
+- 新規用語: 忌民
+- 既存人物追記: サイザクタート/ヴァージル/ケイト/ヴィヴィ＝イヴロス/グラッフィアカーネ/冥道の幼姫（セレス）
+- cumulative登録: status/episodes/index/log/recursion-map/Open_Questions/terminology
+- lint: 0 broken links / typo scan: clean
