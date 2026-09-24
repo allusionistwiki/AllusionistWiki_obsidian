@@ -1,0 +1,12 @@
+# Code License — No Warranty / No Liability
+
+Copyright (c) 2026 AllusionistWiki contributors
+
+本コード・スクリプト・設定ファイルは、無保証で提供されます。
+
+無保証・責任免責（No Warranty / No Liability）
+作者・著作権者は、本ソフトウェアに関して一切の責任を負いません。
+
+The code, scripts, and configuration files are provided "AS IS",
+without warranty of any kind. The author and copyright holder bear
+no responsibility or liability for this software, of any kind.

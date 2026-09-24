@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: LicenseRef-AllusionistWiki-Code
 """
 add_spdx_headers.py — 分割ライセンス用の SPDX-License-Identifier ヘッダー注入ツール
 
 レイヤーA（Wiki本文・独自解説）→ CC BY-NC-SA 4.0
   Markdown:  <!-- SPDX-License-Identifier: CC-BY-NC-SA-4.0 -->
-レイヤーB（コード・スクリプト・設定）→ MIT
-  //, #, /* */ 形式のコメントで // SPDX-License-Identifier: MIT
+レイヤーB（コード・スクリプト・設定）→ コードライセンス（無保証・責任免責）
+  //, #, /* */ 形式のコメントで // SPDX-License-Identifier: LicenseRef-AllusionistWiki-Code
 
 使い方:
   python add_spdx_headers.py --dry-run        # 何が変わるかだけ表示（変更しない）
@@ -15,12 +15,12 @@ add_spdx_headers.py — 分割ライセンス用の SPDX-License-Identifier ヘ�
 
 対象の判定:
   - .md          → CC-BY-NC-SA-4.0（Markdown HTMLコメント）
-  - .py          → MIT（# コメント）
-  - .ts/.js/.jsx/.tsx → MIT（// コメント）
-  - .yml/.yaml   → MIT（# コメント）
+  - .py          → LicenseRef-AllusionistWiki-Code（# コメント）
+  - .ts/.js/.jsx/.tsx → LicenseRef-AllusionistWiki-Code（// コメント）
+  - .yml/.yaml   → LicenseRef-AllusionistWiki-Code（# コメント）
   - .json        → 非対応（JSONにコメント不可。SPDXはpackage.jsonのlicenseフィールドで管理）
-  - .css         → MIT（/* */ コメント）
-  - .sh          → MIT（# コメント）
+  - .css         → LicenseRef-AllusionistWiki-Code（/* */ コメント）
+  - .sh          → LicenseRef-AllusionistWiki-Code（# コメント）
 
 既存の SPDX ヘッダーがあるファイルはスキップする（重複挿入しない）。
 """
@@ -31,17 +31,18 @@ import sys
 
 # 拡張子 → (SPDX識別子, コメント形式)
 # コメント形式: 'line' = 行頭コメント, 'block' = /* */ ブロック
+CODE_SPDX = 'LicenseRef-AllusionistWiki-Code'
 EXT_MAP = {
     '.md':    ('CC-BY-NC-SA-4.0', 'md'),
-    '.py':    ('MIT', 'py'),
-    '.ts':    ('MIT', 'js'),
-    '.js':    ('MIT', 'js'),
-    '.jsx':   ('MIT', 'js'),
-    '.tsx':   ('MIT', 'js'),
-    '.yml':   ('MIT', 'py'),
-    '.yaml':  ('MIT', 'py'),
-    '.css':   ('MIT', 'css'),
-    '.sh':    ('MIT', 'py'),
+    '.py':    (CODE_SPDX, 'py'),
+    '.ts':    (CODE_SPDX, 'js'),
+    '.js':    (CODE_SPDX, 'js'),
+    '.jsx':   (CODE_SPDX, 'js'),
+    '.tsx':   (CODE_SPDX, 'js'),
+    '.yml':   (CODE_SPDX, 'py'),
+    '.yaml':  (CODE_SPDX, 'py'),
+    '.css':   (CODE_SPDX, 'css'),
+    '.sh':    (CODE_SPDX, 'py'),
 }
 
 SPDX_RE = re.compile(r'SPDX-License-Identifier:')

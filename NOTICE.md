@@ -5,7 +5,7 @@
 ## License summary
 
 - **Wiki 本文・独自解説・要約・考察・編纂物**：CC BY-NC-SA 4.0
-- **コード・スクリプト・CI・設定ファイル**：MIT License
+- **コード・スクリプト・CI・設定ファイル**：コードライセンス（無保証・責任免責）
 - **原作本文・抜粋・画像・商標・フォント・第三者素材**：ライセンス対象外（各権利者の権利に従う）
 - **上流 OSS**：各々のオリジナルライセンスに従う
 
@@ -27,17 +27,17 @@ Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
 
 ---
 
-## MIT License
+## コードライセンス（無保証・責任免責）
 
 コード・設定ファイルは次に従います。
 
-MIT License
+コードライセンス（無保証・責任免責）
 
 Copyright (c) 2026 AllusionistWiki contributors
 
 全文：
 
-`LICENSE-MIT.txt`
+`LICENSE-CODE.txt`
 
 ---
 
@@ -53,7 +53,7 @@ Copyright (c) 2026 AllusionistWiki contributors
 - Node.js / npm パッケージ
 - GitHub Actions 上の第三者 Action
 
-これらの素材は、本リポジトリの CC BY-NC-SA 4.0 または MIT License では**ライセンスされません**。
+これらの素材は、本リポジトリの CC BY-NC-SA 4.0 または コードライセンス では**ライセンスされません**。
 各権利者の権利に従い、法令上許される範囲、または権利者の許諾範囲内でのみ利用してください。
 
 特に `raw/` ディレクトリに原作本文や長文引用がある場合は、
