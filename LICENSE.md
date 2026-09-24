@@ -163,44 +163,60 @@ trademarks/**
 
 ## 5. 帰属表示と利用の寛容性
 
-### 帰属表示（Attribution）
+利用の範囲に応じて、帰属表示の要件を2段階に分けます。
 
-CC BY-NC-SA 4.0 の帰属表示は「**合理的な方法**」で十分です。
-次のいずれかを行えば条件を満たします（すべてを揃える必要はありません）：
+| 利用の範囲 | 帰属表示の要件 |
+|---|---|
+| **ファンの部分利用**（引用・抜粋・参照・部分的コピー・二次創作） | **出典の表示不要**（権利放棄） |
+| **リポジトリのコピー**（リポジトリ全体・大規模な再配布） | **厳密な帰属表示必須**（CC BY-NC-SA 4.0 の条件） |
 
-- 出典のリンク（リポジトリURLまたは記事URL）を付与する
-- 作者名・Wiki名を明記する
-- ライセンス名（CC BY-NC-SA 4.0）とライセンスURLを明記する
+### ファンの部分利用（出典不要）
 
-例（最小限の表示）：
+ファンによる**部分利用**（非商用）については、著作権者（本Wikiの編集者）が**出典の表示を不要**とします。
+
+- 記事の一部を引用・抜粋・参照する
+- 特定のページ・用語・人物の記述を自分のブログ・SNS・二次創作に使う
+- 感想・解釈・仮説（`wiki/reflections/` 解釈層）を共有・転載する
+- 上記のいずれかを改変・派生させて二次創作する
+
+これらに対しては、**出典のリンク・作者名・ライセンス名のいずれも不要**です。
+権利を行使しません。商用利用・第三者への転売・有料提供のみ、別途権利者への確認が必要です。
+
+> 解釈層（`wiki/reflections/`）は事実ページとは異なる解釈層であり、
+> 本項の「出典不要」が特に明確に適用されます。
+
+### リポジトリのコピー（厳密な帰属表示必須）
+
+**リポジトリ全体・大規模な部分**をコピーして再配布する場合（ミラー・フォークの公開・
+サイト全体の転載など）は、CC BY-NC-SA 4.0 の帰属表示条件を**厳密に**満たしてください。
+次の**すべて**を揃えてください：
+
+1. **作者名・Wiki名**：`AllusionistWiki contributors`（または各ページの著者名）
+2. **著作権表示**：`© AllusionistWiki contributors`
+3. **ライセンス名とURL**：`CC BY-NC-SA 4.0`（<https://creativecommons.org/licenses/by-nc-sa/4.0/>）
+4. **出典のリンク**：リポジトリURL（<https://github.com/allusionistwiki/AllusionistWiki_obsidian>）
+5. **変更の表示**：改変した場合はその旨を明記し、以前の改変の表示を保持する
+6. **同一条件での再配布**：派生物を CC BY-NC-SA 4.0（または互換ライセンス）で頒布する
+
+例（リポジトリコピー時の表示）：
 
 ```text
-出典: AllusionistWiki（https://github.com/allusionistwiki/AllusionistWiki_obsidian）
-CC BY-NC-SA 4.0
-```
+AllusionistWiki
+© AllusionistWiki contributors
+Licensed under CC BY-NC-SA 4.0.
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+Source: https://github.com/allusionistwiki/AllusionistWiki_obsidian
 
-> 表示は「著者の承認を示唆しない限り、合理的な方法であればよい」が原則です。
-> 上記の全項目を揃える必要はありません。
+This is an unofficial fan wiki. Not affiliated with the original author,
+publisher, or rights holders.
+Third-party materials are not included in this license.
+```
 
 ### 引用・フェアユース
 
 **引用・フェアユース・フェアディーリングの範囲での利用は、本ライセンスの条件に束縛されません。**
 CC BY-NC-SA 4.0 は「例外・制限（exception or limitation）が適用される利用には適用されない」と定めています。
 したがって、批評・評論・研究・教育目的での短い引用は、帰属表示の簡略化も含め自由に行えます。
-
-### 解釈層（reflections/）の寛容な利用
-
-`wiki/reflections/`（感想・美学判断・仮説）は、事実ページとは異なる**解釈層**です。
-この層については、著作権者（本Wikiの編集者）が以下の寛容な条件を付与します：
-
-- **ファン利用（非商用）であれば、事実上自由利用を許可します。**
-  表示は「出典のリンク1本」程度で十分です。
-- 解釈・感想・仮説は著作権の保護対象となり得ますが、
-  ファン活動・二次創作・非商用の共有に対しては権利を行使しません。
-- 商用利用・第三者への転売・有料提供は、別途権利者への確認が必要です。
-
-> 解釈層の寛容な利用は、事実ページ（characters/・terminology/・episodes/等の
-> 原文典拠付きの記述）には適用されません。事実ページは CC BY-NC-SA 4.0 の条件に従います。
 
 ### 非公式ファンWikiであること
 
