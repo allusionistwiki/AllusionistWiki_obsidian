@@ -56,11 +56,11 @@
 | レイヤー | 対象 | ライセンス |
 |---|---|---|
 | A | Wiki 本文・独自解説・要約・考察・編纂物（`wiki/**/*.md`） | [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) |
-| B | コード・スクリプト・設定ファイル（`*.py`, `*.json`, `CLAUDE.md` 等） | コードライセンス（無保証・責任免責） |
+| B | コード・スクリプト・設定ファイル（`*.py`, `*.json`, `CLAUDE.md` 等） | [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/)（パブリックドメイン） |
 | C | 原作本文・抜粋・画像・商標・フォント・第三者素材 | ライセンス対象外（各権利者の権利に従う） |
 
 - 詳細は [LICENSE.md](./LICENSE.md) と [NOTICE.md](./NOTICE.md) を参照してください。
-- 正式な英文 legal code：[LICENSE-CC-BY-NC-SA-4.0.txt](./LICENSE-CC-BY-NC-SA-4.0.txt) / [LICENSE-CODE.txt](./LICENSE-CODE.txt)
+- 正式な英文 legal code：[LICENSE-CC-BY-NC-SA-4.0.txt](./LICENSE-CC-BY-NC-SA-4.0.txt) / [LICENSE-CC0.txt](./LICENSE-CC0.txt)
 - 本リポジトリは**非公式のファンWiki**であり、原作者・出版社・権利者とは関係ありません。
 - 原作「幻想再帰のアリュージョニスト」の著作権は原作者に帰属します。
 

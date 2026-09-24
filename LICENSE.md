@@ -75,7 +75,11 @@ CC BY-NC-SA 4.0 の "NC"（NonCommercial）は、「商業的利益または金�
 ## 2. コード・スクリプト・設定ファイル（レイヤーB）
 
 次のような、動作のためのコード・設定・CI・スクリプト類は、
-**コードライセンス（無保証・責任免責）** で提供されます。
+**CC0 1.0 Universal（パブリックドメイン）** で提供されます。
+
+CC0 により、本コード・スクリプト・設定ファイルの著作権を**公衆に献納**します。
+使用・複製・改変・再配布・サブライセンス・販売の**いかなる利用も無制限に許可**され、
+**帰属表示も不要**です。商用利用も完全に許可されます。
 
 対象の例：
 
@@ -115,27 +119,15 @@ graphrag_tool/**
 - 画像、フォント、アイコン、商標、ロゴ
 - 原作本文、長文引用、スクリーンショット、PDF、EPUB など
 
-### 無保証・責任免責（No Warranty / No Liability）
-
-本コード・スクリプト・設定ファイルは、**無保証**で提供されます。
-作者・著作権者は、本ソフトウェアに関して**一切の責任を負いません**。
-
-```text
-THE CODE, SCRIPTS, AND CONFIGURATION FILES ARE PROVIDED "AS IS",
-WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
-THE AUTHOR AND COPYRIGHT HOLDER BEAR NO RESPONSIBILITY OR LIABILITY
-FOR THIS SOFTWARE, OF ANY KIND.
-```
-
-このコードライセンスは、LICENSE.md で定めた範囲、つまり**コード・スクリプト・設定ファイル**に適用されます。
+この CC0 1.0 Universal は、LICENSE.md で定めた範囲、つまり**コード・スクリプト・設定ファイル**に適用されます。
 Wiki 本文や原作素材には適用しません。
-全文：`LICENSE-CODE.txt`
+全文：`LICENSE-CC0.txt`
 
 ---
 
 ## 3. ライセンス対象外の第三者素材（レイヤーC）
 
-以下の内容は、本リポジトリの CC BY-NC-SA 4.0 または コードライセンス では**ライセンスされません**。
+以下の内容は、本リポジトリの CC BY-NC-SA 4.0 または CC0 1.0 Universal では**ライセンスされません**。
 
 ```text
 raw/**
@@ -286,7 +278,7 @@ MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 | レイヤー | 対象 | ライセンス |
 |---|---|---|
 | A | Wiki 本文・独自解説・要約・考察・編纂物 | CC BY-NC-SA 4.0 |
-| B | コード・スクリプト・CI・設定ファイル | コードライセンス（無保証・責任免責） |
+| B | コード・スクリプト・CI・設定ファイル | CC0 1.0 Universal（パブリックドメイン） |
 | C | 原作本文・抜粋・画像・商標・フォント・第三者素材 | ライセンス対象外（各権利者の権利に従う） |
 | — | 上流 OSS（Quartz, npm, GitHub Actions） | 各々のオリジナルライセンス |
 

@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-# SPDX-License-Identifier: LicenseRef-AllusionistWiki-Code
+# SPDX-License-Identifier: CC0-1.0
 """
 add_spdx_headers.py — 分割ライセンス用の SPDX-License-Identifier ヘッダー注入ツール
 
 レイヤーA（Wiki本文・独自解説）→ CC BY-NC-SA 4.0
   Markdown:  <!-- SPDX-License-Identifier: CC-BY-NC-SA-4.0 -->
-レイヤーB（コード・スクリプト・設定）→ コードライセンス（無保証・責任免責）
-  //, #, /* */ 形式のコメントで // SPDX-License-Identifier: LicenseRef-AllusionistWiki-Code
+レイヤーB（コード・スクリプト・設定）→ CC0 1.0 Universal（パブリックドメイン）
+  //, #, /* */ 形式のコメントで // SPDX-License-Identifier: CC0-1.0
 
 使い方:
   python add_spdx_headers.py --dry-run        # 何が変わるかだけ表示（変更しない）
@@ -15,12 +15,12 @@ add_spdx_headers.py — 分割ライセンス用の SPDX-License-Identifier ヘ�
 
 対象の判定:
   - .md          → CC-BY-NC-SA-4.0（Markdown HTMLコメント）
-  - .py          → LicenseRef-AllusionistWiki-Code（# コメント）
-  - .ts/.js/.jsx/.tsx → LicenseRef-AllusionistWiki-Code（// コメント）
-  - .yml/.yaml   → LicenseRef-AllusionistWiki-Code（# コメント）
+  - .py          → CC0-1.0（# コメント）
+  - .ts/.js/.jsx/.tsx → CC0-1.0（// コメント）
+  - .yml/.yaml   → CC0-1.0（# コメント）
   - .json        → 非対応（JSONにコメント不可。SPDXはpackage.jsonのlicenseフィールドで管理）
-  - .css         → LicenseRef-AllusionistWiki-Code（/* */ コメント）
-  - .sh          → LicenseRef-AllusionistWiki-Code（# コメント）
+  - .css         → CC0-1.0（/* */ コメント）
+  - .sh          → CC0-1.0（# コメント）
 
 既存の SPDX ヘッダーがあるファイルはスキップする（重複挿入しない）。
 """
@@ -31,7 +31,7 @@ import sys
 
 # 拡張子 → (SPDX識別子, コメント形式)
 # コメント形式: 'line' = 行頭コメント, 'block' = /* */ ブロック
-CODE_SPDX = 'LicenseRef-AllusionistWiki-Code'
+CODE_SPDX = 'CC0-1.0'
 EXT_MAP = {
     '.md':    ('CC-BY-NC-SA-4.0', 'md'),
     '.py':    (CODE_SPDX, 'py'),
