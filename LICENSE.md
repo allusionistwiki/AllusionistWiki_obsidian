@@ -161,28 +161,51 @@ trademarks/**
 
 ---
 
-## 5. 帰属表示例
+## 5. 帰属表示と利用の寛容性
 
-本 Wiki の独自解説部分を再利用する場合は、例えば次のように表示してください。
+### 帰属表示（Attribution）
+
+CC BY-NC-SA 4.0 の帰属表示は「**合理的な方法**」で十分です。
+次のいずれかを行えば条件を満たします（すべてを揃える必要はありません）：
+
+- 出典のリンク（リポジトリURLまたは記事URL）を付与する
+- 作者名・Wiki名を明記する
+- ライセンス名（CC BY-NC-SA 4.0）とライセンスURLを明記する
+
+例（最小限の表示）：
 
 ```text
-Original analysis and compilation © AllusionistWiki contributors.
-Licensed under CC BY-NC-SA 4.0.
-https://creativecommons.org/licenses/by-nc-sa/4.0/
-
-This is an unofficial fan wiki. Not affiliated with the original author,
-publisher, or rights holders.
-Third-party materials are not included in this license.
+出典: AllusionistWiki（https://github.com/allusionistwiki/AllusionistWiki_obsidian）
+CC BY-NC-SA 4.0
 ```
 
-```text
-本Wikiの独自解説・要約・考察・編纂物は AllusionistWiki contributors により
-CC BY-NC-SA 4.0 で提供されています。
-https://creativecommons.org/licenses/by-nc-sa/4.0/
+> 表示は「著者の承認を示唆しない限り、合理的な方法であればよい」が原則です。
+> 上記の全項目を揃える必要はありません。
+
+### 引用・フェアユース
+
+**引用・フェアユース・フェアディーリングの範囲での利用は、本ライセンスの条件に束縛されません。**
+CC BY-NC-SA 4.0 は「例外・制限（exception or limitation）が適用される利用には適用されない」と定めています。
+したがって、批評・評論・研究・教育目的での短い引用は、帰属表示の簡略化も含め自由に行えます。
+
+### 解釈層（reflections/）の寛容な利用
+
+`wiki/reflections/`（感想・美学判断・仮説）は、事実ページとは異なる**解釈層**です。
+この層については、著作権者（本Wikiの編集者）が以下の寛容な条件を付与します：
+
+- **ファン利用（非商用）であれば、事実上自由利用を許可します。**
+  表示は「出典のリンク1本」程度で十分です。
+- 解釈・感想・仮説は著作権の保護対象となり得ますが、
+  ファン活動・二次創作・非商用の共有に対しては権利を行使しません。
+- 商用利用・第三者への転売・有料提供は、別途権利者への確認が必要です。
+
+> 解釈層の寛容な利用は、事実ページ（characters/・terminology/・episodes/等の
+> 原文典拠付きの記述）には適用されません。事実ページは CC BY-NC-SA 4.0 の条件に従います。
+
+### 非公式ファンWikiであること
 
 本リポジトリは非公式のファンWikiであり、原作者・出版社・権利者とは関係ありません。
 原作本文、画像、商標、第三者素材は本ライセンスに含まれません。
-```
 
 ---
 
