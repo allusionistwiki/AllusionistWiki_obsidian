@@ -1,4 +1,2 @@
-断章8-5 生と死（トライアンドエラー） 生成（pp.4014–4091）
-
-- 新規 terminology 41件
-- lint: BROKEN 0 / typo scan: clean
+断章8-6 女王と錬鉄者 生成（pp.4123–4161）＋ 断章3-1 畏怖 フォーマット書き直し
+新規 terminology 6件 / 新規 character 1件 / lint: BROKEN 0 / typo scan: clean
