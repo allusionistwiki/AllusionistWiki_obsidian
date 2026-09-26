@@ -1,2 +1,12 @@
-断章8-6 女王と錬鉄者 生成（pp.4123–4161）＋ 断章3-1 畏怖 フォーマット書き直し
-新規 terminology 6件 / 新規 character 1件 / lint: BROKEN 0 / typo scan: clean
+再利用ツールを tools/ に集約し _temp を掃除
+
+- 再利用スクリプトを vault 内の tools/（git管理）へ移動:
+  fix_typo.py / typo_rules.json / add_spdx_headers.py / inject_dates.py /
+  move_resolved.py / linkcheck.py / extract_bold_titles.py / build_boundaries.py /
+  make_raw_from_pdf.py / _commit.ps1 (+ syosetu_toc.json / boundaries.json /
+  bold_starts.json / wiki_to_syosetu.json / custom_rules.json)
+- 移動に伴い各スクリプトのパスを相対化（スクリプト位置から vault ルート・PDF・
+  出力先を導出。絶対パスのハードコードを排除）
+- _commit.ps1 をセルフロケーション化（_repo.txt 依存を除去・絶対パスを排除）
+- _temp/ の使い捨てファイル 467 件を削除（バッチスクリプト・ダンプ・ログ）
+- _example_pre_rebuild/ を削除（不要）

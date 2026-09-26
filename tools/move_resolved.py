@@ -34,7 +34,7 @@ import os
 import re
 import sys
 
-VAULT = os.path.dirname(os.path.abspath(__file__))
+VAULT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # vault root (script in tools/)
 OQ_PATH = os.path.join(VAULT, "wiki", "mysteries", "Open_Questions.md")
 RS_PATH = os.path.join(VAULT, "wiki", "mysteries", "Resolved.md")
 PLACEHOLDER_MARK = "Open_Questions.md から回収された謎をここに移動"

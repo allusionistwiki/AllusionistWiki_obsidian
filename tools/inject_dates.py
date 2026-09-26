@@ -18,7 +18,7 @@ import os
 import re
 from datetime import datetime, timezone, timedelta
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # vault root (script in _temp/)
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # vault root (script in tools/)
 WIKI = os.path.join(ROOT, "wiki")
 JST = timezone(timedelta(hours=9))
 
