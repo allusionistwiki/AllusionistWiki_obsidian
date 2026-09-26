@@ -164,33 +164,34 @@
 ### 8.2 文字コードと一時ファイル
 - コンソール出力は `$env:PYTHONUTF8=1`（または `sys.stdout.reconfigure(encoding='utf-8')`）で UTF-8 固定。ファイル書き込みは `open(..., encoding='utf-8')`。
 - PowerShell コンソールは cp932 のため、日本語をコンソール表示すると化けることがある（**ファイル自体は UTF-8 で正しい**）。確認は Python でコードポイント照合。
-- **一時ファイルの置き場（`_temp/`）**：使いまわさない（1回限りの）一時ファイル・スクリプト・出力は作業ディレクトリ直下の `_temp/` に置く。完了後は `_temp/` 内で整理・削除。再利用ツール（`fix_typo.py`・`typo_rules.json`・`_commit.ps1`・`_repo.txt`・`_msg.txt` 等）は `_temp/` に置かず作業ディレクトリ直下に置く。
+- **一時ファイルの置き場（`_temp/`）**：使いまわさない（1回限りの）一時ファイル・スクリプト・出力は作業ディレクトリ直下の `_temp/` に置く。完了後は `_temp/` 内で整理・削除。再利用ツールは `_temp/` に置かず **`tools/`（vault 内・git 管理）** に集約する（`fix_typo.py`・`typo_rules.json`・`_commit.ps1`・`add_spdx_headers.py`・`inject_dates.py`・`move_resolved.py`・`linkcheck.py`・`extract_bold_titles.py`・`build_boundaries.py`・`make_raw_from_pdf.py` 等）。
+- **スクリプトは相対パスで作成する**：再利用スクリプトは**絶対パス（`C:\Users\...` 等の機械依存パス）をハードコードしない**。スクリプト自身の位置（`os.path.dirname(os.path.abspath(__file__))` / PowerShell の `$PSScriptRoot`）から vault ルート・PDF・出力先を相対導出する。これで公開リポジトリに含めてもプライバシー漏洩がなく、チェックアウト先がどこでも動く。
 
 ### 8.3 更新・コミットと削除
-- **git コミットは恒久ヘルパー `_commit.ps1`（ASCIIのみ）＋ `_repo.txt`（vaultパス・UTF-8）＋ `_msg.txt`（メッセージ・UTF-8）**で行う。git は `shell_command` 経由のみ実行可能（PATH に入らない→`_commit.ps1` が `$env:Path` に Git を自動追加）。
+- **git コミットは恒久ヘルパー `tools/_commit.ps1`（ASCIIのみ・セルフロケーション）＋ `_msg.txt`（メッセージ・UTF-8）**で行う。リポジトリルートはスクリプト自身の位置から導出される（`_repo.txt` は不要・廃止）。git は `shell_command` 経由のみ実行可能（PATH に入らない→`_commit.ps1` が `$env:Path` に Git を自動追加）。
 - コミットメッセージ日本語は UTF-8 ファイル（`-MsgFile`）渡し。
-- 手順（作業Dir `C:/Users/d5dx/Downloads/Code` から）：`Set-ExecutionPolicy -Scope Process Bypass` の後、`_commit.ps1 -All -MsgFile _msg.txt`。特定ファイルのみなら `_commit.ps1 -Paths "CLAUDE.md","wiki/episodes/CH0001.md" -MsgFile _msg.txt`。
+- 手順（vault ルートの `tools/` から）：`Set-ExecutionPolicy -Scope Process Bypass` の後、`_commit.ps1 -All -MsgFile ..\_msg.txt`。特定ファイルのみなら `_commit.ps1 -Paths "CLAUDE.md","wiki/episodes/CH0001.md" -MsgFile ..\_msg.txt`。
 - **削除**：一時スクリプト等の削除は、インライン PowerShell の `Remove-Item` を避け、Python（`python -c` またはスクリプト）で行うと popup を回避できる。
 
 ### 8.4 文字の品質管理（typo・誤変換・簡体字混入）
 - **typo／誤変換・簡体字混入を発見したら、一文ずつ手動で修正せず `fix_typo.py` を使う**（鉄則）。これは vault 内の全 `.md` を再帰スキャンし、既知の誤記を一括置換する再利用スクリプト。
-- スクリプト：`幻想再帰のアリュージョニスト-wiki/fix_typo.py`（vault内・git管理。ファイル名はASCIIなので cp932 で化けない）
+- スクリプト：`tools/fix_typo.py`（vault 内 `tools/`・git 管理。ファイル名は ASCII なので cp932 で化けない）
 - **使い方**（PowerShell）：
   ```powershell
   $env:PYTHONUTF8=1
-  cd 幻想再帰のアリュージョニスト-wiki   # vaultルート（fix_typo.py がある場所）
+  cd 幻想再帰のアリュージョニスト-wiki   # vaultルート
   # サマリー（何が残っているか確認）
-  python fix_typo.py --report wiki
+  python tools/fix_typo.py --report wiki
   # 詳細レポート（行番号付き、dry-run）
-  python fix_typo.py --scan wiki
+  python tools/fix_typo.py --scan wiki
   # 一括置換（実際に上書き）
-  python fix_typo.py --fix wiki
+  python tools/fix_typo.py --fix wiki
   ```
 - **既定で検出・置換する誤記**（置換ルールは外部JSON `typo_rules.json` に定義）：
   - トリシーラ → トリシューラ（`シ(U+30B7)ー(U+30FC)ユ(U+30E5)` が正。`セ(U+30BB)` は誤り）
   - 单词 → 単語、候选人 → 候補者、价值 → 価値、选择 → 選択
   - 简体会字（时→時・单→単・词→詞・价→価・选→選など、JIS に存在しない文字）
-- **置換ルールの場所（拡張方法）**：既定の置換ルールは外部JSON `幻想再帰のアリュージョニスト-wiki/typo_rules.json`（vault内・git管理）に定義（形式 `[ [検索文字列, 置換文字列, 説明], ... ]`）。ルールの追加・変更はこのファイルを編集する。`fix_typo.py` は起動時に同じディレクトリのこのファイルを読み込む。別ファイルを指定する場合は `--rules custom_rules.json` で上書き。
+- **置換ルールの場所（拡張方法）**：既定の置換ルールは外部JSON `tools/typo_rules.json`（vault 内 `tools/`・git 管理）に定義（形式 `[ [検索文字列, 置換文字列, 説明], ... ]`）。ルールの追加・変更はこのファイルを編集する。`fix_typo.py` は起動時に同じディレクトリのこのファイルを読み込む。別ファイルを指定する場合は `--rules custom_rules.json` で上書き。
 - **運用フロー**：新規生成後（§4⑧）とコミット前に必ず `--scan` でクリーン確認。問題があれば `--fix` → 再スキャンでゼロを確認してからコミット。`候`・`人`・`体`・`会`・`社` など簡体と日本語で同一字形の文字は**判定対象から除外**する（検出も置換もしない）。単字で簡体/日本語を区別できないため、簡体字判定は `SIMPLIFIED_ONLY_CHARS`（JIS に存在しない文字）に限定する。
 
 ### 8.5 コンテキスト圧縮への対応（設計書の再確認と依頼）
