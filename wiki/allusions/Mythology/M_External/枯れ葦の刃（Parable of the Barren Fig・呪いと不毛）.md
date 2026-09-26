@@ -10,7 +10,7 @@
 
 ## 本作での使われ方
 
-ch150（pp.6291–6344、終節：救『Parable of The Barren Fig Blade』）で、「枯れ葦の刃」としての権能が描かれる。
+CH0150（pp.6291–6344、終節：救『Parable of The Barren Fig Blade』）で、「枯れ葦の刃」としての権能が描かれる。
 
 - **枯れ葦**＝不毛・呪い・裁きの象徴
 - **刃**＝裁きの執行
@@ -20,4 +20,4 @@ ch150（pp.6291–6344、終節：救『Parable of The Barren Fig Blade』）で
 
 ## 関連エピソード
 
-- [[episodes/ch150]]（終節：救『Parable of The Barren Fig Blade』）
+- [[episodes/CH0150]]（終節：救『Parable of The Barren Fig Blade』）

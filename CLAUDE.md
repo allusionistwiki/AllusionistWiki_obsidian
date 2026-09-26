@@ -22,7 +22,7 @@
     ├── log.md           # 操作履歴（追記のみ）
     ├── CLAUDE.md        # （任意）vault固有の細ルール
     ├── episodes/        # ★1話ごと：要約+人物+引喩+感想+疑問
-    │   └── chNNN.md
+    │   └── CHNNNN.md
     ├── characters/      # 事実ページ（初出/名称/関係/典拠）
     │   └── <人物>.md
     ├── terminology/     # ★用語glossary（術語・固有名詞を**世界観まで記述できる程度に詳細**。グループ＋単語の2階層。用語は[[...]]リンク必須）
@@ -46,7 +46,7 @@
     ├── analogies/       # ★核心層：展開の相似/相違（再帰構造）
     │   └── recursion-map.md
     └── reflections/     # ★感想専用層（事実から分離）
-        ├── by-episode/  # chNNN.md
+        ├── by-episode/  # CHNNNN.md
         └── by-theme/    # テーマ別
 ```
 
@@ -56,20 +56,20 @@
 | 種別 | 名前 | 例 |
 |---|---|---|
 | raw | `話数_タイトル_[分割ID].md`（分割は必要なら） | `001_棒（ワンド）_01.md` |
-| episode | `chNNN.md`（NNN=通し話数、ゼロパディング3桁） | `ch001.md` |
+| episode | `CHNNNN.md`（NNNN=通し話数、ゼロパディング4桁・大文字CH） | `CH0001.md` |
 | character/allusion | 見出し名そのまま（スラッシュ可） | `トリシューラ.md`, `【杖】と呪術体系.md` |
-| reflection | `by-episode/chNNN.md` / `by-theme/<テーマ>.md` | — |
+| reflection | `by-episode/CHNNNN.md` / `by-theme/<テーマ>.md` | — |
 
 - **rawの分割ID**：1話が長大（本作「棒（ワンド）」は約200ページ）な場合は `_01`,`_02`…で分割。分割単位は概ね25〜30ページまたはシーン区切り。
 - PDF頁番号と印刷頁番号は **1ずれる**（PDF leaf N = 本文印刷 N-1）。rawのヘッダは `【p{leaf}】` 形式で統一（既存ファイル準拠）。
 
 ## 3. ページ種別ごとの必須フィールド
-### episodes/chNNN.md
+### episodes/CHNNNN.md
 1. ヘッダ：話数・タイトル・PDF頁範囲・源rawファイル一覧
 2. **要約**：時系列順に事実を述べる（解釈を挿入しない）
 3. **登場人物**：`[[人名]]` リンク付きで初出役割を記す
 4. **引喩・アナロジー**：各引喩を「原典／本作での使われ方／典拠頁」で記す
-5. **感想セクション**：本話の読後感（→ `reflections/by-episode/chNNN.md`へ詳細）
+5. **感想セクション**：本話の読後感（→ `reflections/by-episode/CHNNNN.md`へ詳細）
 6. **疑問・解析ノート**：読みながら浮かんだ疑問・未確定事項・用語整理・組織/人物の対比・一人多名称
 
 ### characters/<人物>.md
@@ -106,7 +106,7 @@
 - 「どの話がどの話を反復/転倒/否定するか」を辺で表現。作品題名の「再帰」構造を可視化。
 - **常時再読対象**：累積状態そのものなので、コンテキスト圧縮後は毎回ファイルから読み直す（§8.5）。追記前に既存の辺を確認し、重複登録・既存仮説との矛盾を防ぐ。
 
-### reflections/by-episode/chNNN.md（感想専用層）
+### reflections/by-episode/CHNNNN.md（感想専用層）
 - 主観的読後感・美学判断・仮説。**事実と混同しないよう冒頭に「解釈層であること」を明記**。
 
 ## 4. ワークフロー（標準流れ）
@@ -120,14 +120,14 @@
 1. **ingest（原文抽出・不変保存）**：`pypdf.PdfReader().extract_text()` で原文抽出（ToUnicode適用済みで文字化けしない）。PDF leaf N = 印刷頁 N−1。raw/ に `話数_タイトル_[分割ID].md` で保存。**本文は不変**（追記のみ・既存本文改禁止、§6）。ヘッダは `【p{leaf}】`。1話が長大なら `_01`,`_02`…で分割（概ね25〜30ページまたはシーン区切り）。
 2. **区切り検出**：太字タイトルが目印。本作は `幕間　『…』` と `第X章 / N－NN タイトル`。抽出テキストの単独行を正規表現で検出（`幕間|第\d+|N－\d+`）。
 3. **関連ページ探索（graphrag・検索補助）**：本話の主要エンティティ（人物・用語・勢力・引喩候補）をクエリに `graphrag_tool/graphrag_search.py` で検索し、**既存ページ・関連エンティティ・既登録の相似/謎**を把握する（§8.7）。これは**発見の補助**であり、事実判定の根拠にはならない（根拠は必ず raw 原文）。重複登録・既存ページの見落とし・既知の伏線との矛盾を防ぐ。
-4. **episodeページ生成**（episodes/chNNN.md）：要約→登場人物→引喩・アナロジー→感想概要→疑問ノート。要約は時系列順で解釈を挿入せず、各項目に典拠頁（pp./raw）を付与。
+4. **episodeページ生成**（episodes/CHNNNN.md）：要約→登場人物→引喩・アナロジー→感想概要→疑問ノート。要約は時系列順で解釈を挿入せず、各項目に典拠頁（pp./raw）を付与。
 5. **事実ページ生成**（characters / terminology）：登場人物・設定を facts 層へ。**種別使い分け** —
    - `characters/`：個人・組織・勢力（初出/名称バリエート/外見・能力/所属・関係/目的/典拠）。推測内面は `> [!] 解釈` で分離。
    - `terminology/`：**用語glossary**（術語・固有名詞を**世界観まで記述できる程度に詳細**にテーマ別ページに列挙。簡潔な定義＋その用語が立つ世界構造との関連。一項目が短く実務的なこちらへ)。新規用語は該当テーマページへ追記 or terminology/index.md へリンク追加。**各用語は[[...]]リンク必須**。未確定は「要検証」ラベル。
    - **言及時点でページ化（2026-08-30 改訂）**：人物も用語も、**原文で一度でも言及されたら即ページを作成する**（§6）。「情報が少ない」「後でまとめる」は禁止。初出か再出かは**作成可否の判定ではなく書く内容の判定**——既存ページがあれば作り直さず追記し、記載済み情報の重複登録を避ける。
    - **グループの適時整理**：用語登録のたびに `terminology/groups/` の帰属を見直し、必要なら新グループ作成・分割・統合・改名・単語ページの移し替えを行う。その際、移動した単語ページのリンクと `terminology/index.md` も更新（§3）。
 6. **引喩解析**（allusions / analogies）：**external**（`Mythology/M_External/`, `Literature/L_External/`）は実世界の神話／文学／思想／歴史への引喩、**原典説明は正確に・出典付き**。**internal**（`Mythology/M_Internal/`, `Literature/L_Internal/`）は本作内部の参照・踏襲。**analogies/recursion-map.md** は「どの話がどの話を反復/転倒/否定するか」を辺で表現。**LLMの世界知識+推論が必須**（頻度抽出だけでは「オジデウス神話のパロディ」は判別不可）。
-7. **感想**（reflections/by-episode/chNNN.md）：主観的読後感・美学判断・仮説。**冒頭に「解釈層であること」を明記**、事実と混同しない。
+7. **感想**（reflections/by-episode/CHNNNN.md）：主観的読後感・美学判断・仮説。**冒頭に「解釈層であること」を明記**、事実と混同しない。
 8. **lint → index/log更新 → commit**（§5）：全 `[[ ]]` が実ファイルへ解決（切れ0）、事実行に典拠あり、感想/事実分離済み、推測はラベル付き、raw不変を確認。`wiki/status.md` と `wiki/episodes/index.md` を更新し、`wiki/log.md` に操作エントリを追記。vault は git 管理・変更をコミット（新ブランチは `bionic/` プレフィックス）。
 
 ## 5. Lintチェックリスト（生成後必ず確認）
@@ -169,7 +169,7 @@
 ### 8.3 更新・コミットと削除
 - **git コミットは恒久ヘルパー `_commit.ps1`（ASCIIのみ）＋ `_repo.txt`（vaultパス・UTF-8）＋ `_msg.txt`（メッセージ・UTF-8）**で行う。git は `shell_command` 経由のみ実行可能（PATH に入らない→`_commit.ps1` が `$env:Path` に Git を自動追加）。
 - コミットメッセージ日本語は UTF-8 ファイル（`-MsgFile`）渡し。
-- 手順（作業Dir `C:/Users/d5dx/Downloads/Code` から）：`Set-ExecutionPolicy -Scope Process Bypass` の後、`_commit.ps1 -All -MsgFile _msg.txt`。特定ファイルのみなら `_commit.ps1 -Paths "CLAUDE.md","wiki/episodes/ch001.md" -MsgFile _msg.txt`。
+- 手順（作業Dir `C:/Users/d5dx/Downloads/Code` から）：`Set-ExecutionPolicy -Scope Process Bypass` の後、`_commit.ps1 -All -MsgFile _msg.txt`。特定ファイルのみなら `_commit.ps1 -Paths "CLAUDE.md","wiki/episodes/CH0001.md" -MsgFile _msg.txt`。
 - **削除**：一時スクリプト等の削除は、インライン PowerShell の `Remove-Item` を避け、Python（`python -c` またはスクリプト）で行うと popup を回避できる。
 
 ### 8.4 文字の品質管理（typo・誤変換・簡体字混入）
