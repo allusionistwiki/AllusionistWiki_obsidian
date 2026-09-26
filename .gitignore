@@ -25,3 +25,6 @@ RAW2/
 # ---- 公開用: 作業ダンプ・原文サンプルは非公開 ----
 _temp/
 _example_pre_rebuild/raw/
+
+# ---- コミットメッセージ一時ファイル（tools/_commit.ps1 が都度生成）----
+_msg.txt
