@@ -1,0 +1,1756 @@
+{
+  "_comment": "仮CH（旧4桁 CHNNNN）→ syosetu正規話番号（新5桁 chNNNNN）対応表",
+  "_generated": "2026-09-26",
+  "_source": "header anchor (in-story code + PDF leaf range) + syosetu TOC cross-check",
+  "_count": 167,
+  "_rule": "全167件を支配syosetu話番号で採番。結合章は支配話番号。新ルールは5桁(chNNNNN)に統一。",
+  "_mapping": [
+    {
+      "old_ch": 1,
+      "new_ch": 1,
+      "wiki_title": "第001話　無彩色の左手、鎧の右手",
+      "syosetu_title": "1-1 無彩色の左手、鎧の右手",
+      "in_story_code": [
+        1,
+        1
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 2,
+      "new_ch": 2,
+      "wiki_title": "第002話　死者を代弁する者",
+      "syosetu_title": "1-2 死者を代弁する者",
+      "in_story_code": [
+        1,
+        2
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 3,
+      "new_ch": 3,
+      "wiki_title": "第003話　きぐるみの魔女（幕間）",
+      "syosetu_title": "幕間 『きぐるみの魔女』",
+      "in_story_code": null,
+      "basis": "leaf"
+    },
+    {
+      "old_ch": 4,
+      "new_ch": 4,
+      "wiki_title": "第004話　氷血のコルセスカ",
+      "syosetu_title": "2-1 氷血のコルセスカ",
+      "in_story_code": [
+        2,
+        1
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 5,
+      "new_ch": 5,
+      "wiki_title": "第005話　転生者（ゼノグラシア）",
+      "syosetu_title": "2-2 転生者（ゼノグラシア）",
+      "in_story_code": [
+        2,
+        2
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 6,
+      "new_ch": 6,
+      "wiki_title": "第006話　悪夢（幕間）",
+      "syosetu_title": "幕間 『悪夢』",
+      "in_story_code": null,
+      "basis": "leaf"
+    },
+    {
+      "old_ch": 7,
+      "new_ch": 7,
+      "wiki_title": "第007話　魔女と狂犬",
+      "syosetu_title": "2-3 魔女と狂犬",
+      "in_story_code": [
+        2,
+        3
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 8,
+      "new_ch": 8,
+      "wiki_title": "第008話　六淫操手",
+      "syosetu_title": "2-4 六淫操手",
+      "in_story_code": [
+        2,
+        4
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 9,
+      "new_ch": 9,
+      "wiki_title": "第009話　王獣カッサリオ",
+      "syosetu_title": "2-5 王獣カッサリオ",
+      "in_story_code": [
+        2,
+        5
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 10,
+      "new_ch": 10,
+      "wiki_title": "第010話　がらくたなんかじゃない",
+      "syosetu_title": "2-6 がらくたなんかじゃない",
+      "in_story_code": [
+        2,
+        6
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 11,
+      "new_ch": 11,
+      "wiki_title": "第011話　炎は黄金を証明する",
+      "syosetu_title": "2-7 炎は黄金を証明する",
+      "in_story_code": [
+        2,
+        7
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 12,
+      "new_ch": 12,
+      "wiki_title": "第012話　その視座の名はゆらぎの神話",
+      "syosetu_title": "2-8 その視座の名はゆらぎの神話",
+      "in_story_code": [
+        2,
+        8
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 13,
+      "new_ch": 14,
+      "wiki_title": "第013話　春の魔女",
+      "syosetu_title": "2-10 春の魔女",
+      "in_story_code": [
+        2,
+        10
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 14,
+      "new_ch": 15,
+      "wiki_title": "第014話　欠落と渇望",
+      "syosetu_title": "2-11 欠落と渇望",
+      "in_story_code": [
+        2,
+        11
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 15,
+      "new_ch": 16,
+      "wiki_title": "第015話　幕間『前夜』",
+      "syosetu_title": "幕間 『前夜』",
+      "in_story_code": null,
+      "basis": "title"
+    },
+    {
+      "old_ch": 16,
+      "new_ch": 17,
+      "wiki_title": "第016話　リーナ・ゾラ・クロウサーより",
+      "syosetu_title": "2-12 リーナ・ゾラ・クロウサーより",
+      "in_story_code": [
+        2,
+        12
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 17,
+      "new_ch": 18,
+      "wiki_title": "第017話　メクセトの神滅具",
+      "syosetu_title": "2-13 メクセトの神滅具",
+      "in_story_code": [
+        2,
+        13
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 18,
+      "new_ch": 19,
+      "wiki_title": "第018話　転生者殺し",
+      "syosetu_title": "2-14 転生者殺し",
+      "in_story_code": [
+        2,
+        14
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 19,
+      "new_ch": 20,
+      "wiki_title": "第019話　涙の価値",
+      "syosetu_title": "幕間 『涙の価値』",
+      "in_story_code": null,
+      "basis": "title"
+    },
+    {
+      "old_ch": 20,
+      "new_ch": 21,
+      "wiki_title": "第020話　そんなことよりゲームをしよう",
+      "syosetu_title": "2-15 そんなことよりゲームをしよう",
+      "in_story_code": [
+        2,
+        15
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 21,
+      "new_ch": 22,
+      "wiki_title": "第021話　鏡（ミラージュ）",
+      "syosetu_title": "2-16 鏡（ミラージュ）",
+      "in_story_code": [
+        2,
+        16
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 22,
+      "new_ch": 23,
+      "wiki_title": "第022話　幕間『棒（ワンド）』",
+      "syosetu_title": "幕間 『棒（ワンド）』",
+      "in_story_code": null,
+      "basis": "title"
+    },
+    {
+      "old_ch": 23,
+      "new_ch": 24,
+      "wiki_title": "第023話　レジンキャストエピゴーネン",
+      "syosetu_title": "2-17 レジンキャストエピゴーネン",
+      "in_story_code": [
+        2,
+        17
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 24,
+      "new_ch": 25,
+      "wiki_title": "第024話　ｎｕｌｌ参照のアリュージョン",
+      "syosetu_title": "2-18 null参照のアリュージョン",
+      "in_story_code": [
+        2,
+        18
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 25,
+      "new_ch": 26,
+      "wiki_title": "第025話　サイバネティクスとオカルティズムの幸福なマリアージュ",
+      "syosetu_title": "2-19 サイバネティクスとオカルティズムの幸福なマリアージュ",
+      "in_story_code": [
+        2,
+        19
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 26,
+      "new_ch": 27,
+      "wiki_title": "第026話　その名はアズーリア",
+      "syosetu_title": "2-20 その名はアズーリア",
+      "in_story_code": [
+        2,
+        20
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 27,
+      "new_ch": 28,
+      "wiki_title": "第027話　もし狂犬が戦国乱世に転生したら",
+      "syosetu_title": "幕間 『もし狂犬が戦国乱世に転生したら』",
+      "in_story_code": null,
+      "basis": "title"
+    },
+    {
+      "old_ch": 28,
+      "new_ch": 29,
+      "wiki_title": "第028話　どうして空は青いの？",
+      "syosetu_title": "3-0 どうして空は青いの？",
+      "in_story_code": [
+        3,
+        0
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 29,
+      "new_ch": 30,
+      "wiki_title": "第029話　未来回想、あるいはこれからのあらすじ",
+      "syosetu_title": "3-1 未来回想、あるいはこれからのあらすじ",
+      "in_story_code": [
+        3,
+        1
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 30,
+      "new_ch": 31,
+      "wiki_title": "第030話　もうひとつの左手",
+      "syosetu_title": "幕間 『もうひとつの左手』",
+      "in_story_code": null,
+      "basis": "title"
+    },
+    {
+      "old_ch": 31,
+      "new_ch": 32,
+      "wiki_title": "第031話　もうひとつの悪夢",
+      "syosetu_title": "幕間 『もうひとつの悪夢』",
+      "in_story_code": null,
+      "basis": "title"
+    },
+    {
+      "old_ch": 32,
+      "new_ch": 33,
+      "wiki_title": "第032話　言の葉遣いは躊躇わない",
+      "syosetu_title": "3-2 言の葉遣いは躊躇わない",
+      "in_story_code": [
+        3,
+        2
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 33,
+      "new_ch": 34,
+      "wiki_title": "第033話　半熟英雄",
+      "syosetu_title": "3-3 半熟英雄",
+      "in_story_code": [
+        3,
+        3
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 34,
+      "new_ch": 35,
+      "wiki_title": "第034話　天の鴉と月の兎",
+      "syosetu_title": "3-4 天の鴉と月の兎",
+      "in_story_code": [
+        3,
+        4
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 35,
+      "new_ch": 36,
+      "wiki_title": "第035話　言語魔術師の弟子（前編）",
+      "syosetu_title": "3-5 言語魔術師の弟子（前編）",
+      "in_story_code": [
+        3,
+        5
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 36,
+      "new_ch": 37,
+      "wiki_title": "第036話　魔女と英雄",
+      "syosetu_title": "3-6 魔女と英雄",
+      "in_story_code": [
+        3,
+        6
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 37,
+      "new_ch": 38,
+      "wiki_title": "第037話　言理の妖精語りて曰く",
+      "syosetu_title": "3-7 言理の妖精語りて曰く",
+      "in_story_code": [
+        3,
+        7
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 38,
+      "new_ch": 39,
+      "wiki_title": "第038話　幻想再起のイリュージョニスト",
+      "syosetu_title": "幕間 『幻想再起のイリュージョニスト』",
+      "in_story_code": null,
+      "basis": "title"
+    },
+    {
+      "old_ch": 39,
+      "new_ch": 42,
+      "wiki_title": "第039話　松明の騎士",
+      "syosetu_title": "幕間 『松明の騎士』",
+      "in_story_code": null,
+      "basis": "title"
+    },
+    {
+      "old_ch": 40,
+      "new_ch": 43,
+      "wiki_title": "第040話　再びの未来回想、そして来るべき次回予告",
+      "syosetu_title": "3-8 再びの未来回想、そして来るべき次回予告",
+      "in_story_code": [
+        3,
+        8
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 41,
+      "new_ch": 45,
+      "wiki_title": "第041話　青の空、黒の空白",
+      "syosetu_title": "3-10 青の空、黒の空白",
+      "in_story_code": [
+        3,
+        10
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 42,
+      "new_ch": 46,
+      "wiki_title": "第042話　チョコレートリリー",
+      "syosetu_title": "3-11 チョコレートリリー",
+      "in_story_code": [
+        3,
+        11
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 43,
+      "new_ch": 47,
+      "wiki_title": "第043話　隠れた変数（オクルトゥム）",
+      "syosetu_title": "3-12 隠れた変数（オクルトゥム）",
+      "in_story_code": [
+        3,
+        12
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 44,
+      "new_ch": 48,
+      "wiki_title": "第044話　この戦いが終わったら",
+      "syosetu_title": "3-13 この戦いが終わったら",
+      "in_story_code": [
+        3,
+        13
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 45,
+      "new_ch": 50,
+      "wiki_title": "第045話　パレルノ山六千人殺し",
+      "syosetu_title": "3-14 パレルノ山六千人殺し",
+      "in_story_code": [
+        3,
+        14
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 46,
+      "new_ch": 51,
+      "wiki_title": "第046話　静謐なる多弁",
+      "syosetu_title": "幕間 『静謐なる多弁』",
+      "in_story_code": null,
+      "basis": "title"
+    },
+    {
+      "old_ch": 47,
+      "new_ch": 52,
+      "wiki_title": "第047話　【死の囀り】カタルマリーナ",
+      "syosetu_title": "3-15 【死の囀り】カタルマリーナ",
+      "in_story_code": [
+        3,
+        15
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 48,
+      "new_ch": 53,
+      "wiki_title": "第048話　黒いアネモネの花言葉",
+      "syosetu_title": "3-16 黒いアネモネの花言葉",
+      "in_story_code": [
+        3,
+        16
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 49,
+      "new_ch": 54,
+      "wiki_title": "第049話　無造作な死",
+      "syosetu_title": "3-17 無造作な死",
+      "in_story_code": [
+        3,
+        17
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 50,
+      "new_ch": 56,
+      "wiki_title": "第050話　言震（ワードクェイク）",
+      "syosetu_title": "幕間 『言震（ワードクェイク）』",
+      "in_story_code": null,
+      "basis": "title"
+    },
+    {
+      "old_ch": 51,
+      "new_ch": 57,
+      "wiki_title": "第051話　激光（レイジ）",
+      "syosetu_title": "3-18 激光（レイジ）",
+      "in_story_code": [
+        3,
+        18
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 52,
+      "new_ch": 59,
+      "wiki_title": "第052話　夢幻の果て",
+      "syosetu_title": "3-19 夢幻の果て",
+      "in_story_code": [
+        3,
+        19
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 53,
+      "new_ch": 60,
+      "wiki_title": "第053話　言語魔術師の弟子（後編）",
+      "syosetu_title": "3-20 言語魔術師の弟子（後編）",
+      "in_story_code": [
+        3,
+        20
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 54,
+      "new_ch": 61,
+      "wiki_title": "第054話　第五階層より第一階層へ",
+      "syosetu_title": "3-21 第五階層より第一階層へ",
+      "in_story_code": [
+        3,
+        21
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 55,
+      "new_ch": 62,
+      "wiki_title": "第055話　シナモリ・アキラより",
+      "syosetu_title": "3-22 シナモリ・アキラより",
+      "in_story_code": [
+        3,
+        22
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 56,
+      "new_ch": 63,
+      "wiki_title": "第056話 睥睨するエクリーオベレッカ",
+      "syosetu_title": "3-23 睥睨するエクリーオベレッカ",
+      "in_story_code": [
+        3,
+        23
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 57,
+      "new_ch": 64,
+      "wiki_title": "第057話 十三階段",
+      "syosetu_title": "3-24 十三階段",
+      "in_story_code": [
+        3,
+        24
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 58,
+      "new_ch": 65,
+      "wiki_title": "第058話 オンステージ",
+      "syosetu_title": "3-25 オンステージ",
+      "in_story_code": [
+        3,
+        25
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 59,
+      "new_ch": 66,
+      "wiki_title": "第059話 奈落に飲まれ、闇に包まれる",
+      "syosetu_title": "3-26 奈落に飲まれ、闇に包まれる",
+      "in_story_code": [
+        3,
+        26
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 60,
+      "new_ch": 67,
+      "wiki_title": "第060話 影に沈み、振り返らずに去っていく",
+      "syosetu_title": "3-27 影に沈み、振り返らずに去っていく",
+      "in_story_code": [
+        3,
+        27
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 61,
+      "new_ch": 68,
+      "wiki_title": "第061話 言葉は断ち切られ、絶望は感染する。そして――",
+      "syosetu_title": "3-28 言葉は断ち切られ、絶望は感染する。そして――",
+      "in_story_code": [
+        3,
+        28
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 62,
+      "new_ch": 69,
+      "wiki_title": "第062話 この夜が明けるまであと百万の祈り（幕間）",
+      "syosetu_title": "幕間 『この夜が明けるまであと百万の祈り』",
+      "in_story_code": null,
+      "basis": "leaf"
+    },
+    {
+      "old_ch": 63,
+      "new_ch": 70,
+      "wiki_title": "第063話 黒百合の子供たち",
+      "syosetu_title": "3-29 黒百合の子供たち",
+      "in_story_code": [
+        3,
+        29
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 64,
+      "new_ch": 71,
+      "wiki_title": "第064話 その名はサイバーカラテ",
+      "syosetu_title": "3-30 その名はサイバーカラテ",
+      "in_story_code": [
+        3,
+        30
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 65,
+      "new_ch": 72,
+      "wiki_title": "第065話 それは、世界がこんなにも光に満ち溢れているから",
+      "syosetu_title": "3-31 それは、世界がこんなにも光に満ち溢れているから",
+      "in_story_code": [
+        3,
+        31
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 66,
+      "new_ch": 73,
+      "wiki_title": "第066話 澄明なる青空に",
+      "syosetu_title": "3-32 澄明なる青空に",
+      "in_story_code": [
+        3,
+        32
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 67,
+      "new_ch": 74,
+      "wiki_title": "第067話 特権者の英雄症候群、さもなくば――",
+      "syosetu_title": "幕間 『特権者の英雄症候群、さもなくば――』",
+      "in_story_code": null,
+      "basis": "title"
+    },
+    {
+      "old_ch": 68,
+      "new_ch": 76,
+      "wiki_title": "第068話 黒血のハルベルト",
+      "syosetu_title": "3-33 黒血のハルベルト",
+      "in_story_code": [
+        3,
+        33
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 69,
+      "new_ch": 77,
+      "wiki_title": "第069話 死人の森",
+      "syosetu_title": "4-0 死人の森",
+      "in_story_code": [
+        4,
+        0
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 70,
+      "new_ch": 78,
+      "wiki_title": "第070話 道場",
+      "syosetu_title": "4-1 道場",
+      "in_story_code": [
+        4,
+        1
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 71,
+      "new_ch": 79,
+      "wiki_title": "第071話 風の吹く丘",
+      "syosetu_title": "4-2 風の吹く丘",
+      "in_story_code": [
+        4,
+        2
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 72,
+      "new_ch": 80,
+      "wiki_title": "第072話 王国",
+      "syosetu_title": "4-3 王国",
+      "in_story_code": [
+        4,
+        3
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 73,
+      "new_ch": 81,
+      "wiki_title": "第073話 ダモクレスの剣",
+      "syosetu_title": "4-4 ダモクレスの剣",
+      "in_story_code": [
+        4,
+        4
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 74,
+      "new_ch": 82,
+      "wiki_title": "第074話 工場",
+      "syosetu_title": "4-5 工場",
+      "in_story_code": [
+        4,
+        5
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 75,
+      "new_ch": 83,
+      "wiki_title": "第075話 白骨迷宮",
+      "syosetu_title": "4-6 白骨迷宮",
+      "in_story_code": [
+        4,
+        6
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 76,
+      "new_ch": 84,
+      "wiki_title": "第076話 花街",
+      "syosetu_title": "4-7 花街",
+      "in_story_code": [
+        4,
+        7
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 77,
+      "new_ch": 85,
+      "wiki_title": "第077話 黒百合館",
+      "syosetu_title": "4-8 黒百合館",
+      "in_story_code": [
+        4,
+        8
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 78,
+      "new_ch": 87,
+      "wiki_title": "第078話 空の玉座",
+      "syosetu_title": "幕間 『空の玉座』",
+      "in_story_code": null,
+      "basis": "title"
+    },
+    {
+      "old_ch": 79,
+      "new_ch": 88,
+      "wiki_title": "第079話 二人の距離",
+      "syosetu_title": "4-10 二人の距離",
+      "in_story_code": [
+        4,
+        10
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 80,
+      "new_ch": 89,
+      "wiki_title": "第080話 星見の塔トーナメント（前編）",
+      "syosetu_title": "4-11 星見の塔トーナメント（前編）",
+      "in_story_code": [
+        4,
+        11
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 81,
+      "new_ch": 90,
+      "wiki_title": "第081話 Ｔｏｕｒｎａｍｅｄ　Ｃｅｌｅｓｔｉａｌ　Ｇａｚｅ（ｔｈｅ　ｓｅｃｏｎｄ　ｖｏｌｕｍｅ）",
+      "syosetu_title": "4-12 Tournamented Celestial Gaze（the second volume）",
+      "in_story_code": [
+        4,
+        12
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 82,
+      "new_ch": 91,
+      "wiki_title": "第082話 不在の二人",
+      "syosetu_title": "幕間 不在の二人",
+      "in_story_code": null,
+      "basis": "title"
+    },
+    {
+      "old_ch": 83,
+      "new_ch": 98,
+      "wiki_title": "第083話 昔々あるところに",
+      "syosetu_title": "幕間 『昔々あるところに』",
+      "in_story_code": null,
+      "basis": "title"
+    },
+    {
+      "old_ch": 84,
+      "new_ch": 101,
+      "wiki_title": "第084話 雷が鳴っている間は",
+      "syosetu_title": "幕間『雷が鳴っている間は』",
+      "in_story_code": null,
+      "basis": "title"
+    },
+    {
+      "old_ch": 85,
+      "new_ch": 105,
+      "wiki_title": "第085話 食い千切られた左腕",
+      "syosetu_title": "幕間『食い千切られた左腕』",
+      "in_story_code": null,
+      "basis": "title"
+    },
+    {
+      "old_ch": 86,
+      "new_ch": 108,
+      "wiki_title": "第086話 不似合いな結びつき",
+      "syosetu_title": "幕間『不似合いな結びつき』",
+      "in_story_code": null,
+      "basis": "title"
+    },
+    {
+      "old_ch": 87,
+      "new_ch": 117,
+      "wiki_title": "第087話 トリシューラ・カムバック",
+      "syosetu_title": "幕間 『トリシューラ・カムバック』",
+      "in_story_code": null,
+      "basis": "title"
+    },
+    {
+      "old_ch": 88,
+      "new_ch": 119,
+      "wiki_title": "第088話 星見の塔の大比武（さいごの戦い）",
+      "syosetu_title": "4-13 星見の塔の大比武（さいごの戦い）",
+      "in_story_code": [
+        4,
+        13
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 89,
+      "new_ch": 122,
+      "wiki_title": "第089話 To Hurt",
+      "syosetu_title": "幕間『To Hurt』",
+      "in_story_code": null,
+      "basis": "title"
+    },
+    {
+      "old_ch": 90,
+      "new_ch": 123,
+      "wiki_title": "第090話 一時の平穏",
+      "syosetu_title": "4-14 一時の平穏",
+      "in_story_code": [
+        4,
+        14
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 91,
+      "new_ch": 124,
+      "wiki_title": "第091話 悪夢の饗宴",
+      "syosetu_title": "4-15 悪夢の饗宴",
+      "in_story_code": [
+        4,
+        15
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 92,
+      "new_ch": 125,
+      "wiki_title": "第092話 六人の王さま",
+      "syosetu_title": "4-16 六人の王さま",
+      "in_story_code": [
+        4,
+        16
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 93,
+      "new_ch": 126,
+      "wiki_title": "第093話 未来の過失",
+      "syosetu_title": "4-17 未来の過失",
+      "in_story_code": [
+        4,
+        17
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 94,
+      "new_ch": 127,
+      "wiki_title": "第094話 ガイノイドの魔女",
+      "syosetu_title": "4-18 ガイノイドの魔女",
+      "in_story_code": [
+        4,
+        18
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 95,
+      "new_ch": 128,
+      "wiki_title": "第095話 予兆",
+      "syosetu_title": "4-19 予兆",
+      "in_story_code": [
+        4,
+        19
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 96,
+      "new_ch": 129,
+      "wiki_title": "第096話 脆弱性、あるいは仕様",
+      "syosetu_title": "4-20 脆弱性、あるいは仕様",
+      "in_story_code": [
+        4,
+        20
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 97,
+      "new_ch": 130,
+      "wiki_title": "第097話 皆殺しのデーデェイア",
+      "syosetu_title": "4-21 皆殺しのデーデェイア",
+      "in_story_code": [
+        4,
+        21
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 98,
+      "new_ch": 131,
+      "wiki_title": "第098話 異界転生",
+      "syosetu_title": "4-22 異界転生",
+      "in_story_code": [
+        4,
+        22
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 99,
+      "new_ch": 132,
+      "wiki_title": "第099話 欲望の在処",
+      "syosetu_title": "4-23 欲望の在処",
+      "in_story_code": [
+        4,
+        23
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 100,
+      "new_ch": 133,
+      "wiki_title": "第100話 幕間『囚われの氷晶姫』",
+      "syosetu_title": "幕間『囚われの氷晶姫』",
+      "in_story_code": null,
+      "basis": "title"
+    },
+    {
+      "old_ch": 101,
+      "new_ch": 134,
+      "wiki_title": "第101話 二人で",
+      "syosetu_title": "4-24 二人で",
+      "in_story_code": [
+        4,
+        24
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 102,
+      "new_ch": 135,
+      "wiki_title": "第102話 ゲームスタート",
+      "syosetu_title": "4-25 ゲームスタート",
+      "in_story_code": [
+        4,
+        25
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 103,
+      "new_ch": 136,
+      "wiki_title": "第103話 幕間『左右一対の邪眼姫』",
+      "syosetu_title": "幕間 左右一対の邪眼姫",
+      "in_story_code": null,
+      "basis": "title"
+    },
+    {
+      "old_ch": 104,
+      "new_ch": 137,
+      "wiki_title": "第104話 嵐の前",
+      "syosetu_title": "4-26 嵐の前",
+      "in_story_code": [
+        4,
+        26
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 105,
+      "new_ch": 138,
+      "wiki_title": "第105話 ラフディボール（前半）",
+      "syosetu_title": "4-27 ラフディボール（前半）",
+      "in_story_code": [
+        4,
+        27
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 106,
+      "new_ch": 139,
+      "wiki_title": "第106話 ラフディボール（後半）",
+      "syosetu_title": "4-28 ラフディボール（後半）",
+      "in_story_code": [
+        4,
+        28
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 107,
+      "new_ch": 140,
+      "wiki_title": "第107話 幕間『騒乱』",
+      "syosetu_title": "幕間『騒乱』",
+      "in_story_code": null,
+      "basis": "title"
+    },
+    {
+      "old_ch": 108,
+      "new_ch": 141,
+      "wiki_title": "第108話 ４－２９ 醜い野獣",
+      "syosetu_title": "4-29 醜い野獣",
+      "in_story_code": [
+        4,
+        29
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 109,
+      "new_ch": 142,
+      "wiki_title": "第109話 ４－３０ 業",
+      "syosetu_title": "4-30 業",
+      "in_story_code": [
+        4,
+        30
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 110,
+      "new_ch": 143,
+      "wiki_title": "第110話 ４－３１ 王と物乞い",
+      "syosetu_title": "4-31 王と物乞い",
+      "in_story_code": [
+        4,
+        31
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 111,
+      "new_ch": 144,
+      "wiki_title": "第111話 ４－３２ 祈りは流星に似て",
+      "syosetu_title": "4-32 祈りは流星に似て",
+      "in_story_code": [
+        4,
+        32
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 112,
+      "new_ch": 145,
+      "wiki_title": "第112話 ４－３３ ガロアンディアンの真竜王",
+      "syosetu_title": "4-33 ガロアンディアンの真竜王",
+      "in_story_code": [
+        4,
+        33
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 113,
+      "new_ch": 147,
+      "wiki_title": "第113話 幕間『死人の森の父』",
+      "syosetu_title": "幕間『死人の森の父』",
+      "in_story_code": null,
+      "basis": "title"
+    },
+    {
+      "old_ch": 114,
+      "new_ch": 148,
+      "wiki_title": "第114話 ４－３４ オルヴァ王と十二人のシナモリアキラ１",
+      "syosetu_title": "4-34 オルヴァ王と十二人のシナモリアキラ１",
+      "in_story_code": [
+        4,
+        34
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 115,
+      "new_ch": 149,
+      "wiki_title": "第115話 ４－３５ オルヴァ王と十二人のシナモリアキラ２",
+      "syosetu_title": "4-35 オルヴァ王と十二人のシナモリアキラ２",
+      "in_story_code": [
+        4,
+        35
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 116,
+      "new_ch": 150,
+      "wiki_title": "第116話 ４－３６ オルヴァ王と十二人のシナモリアキラ３",
+      "syosetu_title": "4-36 オルヴァ王と十二人のシナモリアキラ３",
+      "in_story_code": [
+        4,
+        36
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 117,
+      "new_ch": 151,
+      "wiki_title": "第117話 ４－３７ オルヴァ王と十二人のシナモリアキラ４",
+      "syosetu_title": "4-37 オルヴァ王と十二人のシナモリアキラ４",
+      "in_story_code": [
+        4,
+        37
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 118,
+      "new_ch": 152,
+      "wiki_title": "第118話 ４－３８ オルヴァ王と十二人のシナモリアキラ５",
+      "syosetu_title": "4-38 オルヴァ王と十二人のシナモリアキラ５",
+      "in_story_code": [
+        4,
+        38
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 119,
+      "new_ch": 153,
+      "wiki_title": "第119話 ４－３９ オルヴァ王と十二人のシナモリアキラ６",
+      "syosetu_title": "4-39 オルヴァ王と十二人のシナモリアキラ６",
+      "in_story_code": [
+        4,
+        39
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 120,
+      "new_ch": 154,
+      "wiki_title": "第120話 ４－４０ オルヴァ王と十二人のシナモリアキラ７",
+      "syosetu_title": "4-40 オルヴァ王と十二人のシナモリアキラ７",
+      "in_story_code": [
+        4,
+        40
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 121,
+      "new_ch": 155,
+      "wiki_title": "第121話 ４－４１ オルヴァ王と十二人のシナモリアキラ８",
+      "syosetu_title": "4-41 オルヴァ王と十二人のシナモリアキラ８",
+      "in_story_code": [
+        4,
+        41
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 122,
+      "new_ch": 156,
+      "wiki_title": "第122話 ４－４２ オルヴァ王と十二人のシナモリアキラ９",
+      "syosetu_title": "4-42 オルヴァ王と十二人のシナモリアキラ９",
+      "in_story_code": [
+        4,
+        42
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 123,
+      "new_ch": 157,
+      "wiki_title": "第123話 ４－４３ オルヴァ王と十二人のシナモリアキラ１０",
+      "syosetu_title": "4-43 オルヴァ王と十二人のシナモリアキラ１０",
+      "in_story_code": [
+        4,
+        43
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 124,
+      "new_ch": 158,
+      "wiki_title": "第124話 ４－４４ オルヴァ王と十二人のシナモリアキラ１１",
+      "syosetu_title": "4-44 オルヴァ王と十二人のシナモリアキラ１１",
+      "in_story_code": [
+        4,
+        44
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 125,
+      "new_ch": 159,
+      "wiki_title": "第125話 ４－４５ オルヴァ王と十二人のシナモリアキラ１２",
+      "syosetu_title": "4-45 オルヴァ王と十二人のシナモリアキラ１２",
+      "in_story_code": [
+        4,
+        45
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 126,
+      "new_ch": 160,
+      "wiki_title": "第126話 ４－４６ オルヴァ王と十二人のシナモリアキラ０",
+      "syosetu_title": "4-46 オルヴァ王と十二人のシナモリアキラ０",
+      "in_story_code": [
+        4,
+        46
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 127,
+      "new_ch": 161,
+      "wiki_title": "第127話 ４－４７ 狂姫乱舞",
+      "syosetu_title": "4-47 狂姫乱舞",
+      "in_story_code": [
+        4,
+        47
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 128,
+      "new_ch": 162,
+      "wiki_title": "第128話 ４－４８ カクリ世の宴",
+      "syosetu_title": "4-48 カクリ世の宴",
+      "in_story_code": [
+        4,
+        48
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 129,
+      "new_ch": 163,
+      "wiki_title": "第129話 ４－４９ 檻の感触だきしめて",
+      "syosetu_title": "4-49 檻の感触だきしめて",
+      "in_story_code": [
+        4,
+        49
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 130,
+      "new_ch": 164,
+      "wiki_title": "第130話 幕間『悪夢の継承者』",
+      "syosetu_title": "幕間『悪夢の継承者』",
+      "in_story_code": null,
+      "basis": "title"
+    },
+    {
+      "old_ch": 131,
+      "new_ch": 165,
+      "wiki_title": "第131話 ４－５０ あなたのアイは独りよがり",
+      "syosetu_title": "4-50 あなたのアイは独りよがり",
+      "in_story_code": [
+        4,
+        50
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 132,
+      "new_ch": 166,
+      "wiki_title": "第132話 ４－５１ 純な炎を胸に燃やして",
+      "syosetu_title": "4-51 純な炎を胸に燃やして",
+      "in_story_code": [
+        4,
+        51
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 133,
+      "new_ch": 167,
+      "wiki_title": "第133話 ４－５２ 血も凍りつく眠りの中で",
+      "syosetu_title": "4-52 血も凍りつく眠りの中で",
+      "in_story_code": [
+        4,
+        52
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 134,
+      "new_ch": 168,
+      "wiki_title": "第134話 ４－５３ 燃え上がる夢の終わりに",
+      "syosetu_title": "4-53 燃え上がる夢の終わりに",
+      "in_story_code": [
+        4,
+        53
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 135,
+      "new_ch": 169,
+      "wiki_title": "第135話 ４－５４ 目指すは奈落、一直線に",
+      "syosetu_title": "4-54 目指すは奈落、一直線に",
+      "in_story_code": [
+        4,
+        54
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 136,
+      "new_ch": 170,
+      "wiki_title": "第136話 ４－５５ 栄えある女王の凱旋",
+      "syosetu_title": "4-55 栄えある女王の凱旋",
+      "in_story_code": [
+        4,
+        55
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 137,
+      "new_ch": 171,
+      "wiki_title": "第137話 幕間『甘い果実は腐り堕ちて』",
+      "syosetu_title": "幕間『甘い果実は腐り堕ちて』",
+      "in_story_code": null,
+      "basis": "title"
+    },
+    {
+      "old_ch": 138,
+      "new_ch": 172,
+      "wiki_title": "第138話 ４－５６ メスブタノパン／ブタノマンジュウ",
+      "syosetu_title": "4-56 メスブタノパン/ブタノマンジュウ",
+      "in_story_code": [
+        4,
+        56
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 139,
+      "new_ch": 173,
+      "wiki_title": "第139話 ４－５７ 裸の自分、服を着た誰か",
+      "syosetu_title": "4-57 裸の自分、服を着た誰か",
+      "in_story_code": [
+        4,
+        57
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 140,
+      "new_ch": 174,
+      "wiki_title": "第140話 ４－５８ あなたは理想の王子さま、私の素敵な王子さま",
+      "syosetu_title": "4-58 あなたは理想の王子さま、私の素敵な王子さま",
+      "in_story_code": [
+        4,
+        58
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 141,
+      "new_ch": 175,
+      "wiki_title": "第141話 ４－５９ 『私たち』を始めましょう",
+      "syosetu_title": "4-59 『私たち』を始めましょう",
+      "in_story_code": [
+        4,
+        59
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 142,
+      "new_ch": 176,
+      "wiki_title": "第142話 ４－６０ Ｃａｌｌｉｎｇ",
+      "syosetu_title": "4-60 Calling",
+      "in_story_code": [
+        4,
+        60
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 143,
+      "new_ch": 178,
+      "wiki_title": "第143話 幕間『罪貨の略奪者』＋４－６１ 狂姫と狂犬（前書き）",
+      "syosetu_title": "幕間『罪貨の略奪者』",
+      "in_story_code": [
+        4,
+        61
+      ],
+      "basis": "manual(ep178=幕間)"
+    },
+    {
+      "old_ch": 144,
+      "new_ch": 179,
+      "wiki_title": "第144話 ４－６１ 狂姫と狂犬",
+      "syosetu_title": "4-61 狂姫と狂犬",
+      "in_story_code": [
+        4,
+        61
+      ],
+      "basis": "manual(ep179=4-61)"
+    },
+    {
+      "old_ch": 145,
+      "new_ch": 180,
+      "wiki_title": "第145話 ４－６２ 夢に向かって",
+      "syosetu_title": "4-62 夢に向かって",
+      "in_story_code": [
+        4,
+        62
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 146,
+      "new_ch": 181,
+      "wiki_title": "第146話 ４－６３ 女王の器",
+      "syosetu_title": "4-63 女王の器",
+      "in_story_code": [
+        4,
+        63
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 147,
+      "new_ch": 182,
+      "wiki_title": "第147話 幕間『チェンジリング・ケット・シー』",
+      "syosetu_title": "幕間『チェンジリング・ケット・シー』",
+      "in_story_code": null,
+      "basis": "title"
+    },
+    {
+      "old_ch": 148,
+      "new_ch": 183,
+      "wiki_title": "第148話 ４－６４ 愛の切っ先",
+      "syosetu_title": "4-64 愛の切っ先",
+      "in_story_code": [
+        4,
+        64
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 149,
+      "new_ch": 184,
+      "wiki_title": "第149話 ４－６５ 第五階層のシナモリアキラ",
+      "syosetu_title": "4-65 第五階層のシナモリアキラ",
+      "in_story_code": [
+        4,
+        65
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 150,
+      "new_ch": 185,
+      "wiki_title": "第150話 ４－６６ 夜空裂くキャスケット",
+      "syosetu_title": "4-66 夜空裂くキャスケット",
+      "in_story_code": [
+        4,
+        66
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 151,
+      "new_ch": 197,
+      "wiki_title": "第151話 ５－０ エレクトラには向いてない",
+      "syosetu_title": "5-0 エレクトラには向いてない",
+      "in_story_code": [
+        5,
+        0
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 152,
+      "new_ch": 198,
+      "wiki_title": "第152話 ５－１ 枯れ木激して死灰に至り、苗木人立ちて雲路を砕く",
+      "syosetu_title": "5-1 枯れ木激して死灰に至り、苗木人立ちて雲路を砕く",
+      "in_story_code": [
+        5,
+        1
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 153,
+      "new_ch": 199,
+      "wiki_title": "第153話 ５－２ 怒りについて（前編）",
+      "syosetu_title": "5-2 怒りについて（前編）",
+      "in_story_code": [
+        5,
+        2
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 154,
+      "new_ch": 200,
+      "wiki_title": "第154話 ５－３ 自称、幼馴染み",
+      "syosetu_title": "5-3 自称、幼馴染み",
+      "in_story_code": [
+        5,
+        3
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 155,
+      "new_ch": 201,
+      "wiki_title": "第155話 ５－４ 裏切り者の誓い",
+      "syosetu_title": "5-4 裏切り者の誓い",
+      "in_story_code": [
+        5,
+        4
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 156,
+      "new_ch": 202,
+      "wiki_title": "第156話 ５－５ 第一の誘拐",
+      "syosetu_title": "5-5 第一の誘拐",
+      "in_story_code": [
+        5,
+        5
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 157,
+      "new_ch": 203,
+      "wiki_title": "第157話 ５－６ 神話の子供たち",
+      "syosetu_title": "5-6 神話の子供たち",
+      "in_story_code": [
+        5,
+        6
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 158,
+      "new_ch": 204,
+      "wiki_title": "第158話 ５－７ 夢界の兇手",
+      "syosetu_title": "5-7 夢界の兇手",
+      "in_story_code": [
+        5,
+        7
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 159,
+      "new_ch": 205,
+      "wiki_title": "第159話 ５－８ トリシューラ暗殺計画",
+      "syosetu_title": "5-8 トリシューラ暗殺計画",
+      "in_story_code": [
+        5,
+        8
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 160,
+      "new_ch": 207,
+      "wiki_title": "第160話 ５－１０ 夜明け前の沈黙",
+      "syosetu_title": "5-10 夜明け前の沈黙",
+      "in_story_code": [
+        5,
+        10
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 161,
+      "new_ch": 212,
+      "wiki_title": "第161話 幕間『正しい未来の選び方』",
+      "syosetu_title": "幕間『正しい未来の選び方』",
+      "in_story_code": null,
+      "basis": "title"
+    },
+    {
+      "old_ch": 162,
+      "new_ch": 213,
+      "wiki_title": "第162話 ５－１１ 空使いは知らんぷり",
+      "syosetu_title": "5-11 空使いは知らんぷり",
+      "in_story_code": [
+        5,
+        11
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 163,
+      "new_ch": 214,
+      "wiki_title": "第163話 ５－１２ 万獣祭・開幕",
+      "syosetu_title": "5-12 万獣祭・開幕",
+      "in_story_code": [
+        5,
+        12
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 164,
+      "new_ch": 215,
+      "wiki_title": "第164話 ５－１３ テキストベース・サーキット",
+      "syosetu_title": "5-13 テキストベース・サーキット",
+      "in_story_code": [
+        5,
+        13
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 165,
+      "new_ch": 216,
+      "wiki_title": "第165話 ５－１４ オルゴーの飛翔の呪文",
+      "syosetu_title": "5-14 オルゴーの飛翔の呪文",
+      "in_story_code": [
+        5,
+        14
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 166,
+      "new_ch": 217,
+      "wiki_title": "第166話 ５－１５ 未来回想、それは破綻した青写真",
+      "syosetu_title": "5-15 未来回想、それは破綻した青写真",
+      "in_story_code": [
+        5,
+        15
+      ],
+      "basis": "code"
+    },
+    {
+      "old_ch": 167,
+      "new_ch": 218,
+      "wiki_title": "第167話 ５－１６ 古びた真珠",
+      "syosetu_title": "5-16 古びた真珠",
+      "in_story_code": [
+        5,
+        16
+      ],
+      "basis": "code"
+    }
+  ]
+}
