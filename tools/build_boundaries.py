@@ -22,9 +22,9 @@ Run from anywhere:  python build_boundaries.py
 import sys, os, re, json, unicodedata
 sys.stdout.reconfigure(encoding="utf-8")
 HERE = os.path.dirname(os.path.abspath(__file__))
-STARTS = os.path.join(HERE, "bold_starts.json")
-TOC = os.path.join(HERE, "syosetu_toc.json")
-OUT = os.path.join(HERE, "boundaries.json")
+STARTS = os.path.join(HERE, "data", "bold_starts.json")
+TOC = os.path.join(HERE, "data", "syosetu_toc.json")
+OUT = os.path.join(HERE, "data", "boundaries.json")
 LAST_LEAF = 8450   # last 0-based page index of the PDF
 
 def norm(s):

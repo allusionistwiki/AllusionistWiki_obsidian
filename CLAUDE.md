@@ -164,7 +164,7 @@
 ### 8.2 文字コードと一時ファイル
 - コンソール出力は `$env:PYTHONUTF8=1`（または `sys.stdout.reconfigure(encoding='utf-8')`）で UTF-8 固定。ファイル書き込みは `open(..., encoding='utf-8')`。
 - PowerShell コンソールは cp932 のため、日本語をコンソール表示すると化けることがある（**ファイル自体は UTF-8 で正しい**）。確認は Python でコードポイント照合。
-- **一時ファイルの置き場（`_temp/`）**：使いまわさない（1回限りの）一時ファイル・スクリプト・出力は作業ディレクトリ直下の `_temp/` に置く。完了後は `_temp/` 内で整理・削除。再利用ツールは `_temp/` に置かず **`tools/`（vault 内・git 管理）** に集約する（`fix_typo.py`・`typo_rules.json`・`_commit.ps1`・`add_spdx_headers.py`・`inject_dates.py`・`move_resolved.py`・`linkcheck.py`・`extract_bold_titles.py`・`build_boundaries.py`・`make_raw_from_pdf.py` 等）。
+- **一時ファイルの置き場（`_temp/`）**：使いまわさない（1回限りの）一時ファイル・スクリプト・出力は作業ディレクトリ直下の `_temp/` に置く。完了後は `_temp/` 内で整理・削除。再利用ツールは `_temp/` に置かず **`tools/`（vault 内・git 管理）** に集約する。`tools/` **直下は実行スクリプト（親ツール）のみ**（`fix_typo.py`・`_commit.ps1`・`add_spdx_headers.py`・`inject_dates.py`・`move_resolved.py`・`linkcheck.py`・`extract_bold_titles.py`・`build_boundaries.py`・`make_raw_from_pdf.py` 等）とし、**JSON 等の補助ファイルは `tools/data/` に保管**する（`typo_rules.json`・`custom_rules.json`・`bold_starts.json`・`boundaries.json`・`syosetu_toc.json`・`wiki_to_syosetu.json`）。
 - **スクリプトは相対パスで作成する**：再利用スクリプトは**絶対パス（`C:\Users\...` 等の機械依存パス）をハードコードしない**。スクリプト自身の位置（`os.path.dirname(os.path.abspath(__file__))` / PowerShell の `$PSScriptRoot`）から vault ルート・PDF・出力先を相対導出する。これで公開リポジトリに含めてもプライバシー漏洩がなく、チェックアウト先がどこでも動く。
 
 ### 8.3 更新・コミットと削除
@@ -191,7 +191,7 @@
   - トリシーラ → トリシューラ（`シ(U+30B7)ー(U+30FC)ユ(U+30E5)` が正。`セ(U+30BB)` は誤り）
   - 单词 → 単語、候选人 → 候補者、价值 → 価値、选择 → 選択
   - 简体会字（时→時・单→単・词→詞・价→価・选→選など、JIS に存在しない文字）
-- **置換ルールの場所（拡張方法）**：既定の置換ルールは外部JSON `tools/typo_rules.json`（vault 内 `tools/`・git 管理）に定義（形式 `[ [検索文字列, 置換文字列, 説明], ... ]`）。ルールの追加・変更はこのファイルを編集する。`fix_typo.py` は起動時に同じディレクトリのこのファイルを読み込む。別ファイルを指定する場合は `--rules custom_rules.json` で上書き。
+- **置換ルールの場所（拡張方法）**：既定の置換ルールは外部JSON `tools/data/typo_rules.json`（vault 内 `tools/data/`・git 管理）に定義（形式 `[ [検索文字列, 置換文字列, 説明], ... ]`）。ルールの追加・変更はこのファイルを編集する。`fix_typo.py` は起動時に `tools/data/` のこのファイルを読み込む。別ファイルを指定する場合は `--rules data/custom_rules.json` で上書き。
 - **運用フロー**：新規生成後（§4⑧）とコミット前に必ず `--scan` でクリーン確認。問題があれば `--fix` → 再スキャンでゼロを確認してからコミット。`候`・`人`・`体`・`会`・`社` など簡体と日本語で同一字形の文字は**判定対象から除外**する（検出も置換もしない）。単字で簡体/日本語を区別できないため、簡体字判定は `SIMPLIFIED_ONLY_CHARS`（JIS に存在しない文字）に限定する。
 
 ### 8.5 コンテキスト圧縮への対応（設計書の再確認と依頼）

@@ -41,7 +41,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))          # .../tools
 VAULT = os.path.dirname(HERE)                              # vault root
 CODE  = os.path.dirname(VAULT)                             # parent holding the PDF
 PDF = os.path.normpath(os.path.join(CODE, "gensousaiki.pdf"))
-BOUNDS = os.path.join(HERE, "boundaries.json")
+BOUNDS = os.path.join(HERE, "data", "boundaries.json")
 
 # Windows-illegal filename chars -> full-width equivalents (keep title readable)
 _ILLEGAL = {'\\': '＼', '/': '／', ':': '：', '*': '＊', '?': '？',

@@ -1,4 +1,20 @@
-再利用ツールを tools/ に集約し _temp を掃除
+JSON 等の補助ファイルを tools/data/ に移し、tools/ 直下は親ツールのみに
+
+- tools/data/ を作成し、JSON 補助ファイルを退避:
+  typo_rules.json / custom_rules.json / bold_starts.json /
+  boundaries.json / syosetu_toc.json / wiki_to_syosetu.json
+- tools/ 直下は実行スクリプト（親ツール）のみに
+- 参照先を data/ に更新:
+  extract_bold_titles.py / build_boundaries.py / make_raw_from_pdf.py /
+  fix_typo.py（既定ルール＋ usage 例）
+- CLAUDE.md §8.2/§8.4 を tools/data/ 配置に合わせて更新
+
+- §8.2: 再利用ツールは tools/（vault内・git管理）に集約
+- §8.2: 「スクリプトは相対パスで作成する」規則を追加
+  （絶対パスのハードコード禁止・スクリプト位置から相対導出）
+- §8.3: _commit.ps1 を tools/ 配下・セルフロケーションに変更
+  （_repo.txt 廃止・作業Dir の絶対パスを排除）
+- §8.4: fix_typo.py / typo_rules.json の参照を tools/ 配下に変更
 
 - 再利用スクリプトを vault 内の tools/（git管理）へ移動:
   fix_typo.py / typo_rules.json / add_spdx_headers.py / inject_dates.py /

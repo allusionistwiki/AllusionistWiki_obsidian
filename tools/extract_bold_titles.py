@@ -19,7 +19,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))          # .../tools
 VAULT = os.path.dirname(HERE)                              # vault root
 CODE  = os.path.dirname(VAULT)                             # parent holding the PDF
 PDF = os.path.normpath(os.path.join(CODE, "gensousaiki.pdf"))
-OUT = os.path.join(HERE, "bold_starts.json")
+OUT = os.path.join(HERE, "data", "bold_starts.json")
 
 import pymupdf
 
@@ -58,6 +58,7 @@ def main():
                     best = (ytop, t)
         if best:
             starts.append([li, best[1]])
+    os.makedirs(os.path.dirname(OUT), exist_ok=True)
     json.dump(starts, open(OUT, "w", encoding="utf-8"), ensure_ascii=False)
     print(f"bold-title candidates: {len(starts)}")
     print(f"saved {os.path.relpath(OUT, HERE)}")

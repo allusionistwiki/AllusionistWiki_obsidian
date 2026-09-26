@@ -24,9 +24,9 @@ from collections import defaultdict
 # ──────────────────────────────────────────────
 # 置換ルールは外部JSONファイル（typo_rules.json）から読み込む。
 # 形式: [ [検索文字列, 置換文字列, 説明], ... ]。長い文字列を先に（部分一致対策）。
-# 既定ファイルは本スクリプトと同じディレクトリの typo_rules.json。
+# 既定ファイルは本スクリプトの data/ サブディレクトリの typo_rules.json。
 # ──────────────────────────────────────────────
-DEFAULT_RULES_FILE = Path(__file__).resolve().parent / "typo_rules.json"
+DEFAULT_RULES_FILE = Path(__file__).resolve().parent / "data" / "typo_rules.json"
 
 
 def load_rules(path: Path) -> list:
@@ -354,7 +354,7 @@ def main():
   python fix_typo.py --report C:/path/to/wiki
 
   # カスタムルールでスキャン（JSONファイル指定）
-  python fix_typo.py --scan <dir> --rules custom_rules.json
+  python fix_typo.py --scan <dir> --rules data/custom_rules.json
 
   # JSON出力（後処理用）
   python fix_typo.py --scan <dir> --json
