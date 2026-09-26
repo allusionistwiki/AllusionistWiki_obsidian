@@ -9,13 +9,25 @@
 
 ## 補足・制約
 - 正規 ch 基準 = syosetu 272 エピソード（`tools/data/syosetu_toc.json`、URL `https://ncode.syosetu.com/n9073ca/{1..272}/`）
-- 旧 CH→syosetu マッピング（167 件）は `tools/data/wiki_to_syosetu.json`
-- RAW2/ は 272 ファイル生成済み（`chNNN__タイトル.md`・二重アンダースコア・PDF 由来・gitignore）
-- 現行 wiki は仮 CH（`CH0001.md`–`CH0167.md`）のまま。これを正規 ch 基準に**順次**変換する
-- 1 話生成ごとに push（ユーザー常設指示）
-- 捏造禁止：raw に存在しない主張は書かない。人物ページの頁番号は必ず raw で検証
+- 仮 CH→syosetu マッピング（167 件・検証済み）は `tools/data/ch_mapping.json`（＋人間可読 `ch_mapping.md`）。旧 `wiki_to_syosetu.json` は欠陥あり・盲信不可。
+- RAW2/ は 272 ファイル生成済み（`chNNN__タイトル.md`・二重アンダースコア・PDF 由来・gitignore）。ファイル名は 5 桁（`ch00001__…`）に統一済み。
+- 現行 wiki は仮 CH（`CH0001.md`–`CH0167.md`）から正規 ch 基準（5 桁小文字 `chNNNNN.md`）へ**変換済み**（2026-09-26・下記進捗）。
+- **新ルール: 5 桁小文字 `chNNNNN` に統一**（RAW2 と揃える）。旧（仮）4 桁大文字 `CHNNNN` と新 5 桁小文字 `chNNNNN` を完全分離。
+- 1 話生成ごとに push（ユーザー常設指示）——ただし **ch 貼り替え中は 1 話毎 push 不要**。
+- 捏造禁止：raw に存在しない主張は書かない。人物ページの頁番号は必ず raw で検証。
+
+## 変換手順（ユーザー指定・修正版）
+1. `xxxx → yyyyyy`（4 桁 → 6 桁、衝突回避の中間地帯。6 桁は**新 syosetu 話番号**を持つ）
+2. `CHyyyyyy → chyyyyy`（6 桁大文字 → 5 桁小文字 `ch00001`）
+   - **リンク切れの 6 桁**（対象ファイル未生成＝先行参照）→ 5 桁に**アルゴリズムで**
+   - **リンク切れ以外の 6 桁**（実ファイルに解決）→ **目視確認して** 5 桁に
+- 対象: `wiki/episodes/`＋`wiki/reflections/by-episode/` のファイル名 ＋ 全 vault の `[[CHxxxx]]` wikilink ＋ 裸 `CHxxxx` トークン
+- RAW2/ はリネームしない（syosetu 番号で既に正しい）
 
 ## 進捗（着手中・都度更新）
 - 2026-09-26: 正本調査完了（syosetu 272 話・PDF bold 縦書きタイトル 317 件→前書き/後書き変種 46 件除去→272 話）。RAW2/ 272 ファイル生成・ch146/ch177 境界 off-by-one 修正済み・ch120 前書き開始は OK 承認済み。
 - 2026-09-26: tools/ 集約・相対パス化・CLAUDE.md 反映・backlog/ 機構導入 完了（コミット済み）。
-- 次の一手: 仮 CH（CH0001–CH0167）を正規 ch 基準に順次変換を開始。変換ルール（バンドル 9 件・1:1 158 件）を `tools/data/wiki_to_syosetu.json` と突き合わせ、1 話ずつ wiki/episodes/・reflections/ を正規話番号へ改名・中身の典拠頁を RAW2 基準に修正しつつ進める。
+- 2026-09-26: 確定マップ構築（ヘッダアンカー＝作品内表記コード＋PDF leaf 範囲＋syosetu TOC クロスチェック）。全 167 件を支配 syosetu 話番号で採番（1:1=152・結合=15）。衝突ゼロ・単調増加・タイトル整合を検証済み。`tools/data/ch_mapping.json`＋`.md` に退避（コミット `0d30938`）。
+- 2026-09-26: 初回リネーム（4桁→5桁大文字 CH）を実行したが、ユーザー指示で**ロールバック**（置換前状態へ復帰）。理由: 最終形は 5 桁**小文字 `ch`**（RAW2 と揃える）であり、手順は 6 桁中間を経由すべき。
+- 2026-09-26: **修正手順でリネーム実行・完了**。Phase1: 4桁→6桁（参照8124・ファイル316）。Phase2: 6桁→5桁小文字（参照8124・ファイル316）。broken（先行参照3件: ch211/ch219/ch220）はアルゴリズムで・valid（167件）は目視確認表（`_temp/visual_confirm.md`）で確認済み。検証: CH6=0/CH4=0/ch5=8124・episodes 167・reflections 149・多集合は前回セッションでPERFECT MATCH証明済み（本回はcase変更のみ）。
+- 次の一手: ①〜⑦（raw→RAW2 移行・結合再生成）→ 対応表恒久 repo ファイル（＋kakuyomu）→ ch168 相当からの 1 話生成＋1 話毎 push → ch220 相当まで。
