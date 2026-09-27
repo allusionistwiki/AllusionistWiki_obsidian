@@ -20,4 +20,4 @@ CH0150（pp.6291–6344、終節：救『Parable of The Barren Fig Blade』）�
 
 ## 関連エピソード
 
-- [[episodes/CH0150]]（終節：救『Parable of The Barren Fig Blade』）
+- [[episodes/CH0150]]☆（終節：救『Parable of The Barren Fig Blade』）

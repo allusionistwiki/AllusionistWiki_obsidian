@@ -33,7 +33,7 @@ modified: 2026-09-22
 
 ## 関連
 - [[episodes/ch00063]]
-- [[episodes/CH0038]]
+- [[episodes/CH0038]]☆
 - [[episodes/ch00077]]
 - [[テセウスの船（同一性のパラドックス）]]
 - [[沼男（swamp man）]]

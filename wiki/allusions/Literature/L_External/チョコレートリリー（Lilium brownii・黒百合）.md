@@ -33,5 +33,5 @@ modified: 2026-09-22
 
 ## 関連
 - [[episodes/ch00046]]
-- [[episodes/CH0038]]
+- [[episodes/CH0038]]☆
 - [[マリー・スー（Mary Sue・ネットミーム）]]

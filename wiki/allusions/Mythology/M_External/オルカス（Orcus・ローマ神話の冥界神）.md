@@ -33,5 +33,5 @@ modified: 2026-09-22
 
 ## 関連
 - [[episodes/ch00061]]
-- [[episodes/CH0049]]
+- [[episodes/CH0049]]☆
 - [[哲学的ゾンビ（Philosophical Zombie）]]

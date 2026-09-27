@@ -22,4 +22,4 @@ CH0150（pp.6263–6290、終節：刃『Oedipus／Simplex』）で、ルウテ�
 
 ## 関連エピソード
 
-- [[episodes/CH0150]]（終節：刃『Oedipus／Simplex』）
+- [[episodes/CH0150]]☆（終節：刃『Oedipus／Simplex』）
