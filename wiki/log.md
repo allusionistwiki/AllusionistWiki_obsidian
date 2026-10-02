@@ -1958,3 +1958,9 @@ eplace_file）や shell のリテラルから直接参照不可。**ASCII パス
 - 新規ページ: 浄罪月／エトワール／誰でも明鏡止水（terminology）、ヨウカ（characters）
 - 典拠照合: 整合。linkcheck 切れ 0。recursion-map +5 エッジ、Open_Questions +4 件（491→495）、status/index/log 更新
 - 次: ch00188（終節：急 Escape from The Family）
+
+## 2026-10-02 ⑤1:N 再生成 ch00189（終節：抒 Phallus／Farce・RAW2 新規書き下ろし）
+- ch00189（終節：抒・pp.6242–6261）: episodes/reflections 新規書き下ろし。第四階層終節八話の第四話
+- 死体安置所でマラコーダ正体告白、大洪水と妖精郷アヴロニア史、銀の森のハジュラフィン×ルウテト（九断章埋没＝断章起源神話）、スフィンクス謎かけ＝ハザーリャ退治とオイディプス逃走劇
+- 典拠照合: 整合。linkcheck 切れ 0。recursion-map +5 エッジ、Open_Questions +4 件（499→503）、status/index/log 更新
+- 次: ch00190（終節：刃 Oedipus／Simplex）
