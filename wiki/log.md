@@ -1951,3 +1951,10 @@ eplace_file）や shell のリテラルから直接参照不可。**ASCII パス
 - 立春アズチョコ祭り、タマルとの和解、爆破テロとアズーリア勇者団、白騎士との対峙とレイシズム変数、ウネム・リビュエー（守護の九槍第七位）、ナッツの比喩論争
 - 典拠照合: 整合 0 件。linkcheck 切れ 0。recursion-map +5 エッジ、Open_Questions +2 件（485→487）、status/index/log 更新
 - 次: ch00186（終節：序 The Orb Is a Harsh Mistress）
+
+## 2026-10-02 ⑤1:N 再生成 ch00187（終節：破 The Winddown Girl・RAW2 新規書き下ろし）
+- ch00187（終節：破・pp.6200–6213）: episodes/reflections 新規書き下ろし。第四階層終節八話の第二話
+- 学園異界都市ラクルラール：射撃＝占星術＝播種、ヒメ／コズエとトウコ／クルミの権威転倒、模倣いじめと殴り合い、「一生あんたを憎む」和解、クルミの性商品化の吐露、屋上のヨウカ、終幕の違法アプリ→サイバーカラテ道場
+- 新規ページ: 浄罪月／エトワール／誰でも明鏡止水（terminology）、ヨウカ（characters）
+- 典拠照合: 整合。linkcheck 切れ 0。recursion-map +5 エッジ、Open_Questions +4 件（491→495）、status/index/log 更新
+- 次: ch00188（終節：急 Escape from The Family）
