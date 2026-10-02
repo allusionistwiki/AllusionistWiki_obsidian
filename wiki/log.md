@@ -1977,3 +1977,5 @@ eplace_file）や shell のリテラルから直接参照不可。**ASCII パス
 - 新規用語ページ: 根源人種浄化、冥府の聖婚
 - 典拠照合: 引用一致 0 件（修正後）。linkcheck 切れ 0。recursion-map +5 エッジ、Open_Questions +3 件（514→517）、status/index/log 更新
 - 次: ch00194（終節：窮 Put My Finger Only On Your Cheek）
+
+- 2026-10-03 ch00196（転章・pp.6575–6619）episode/reflections 新規書き下ろし（第五階層開幕前の視点転換章）。新ページ: 大神院・枢機卿団、義国派、草の民、穂先の階層世界（第零階層）。フォルス初出更新（ch00185→ch00196）。linkcheck BROKEN 0、典拠52件 RAW2 照合 OK。recursion-map +4、OQ +6。
