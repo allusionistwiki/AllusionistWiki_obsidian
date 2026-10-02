@@ -1964,3 +1964,9 @@ eplace_file）や shell のリテラルから直接参照不可。**ASCII パス
 - 死体安置所でマラコーダ正体告白、大洪水と妖精郷アヴロニア史、銀の森のハジュラフィン×ルウテト（九断章埋没＝断章起源神話）、スフィンクス謎かけ＝ハザーリャ退治とオイディプス逃走劇
 - 典拠照合: 整合。linkcheck 切れ 0。recursion-map +5 エッジ、Open_Questions +4 件（499→503）、status/index/log 更新
 - 次: ch00190（終節：刃 Oedipus／Simplex）
+
+## 2026-10-02 ⑤1:N 再生成 ch00191（終節：救 Parable of The Barren Fig Blade・RAW2 新規書き下ろし）
+- ch00191（終節：救・pp.6290–6343）: episodes/reflections 新規書き下ろし。第四階層終節八話の第六話（最大情報の章）
+- カインとアベル寓話、六王決闘とクルミの死（腐った豚）、ゼド＝多重人格発覚、クレイ＝女王の息子（無自覚インセスト設計）、復讐の失敗、第九世界槍アイスナイン宣名、ステュクス／コキュートスでコルセスカ敗北
+- 典拠照合: 整合 0 件。linkcheck 切れ 0。recursion-map +5 エッジ、Open_Questions +4 件（507→511）、status/index/log 更新
+- 次: ch00192（終節：除 Under The Law）
