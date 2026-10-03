@@ -1523,7 +1523,7 @@ modified: 2026-09-28
   - 境界の 398・1083 は ch00009/ch00024 への正解参照のためシフト対象外（確認済み）。
 - **正しい話（ch00009〜ch00022・ch00024）は変更なし**。log.md は履歴のため変更せず。
 - **次タスク**：ch00001 から順に各話の ⏳ フォルダを埋める。
-## 2026-08-25（リンク方式を [[...]] wikilink へ統一）
+## 2026-08-25（リンク方式を  wikilink へ統一）
 - **ユーザー依頼**：vault 内のリンクを ` 0 ` wikilink に統一した（`[text](url)` の markdown リンクを変換）。
 - **方針**：内部リンクは裸の basename 形式（` 0 `）。basename 重複（ch00001〜ch00024 は episodes/ と reflections/ で重複、index/_index）は ` 1 ` のパス付き。vault 外（`raw/`・`CLAUDE.md★`）へのリンクは `[text](url)` の markdown 相対パスのまま（wikilink は vault 内のみ解決）。
 - **適用**：139ファイルの `[text](url)`→` 0 ` 変換＋既存 ` 1 ` の裸化正規化。全 wikilink が実ファイルへ解決することを確認（残る `[text](url)` は raw/・CLAUDE.md★ への vault 外リンクと log.md の散文例のみ）。
@@ -1628,7 +1628,7 @@ anks_b）だけで正値を持つチャンクがインデックス外 → IndexE
 - **グラフの更新方法**（新規ドキュメント化）：
   - インデックスは初回のみ構築し .graphrag/index.json にキャッシュ。**ソース変更は content_hash() で自動検出**され、次回の実行で自動的に再構築される。
   - 手動再構築：.graphrag/ を削除して次回実行（またはクエリを再度実行）。
-  - グラフ源：本 vault は [text](url) の markdown リンクを知識グラフ辺として利用（[[...]] は 0 件）。wiki/ と 
+  - グラフ源：本 vault は [text](url) の markdown リンクを知識グラフ辺として利用（ は 0 件）。wiki/ と 
 aw/ がインデックス対象、.git・.obsidian・.agents・_example_pre_rebuild・graphrag_tool は除外。
   - CLI：python graphrag_tool/graphrag_search.py --query "..." [--top N] [--depth N] [--json]（既定 depth=1）。
 - **環境面の変化・新規律（本次第で適用・今後も準拠）**：
