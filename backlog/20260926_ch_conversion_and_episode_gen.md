@@ -130,4 +130,6 @@ Phase 0（⑤ 完走）→ Phase 1（⑥a）→ Phase 2（⑥b）→ Phase 3（�
 
 ### 進捗（2026-10-03 続報）
 - ✅ **歯抜け ch00121 完了・push 済み（`b14dc62`）**: 転章『未来転生』（pp.4276–4282）episode＋reflections 新規書き下ろし。新語 巡節／糸杉（サイプレス）。linkcheck BROKEN 0・典拠 30件 in-range。**ch00221〜272 を除く歯抜けはゼロ**（episodes 220/272）
-- 🔄 **Phase 1 着手**: CH4 旧記事 34 件の解消（ch_mapping 確認 → 削除 → wikilink 438件 個別張り替え → 検証）
+- ✅ **Phase 1 完了・push 済み（`a8e0a55`）**: CH4 wikilink 381 件/148 ファイルを ch5 へ張り替え（pp 境界照合 203・pp-multi 70・支配話 108・旧結合章プレーン化）。CH4 旧記事 34 件削除（カバレッジ確認 OK）。フォルダ形式リンク 484 ファイル正規化。検証: CH4 への wikilink 0
+- 🔄 **Phase 2 着手**: ★198 件（旧 raw 参照 163 行）→ RAW2/chNNNNN 差し替え＋★除去
+- 既知の残課題: 全vault broken 479 件のうち 307 トークンは CH4 無関係の既存切れリンク（Phase 6 で整理。`_temp/broken_cands.json` に候補表あり）
