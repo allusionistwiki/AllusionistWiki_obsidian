@@ -1981,3 +1981,4 @@ eplace_file）や shell のリテラルから直接参照不可。**ASCII パス
 - 2026-10-03 ch00196（転章・pp.6575–6619）episode/reflections 新規書き下ろし（第五階層開幕前の視点転換章）。新ページ: 大神院・枢機卿団、義国派、草の民、穂先の階層世界（第零階層）。フォルス初出更新（ch00185→ch00196）。linkcheck BROKEN 0、典拠52件 RAW2 照合 OK。recursion-map +4、OQ +6。
 - 2026-10-03 ch00197（5-0 エレクトラには向いてない・pp.6620–6631）episode 再生成（RAW2 新規書き下ろし・第五階層開幕）＋reflections 新規。新ページ: 博物城、藍神（クリマ）、順正化処置、彩域・彩度。キニス既存（初出更新済み）。linkcheck BROKEN 0、recursion-map +4、OQ +4。2026-10-03 ch00206（5-9 怪物退治・pp.6901–6933）episode＋reflections 新規書き下ろし。新語ページ: 方言使い／辺境区／変呪施設／キノコ人。linkcheck BROKEN 0、典拠照合 37件 in-range。
 2026-10-03 ch00208（祝祭前夜１『死者への慰め』・pp.6982–7033）episode＋reflections 新規書き下ろし。新人物ページ: モバン・ジート／エスト。linkcheck BROKEN 0、典拠 46件 in-range（leaf−1 照合）。
+2026-10-03 ch00209（祝祭前夜２『今、ここにある断絶』・pp.7034–7088）episode＋reflections 新規書き下ろし。新語ページ: 集団の抽象化／架け橋（扉と門）／線の嵐／虹犬。linkcheck BROKEN 0、典拠 46件 in-range（leaf−1 照合）。
