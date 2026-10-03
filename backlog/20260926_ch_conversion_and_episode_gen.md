@@ -130,6 +130,10 @@ Phase 0（⑤ 完走）→ Phase 1（⑥a）→ Phase 2（⑥b）→ Phase 3（�
 
 ### 進捗（2026-10-03 続報）
 - ✅ **歯抜け ch00121 完了・push 済み（`b14dc62`）**: 転章『未来転生』（pp.4276–4282）episode＋reflections 新規書き下ろし。新語 巡節／糸杉（サイプレス）。linkcheck BROKEN 0・典拠 30件 in-range。**ch00221〜272 を除く歯抜けはゼロ**（episodes 220/272）
-- ✅ **Phase 1 完了・push 済み（`a8e0a55`）**: CH4 wikilink 381 件/148 ファイルを ch5 へ張り替え（pp 境界照合 203・pp-multi 70・支配話 108・旧結合章プレーン化）。CH4 旧記事 34 件削除（カバレッジ確認 OK）。フォルダ形式リンク 484 ファイル正規化。検証: CH4 への wikilink 0
-- 🔄 **Phase 2 着手**: ★198 件（旧 raw 参照 163 行）→ RAW2/chNNNNN 差し替え＋★除去
-- 既知の残課題: 全vault broken 479 件のうち 307 トークンは CH4 無関係の既存切れリンク（Phase 6 で整理。`_temp/broken_cands.json` に候補表あり）
+- ✅ **Phase 1 完了・push 済み（`a8e0a55`）**: CH4 wikilink 381 件/148 ファイルを ch5 へ張り替え（pp 境界照合 203・pp-multi 70・支配話 108・旧結合章プレーン化）。CH4 旧記事 34 件削除（カバレッジ確認 OK）。フォルダ形式リンク 484 ファイル正規化
+- ✅ **Phase 2 完了・push 済み（`edb0e2d`）**: ★ 旧raw参照 144 件 → RAW2 差し替え＋★除去（pp 境界/ch_mapping で解決）。RAW2 md-link 相対深度正規化 88 ファイル（切れ 0）
+- ✅ **Phase 3 完了・push 済み（`041cbef`）**: ☆ 2631 件（566 ファイル）解決 → episodes wikilink 化 2323 件＋装飾除去 308 件。残 ☆ 0（log.md 除く）
+- ✅ **Phase 4 スキップ**（ユーザー指示: 旧「第～話」見出し未修正記事は書き直さない）
+- ✅ **Phase 5 完了・push 済み（`a7e2844`）**: wiki 内 RAW2/ 参照 1424 件（642 ファイル）→ raw/ へ。旧 raw/ 241 削除 → RAW2/ を raw/ へ改名（ローカル・gitignore 対象）。raw/ md-link 185 件すべて実在
+- ✅ **Phase 6a 完了・push 済み（`0b5a48b`）**: 切れリンク整理 — リダイレクト 82・プレーン化 364・バックスラッシュ 7。wiki 全体 BROKEN 0（log.md 履歴 28 件は対象外）。fix_typo --scan クリーン
+- 🔄 **Phase 0（最後）着手**: ch00221〜ch00272 の 52 話を RAW2 から 1話完結で順次生成
