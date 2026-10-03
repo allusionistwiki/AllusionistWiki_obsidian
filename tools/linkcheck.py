@@ -38,6 +38,12 @@ for t in targets:
             target = m.group(1).strip()
             if not target or 'http' in target:
                 continue
+            # vault ルート絶対パス規約（[[/path]]、2026-10-03 正規化 08907a33）:
+            # 先頭スラッシュは wiki/ 直下を指す。os.path.join は先頭 '/' を
+            # 絶対パス扱いするため、必ず strip してから解決する。
+            root_abs = target.startswith('/')
+            if root_abs:
+                target = target.lstrip('/')
             ok = False
             if '/' in target:
                 # path-qualified: file must exist at wiki/<target>.md (or basename under that folder)

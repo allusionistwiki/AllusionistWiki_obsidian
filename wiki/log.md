@@ -1997,3 +1997,11 @@ eplace_file）や shell のリテラルから直接参照不可。**ASCII パス
 - episodes/index.md 話一覧 221 行・status.md 話一覧 221 行を boundaries.json + raw 実ファイルから完全再生成（ch 昇順・ラベル=第NNNNN話＋作品内コード・raw 0 切れ）
 - status.md 進捗表 221 行 11 列正規化・重複排除、末尾混入の旧表 27 行削除。episodes/index 進捗セクションを 221 話生成済み/ch00222〜272 生成待ちへ更新
 - 検証: 表すべて ch 昇順・重複なし・ラベル/リンク一致・wikilink 切れ 0・CHNNNN 残 0・typo クリーン
+
+## 2026-10-03 キャラグループ層の新設（characters/groups/）
+- 要望: トップページから人物 index へのリンク追加＋キャラグループページ・キャラグループ index の新設
+- `wiki/index.md` 入口表に [[/characters/index|人物 index]]（320件）と [[/characters/groups/index|キャラグループ index]]（18グループ）を追加。構造セクションにも groups/ を明記
+- `wiki/characters/groups/` 新設: 18 グループページ＋`index.md`。320 人を**主割当1つ**で分類（§3 重複解消方針）。分類根拠は各人物ページの「所属/関係」欄の原文典拠（グループページ冒頭に引用付き）
+- 分類は「所属/関係」欄優先→本文キーワードの順で自動割当後、手動オーバーライド（アキラ別名8体を主人公圏へ、群青司教・群青様・少年始祖をその他・雑へ 等）
+- `tools/linkcheck.py` 修正: `[[/path]]` ルート絶対パス規約（08907a33）未対応（先頭スラッシュが os.path.join で絶対パス化され全件偽 BROKEN 化）。lstrip で解決 → 全 vault 23,581 リンク検査で BROKEN 16 件＝log.md 内の履歴記述のみ（既存・実ページ 0 切れ）
+- 検証: groups/・index.md の wikilink 切れ 0・typo --scan クリーン
