@@ -14,12 +14,12 @@ modified: 2026-09-25
 | 層 | 内容 |
 |---|---|
 | [[status]] | ★トップカタログ・進捗管理（最新話一覧＋各話ステータス） |
-| [[episodes/index\|エピソード一覧]] | 1話ごとの要約・登場人物・引喩・感想・疑問ノート |
-| [[terminology/index\|用語glossary]] | 術語・固有名詞を世界観まで記述できる程度に詳細化 |
-| [[allusions/index\|引喩（Allusions）]] | ★核心層：神話／文学の元ネタを external/internal で分類 |
-| [[mysteries/index\|謎と伏線]] | 未解決の謎・回収済みログ・伏線リスト |
-| [[analogies/recursion-map\|再帰マップ]] | 「どの話がどの話を反復/転倒/否定するか」を可視化 |
-| [[license\|ライセンス]] | 分割ライセンス（CC BY-NC-SA 4.0 / CC0 / 第三者素材除外）の説明 |
+| [[episodes/index|エピソード一覧]] | 1話ごとの要約・登場人物・引喩・感想・疑問ノート |
+| [[terminology/index|用語glossary]] | 術語・固有名詞を世界観まで記述できる程度に詳細化 |
+| [[allusions/index|引喩（Allusions）]] | ★核心層：神話／文学の元ネタを external/internal で分類 |
+| [[mysteries/index|謎と伏線]] | 未解決の謎・回収済みログ・伏線リスト |
+| [[analogies/recursion-map|再帰マップ]] | 「どの話がどの話を反復/転倒/否定するか」を可視化 |
+| [[license|ライセンス]] | 分割ライセンス（CC BY-NC-SA 4.0 / CC0 / 第三者素材除外）の説明 |
 | [直近更新記事](./recent-updates) | 最終更新日が新しい順に1000件（自動生成） |
 | [直近コミット](./recent-commits) | vaultの直近コミット100件（自動生成） |
 
