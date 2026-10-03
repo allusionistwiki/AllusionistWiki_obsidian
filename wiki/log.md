@@ -1983,3 +1983,4 @@ eplace_file）や shell のリテラルから直接参照不可。**ASCII パス
 2026-10-03 ch00208（祝祭前夜１『死者への慰め』・pp.6982–7033）episode＋reflections 新規書き下ろし。新人物ページ: モバン・ジート／エスト。linkcheck BROKEN 0、典拠 46件 in-range（leaf−1 照合）。
 2026-10-03 ch00209（祝祭前夜２『今、ここにある断絶』・pp.7034–7088）episode＋reflections 新規書き下ろし。新語ページ: 集団の抽象化／架け橋（扉と門）／線の嵐／虹犬。linkcheck BROKEN 0、典拠 46件 in-range（leaf−1 照合）。
 2026-10-03 ch00210（祝祭前夜３『黒蟲騎士団』・pp.7089–7113）episode＋reflections 新規書き下ろし。新語ページ: 黒蟲騎士団／虫王の印章／マイコニド解放戦線。linkcheck BROKEN 0、典拠 40件 in-range（leaf−1 照合）。
+2026-10-03 ch00211（祝祭前夜４『正しい神の殺し方』・pp.7114–7150）episode＋reflections 新規書き下ろし（祝祭前夜シリーズ完結）。新語ページ: 夢馬（ナイトメア）／槍の民。linkcheck BROKEN 0、典拠 51件 in-range（leaf−1 照合）。
