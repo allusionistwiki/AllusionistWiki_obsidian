@@ -10,7 +10,7 @@ modified: 2026-08-25
 ## 構成
 - [[Open_Questions]] — **未解決の謎リスト**。初出話・典拠・状態・仮説を表形式で管理。
 - [[Resolved]] — **回収済みの謎ログ**。解決後に Open_Questions.md から移動（または状態を変更）してここに記録。
-- [[mysteries/Foreshadowing/index|Foreshadowing/]] — **伏線リスト**。作品中に撒かれ回収を待つ暗示／予兆を、未回収／回収済みで管理（allusions/ から移設）。
+- [[mysteries/Foreshadowing/_index|Foreshadowing/]] — **伏線リスト**。作品中に撒かれ回収を待つ暗示／予兆を、未回収／回収済みで管理（allusions/ から移設）。
 
 ## 使い方
 1. 新しい未解決謎を発見したら `Open_Questions.md` の表に1行追加（初出話・典拠は原文ベース、ページ番号は不確なら話数のみで引用）。
