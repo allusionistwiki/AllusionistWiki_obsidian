@@ -2009,3 +2009,5 @@ eplace_file）や shell のリテラルから直接参照不可。**ASCII パス
 ## 2026-10-03 直近更新記事の日付修正（frontmatter 日付注入の補完）
 - 症状: 公開サイトの recent-updates（直近更新記事）に古い記事が最上位へ。原因: 233 ページ（terminology 133・characters 51・episodes 33・reflections 11・allusions 5）に frontmatter の created/modified が無く、Quartz の CreatedModifiedDate が git/filesystem へフォールバック。CI は `git clone --depth 1` ＋コピーのためフォールバック日付=**ビルド時刻**となり、全旧記事が「今更新」同順で最上位に並んでいた
 - 対応: `tools/inject_dates.py --apply` で 233 ページに created（初出コミット・--follow 追跡）/modified（最終コミット）を注入 → 全 1860 ページが frontmatter 日付を持つ状態に（frontmatter が priority 最上位）
+
+- 2026-10-03 キャラグループ所属の逐次精査 ch00001（raw全文読解）：キール隊六人を『松明の騎士団』へ確定（カイン/テール/トッド/マフス をグループページへ移設）、エスフェイルを地獄の魔将とジャッフハリムへ（第十五魔将）、エスフェイル陣営からアズーリア/カインを除去、探索者三人組＋巨大狼（鎧・第一）の4ページを新規作成しその他・雑へ。characters/index 324件へ更新。

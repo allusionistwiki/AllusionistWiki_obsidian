@@ -7,7 +7,7 @@ modified: 2026-10-03
 
 > characters/（事実ページ・典拠付き）。人物・組織・勢力。推測内面は各ページの `> [!] 解釈` で分離。
 
-収録: 320 件
+収録: 324 件
 
 - [[/characters/うずめ・イアンベ・バウボ]]
 - [[/characters/ちびシューラ]]
@@ -78,6 +78,8 @@ modified: 2026-10-03
 - [[/characters/キャカール]]
 - [[/characters/キロン]]
 - [[/characters/キール]]
+- [[/characters/巨大剣の青年（探索者三人組）]]
+- [[/characters/巨大狼（鎧・第一）]]
 - [[/characters/クァヒート家]]
 - [[/characters/クエスドレム]]
 - [[/characters/クナータ・ノーグ]]
@@ -316,12 +318,14 @@ modified: 2026-10-03
 - [[/characters/狂怖]]
 - [[/characters/白のメートリアン]]
 - [[/characters/白騎士（イリス／リビュエー０５）]]
+- [[/characters/白髪の魔法使い（探索者三人組）]]
 - [[/characters/白骨迷宮の女王（豚首の女王）]]
 - [[/characters/眠り棺（アヌビス740）]]
 - [[/characters/紅戦熱（チフス・アキラ）]]
 - [[/characters/絡新婦]]
 - [[/characters/群青司教]]
 - [[/characters/群青様]]
+- [[/characters/黒肌の巨漢（探索者三人組）]]
 - [[/characters/聖女クナータ]]
 - [[/characters/蠍尾]]
 - [[/characters/赤い髪の魔女]]
