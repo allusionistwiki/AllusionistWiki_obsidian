@@ -57,4 +57,7 @@
 A → B → C → D（A の統合判断が B のリンク解決先に影響するため A 先行）。各 Phase 完了ごとに commit/push。
 
 ## 進捗
-- 2026-10-03: 監査完了、計画記載。未実施（承認待ち）。
+- 2026-10-03: 監査完了、計画記載。
+- 2026-10-03: **Phase A 完了・push（`adffdd87`）** — 18 重複ペア characters/ 主統合（ユーザー方針: 全部 characters/ 主）、曖昧裸リンク 438 件パス修飾、裸 [[chNNNNN]] 16 件 episodes/ 化、グランギニョル統合。曖昧 0・切れ 0
+- 2026-10-03: **Phase B+C 完了・push（`89270de6`）** — 外側 第N話 2965 件を [[episodes/chNNNNN|第NNNNN話]] 化（unresolved 0）／terminology/index +146・allusions _index +35・episodes/index +24 行・status +53 行・characters/index.md 新規 320 件・groups/ 再建 842 語（その他・雑 新設 414 語）。検証: 切れ 0・外側 第N話 0・groups 未リンク 0・typo クリーン。※コミットメッセージは Phase B 表記だが Phase C 変更も同コミットに含む
+- 残: Phase D（最終 lint 完了・backlog 削除）— 本件完了確認後に実施。groups/「その他・雑」414 語の人手レビューは任意タスク

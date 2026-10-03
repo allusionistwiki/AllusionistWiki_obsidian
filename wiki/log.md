@@ -1987,3 +1987,8 @@ eplace_file）や shell のリテラルから直接参照不可。**ASCII パス
 2026-10-03 ch00219（５－１７ ペラティアの末裔・pp.7289–7311）episode＋reflections 新規書き下ろし（1話完結）。新語/人物ページ: ユディーア・ディスケイム／アゥルメイア／ペラティア／ホラー／バッカンドラ／ニア／プラータ／セレアフィレア／セーラ／ロザリンダ／エレクトラ／エスメラルダ／キャカール／ディシルキュトス／メギンジェル／カズキス／アトゥールイン。linkcheck BROKEN 0、典拠 61件 in-range（leaf−1 照合）。
 2026-10-03 ch00220（５－１８ 緑の求婚・pp.7312–7326）episode＋reflections 新規書き下ろし（1話完結・既定目標 ch220 到達）。新語ページ: テキストベース・サーキット。linkcheck BROKEN 0、典拠 43件 in-range（leaf−1 照合）。
 2026-10-03 ch00121（転章『未来転生』・pp.4276–4282）episode＋reflections 新規書き下ろし（歯抜け案件・CH0088 の [121]）。新語ページ: 巡節／糸杉（サイプレス）。linkcheck BROKEN 0、典拠 30件 in-range（leaf−1 照合・旧結合章範囲参照 1 件は CH0088 ヘッダ準拠）。
+## 2026-10-03 整合性監査フェーズ（backlog/20261003_link_numbering_index_audit.md）
+- 監査: basename 重複 225・曖昧裸リンク 441・第N話 3732（外側 3008）・index 登録漏れ（terminology 128/allusions 36/episodes-index 29行/status 53行/groups 未リンク 788/characters index 不存在）
+- Phase A（`adffdd87`）: characters/terminology 同一語 18 ペアを characters/ 主へ統合（terminology 側は参照節スタブ）、曖昧裸リンク 438 件をパス修飾、裸 [[chNNNNN]] 16 件を episodes/ へ、グランギニョル重複統合（L_External 主）
+- Phase B+C（`89270de6`）: 外側の 第N話 2965 件を [[episodes/chNNNNN|第NNNNN話]] へ正規化（episodes/reflections 本文・log.md は対象外）／terminology/index +146・allusions _index +35・episodes/index +24 行・status +53 行・characters/index.md 新規（320 件）・groups/ 再建（842 語を 5 グループへ分類、その他・雑 新設）
+- 検証: wikilink 切れ 0・曖昧裸リンク 0・外側 第N話 0・groups 未リンク 0・fix_typo クリーン
