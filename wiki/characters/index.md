@@ -7,7 +7,7 @@ modified: 2026-10-03
 
 > characters/（事実ページ・典拠付き）。人物・組織・勢力。推測内面は各ページの `> [!] 解釈` で分離。
 
-収録: 325 件
+収録: 327 件
 
 - [[/characters/うずめ・イアンベ・バウボ]]
 - [[/characters/ちびシューラ]]
@@ -144,6 +144,7 @@ modified: 2026-10-03
 - [[/characters/タマラ]]
 - [[/characters/タマル]]
 - [[/characters/タマ（白黒兎）]]
+- [[/characters/岩肌の刺客（第五階層）]]
 - [[/characters/ダウザール]]
 - [[/characters/ダエモデク]]
 - [[/characters/ダーカンシェル]]
@@ -326,6 +327,7 @@ modified: 2026-10-03
 - [[/characters/絡新婦]]
 - [[/characters/群青司教]]
 - [[/characters/群青様]]
+- [[/characters/黒髪のアイドル歌手]]
 - [[/characters/黒肌の巨漢（探索者三人組）]]
 - [[/characters/聖女クナータ]]
 - [[/characters/蠍尾]]
