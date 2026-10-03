@@ -7,7 +7,7 @@ modified: 2026-10-03
 
 > characters/（事実ページ・典拠付き）。人物・組織・勢力。推測内面は各ページの `> [!] 解釈` で分離。
 
-収録: 324 件
+収録: 325 件
 
 - [[/characters/うずめ・イアンベ・バウボ]]
 - [[/characters/ちびシューラ]]
@@ -118,6 +118,7 @@ modified: 2026-10-03
 - [[/characters/シナモリアキラ]]
 - [[/characters/シナモリ・アキラ]]
 - [[/characters/ジュティア]]
+- [[/characters/呪祖フィリス]]
 - [[/characters/ジルミッサ]]
 - [[/characters/スカルミリオーネ]]
 - [[/characters/スカルミリョーネ]]
