@@ -2005,3 +2005,7 @@ eplace_file）や shell のリテラルから直接参照不可。**ASCII パス
 - 分類は「所属/関係」欄優先→本文キーワードの順で自動割当後、手動オーバーライド（アキラ別名8体を主人公圏へ、群青司教・群青様・少年始祖をその他・雑へ 等）
 - `tools/linkcheck.py` 修正: `[[/path]]` ルート絶対パス規約（08907a33）未対応（先頭スラッシュが os.path.join で絶対パス化され全件偽 BROKEN 化）。lstrip で解決 → 全 vault 23,581 リンク検査で BROKEN 16 件＝log.md 内の履歴記述のみ（既存・実ページ 0 切れ）
 - 検証: groups/・index.md の wikilink 切れ 0・typo --scan クリーン
+
+## 2026-10-03 直近更新記事の日付修正（frontmatter 日付注入の補完）
+- 症状: 公開サイトの recent-updates（直近更新記事）に古い記事が最上位へ。原因: 233 ページ（terminology 133・characters 51・episodes 33・reflections 11・allusions 5）に frontmatter の created/modified が無く、Quartz の CreatedModifiedDate が git/filesystem へフォールバック。CI は `git clone --depth 1` ＋コピーのためフォールバック日付=**ビルド時刻**となり、全旧記事が「今更新」同順で最上位に並んでいた
+- 対応: `tools/inject_dates.py --apply` で 233 ページに created（初出コミット・--follow 追跡）/modified（最終コミット）を注入 → 全 1860 ページが frontmatter 日付を持つ状態に（frontmatter が priority 最上位）

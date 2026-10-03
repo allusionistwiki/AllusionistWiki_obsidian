@@ -1,3 +1,8 @@
+---
+created: 2026-09-26
+modified: 2026-10-03
+---
+
 # 枯れ葦の刃（Parable of the Barren Fig・呪いと不毛）
 
 > 確度：【相当有力】
