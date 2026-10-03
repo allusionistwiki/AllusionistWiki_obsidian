@@ -7,10 +7,11 @@ modified: 2026-10-03
 
 > characters/（事実ページ・典拠付き）。人物・組織・勢力。推測内面は各ページの `> [!] 解釈` で分離。
 
-収録: 327 件
+収録: 331 件
 
 - [[/characters/うずめ・イアンベ・バウボ]]
 - [[/characters/ちびシューラ]]
+- [[/characters/蝶翅の少女（三報会襲撃）]]
 - [[/characters/アイシャ]]
 - [[/characters/アインノーラ]]
 - [[/characters/アゥルメイア]]
@@ -336,3 +337,6 @@ modified: 2026-10-03
 - [[/characters/鎌鼬]]
 - [[/characters/青海]]
 - [[/characters/鵺]]
+- [[/characters/刺青の炎術師（三報会）]]
+- [[/characters/猫耳の少年（三報会襲撃）]]
+- [[/characters/用心棒（モロレク雇い）]]
