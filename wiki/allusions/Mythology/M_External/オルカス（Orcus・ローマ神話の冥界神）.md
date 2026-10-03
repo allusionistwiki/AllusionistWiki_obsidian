@@ -32,6 +32,6 @@ modified: 2026-09-22
 - **オルカスへの意図的引用**：【相当有力・名称の一致】
 
 ## 関連
-- [[episodes/ch00061]]
-- [[episodes/ch00054]]
-- [[哲学的ゾンビ（Philosophical Zombie）]]
+- [[/episodes/ch00061]]
+- [[/episodes/ch00054]]
+- [[/allusions/Literature/L_External/哲学的ゾンビ（Philosophical Zombie）]]

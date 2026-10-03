@@ -20,4 +20,4 @@ ch00185（pp.6291–6344、終節：救『Parable of The Barren Fig Blade』）�
 
 ## 関連エピソード
 
-- [[episodes/ch00185]]（終節：救『Parable of The Barren Fig Blade』）
+- [[/episodes/ch00185]]（終節：救『Parable of The Barren Fig Blade』）

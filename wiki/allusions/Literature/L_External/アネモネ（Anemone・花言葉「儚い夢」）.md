@@ -34,7 +34,7 @@ modified: 2026-09-22
 - **本作での使われ方**：【確定・pp.2056–2057】
 
 ## 関連
-- [[episodes/ch00053]]
-- [[チョコレートリリー（Lilium brownii・黒百合）]]
-- [[哲学的ゾンビ（Philosophical Zombie）]]
-- [[砂漠の薔薇（アデニウム・Adenium）]]
+- [[/episodes/ch00053]]
+- [[/allusions/Literature/L_External/チョコレートリリー（Lilium brownii・黒百合）]]
+- [[/allusions/Literature/L_External/哲学的ゾンビ（Philosophical Zombie）]]
+- [[/allusions/Literature/L_External/砂漠の薔薇（アデニウム・Adenium）]]

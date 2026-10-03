@@ -12,11 +12,11 @@ modified: 2026-09-22
   - **語源**：ラテン語「quale」（どのようなものか）の複数形。
   - **提唱**：哲学者**ジークフリート・シュミット（Siegfried Schmidt）**が1950年代に導入、**フランシス・パース（Francis P. D. M. Armstrong）**・**デイヴィッド・チャーマー（David Chalmers）**が体系化。
   - **問題**：クオリアは物理的・神経的な説明で完全に還元できるか。物理主義（唯物論）への反論（マリーの部屋・哲学的ゾンビと接続）。
-  - **関連**：[[マリーの部屋（Mary's Room・カラーの思考実験）]]・[[哲学的ゾンビ（Philosophical Zombie）]]。
+  - **関連**：[[/allusions/Literature/L_External/マリーの部屋（Mary's Room・カラーの思考実験）]]・[[/allusions/Literature/L_External/哲学的ゾンビ（Philosophical Zombie）]]。
 - 本作の「クオリア（感覚質）」は、哲学・認知科学の概念をそのまま転写。
 
 ## 本作での使われ方
-- **[[episodes/ch00073|第00073話]]（p.2746）**：「現象世界を知覚する感覚質。色を見て、『赤い』とか『青い』とかの『感じ』を捉える感覚器」。
+- **[[/episodes/ch00073|第00073話]]（p.2746）**：「現象世界を知覚する感覚質。色を見て、『赤い』とか『青い』とかの『感じ』を捉える感覚器」。
 - 「アストラル体＝感覚質」（p.2746）の対立として本作の核心に組み込まれる。
 - ch00072 宣名の色彩論（「青という色彩は、青じゃない色彩によって規定される」）の受動側への反転。
 
@@ -25,9 +25,9 @@ modified: 2026-09-22
 - 「アストラル体＝感覚質」の対立は、物理主義 vs 二元論の対立の転写。【相当有力】
 
 ## 関連エピソード
-- [[episodes/ch00073]]（p.2746）
-- [[allusions/Literature/L_External/マリーの部屋（Mary's Room・カラーの思考実験）]]
-- [[allusions/Literature/L_External/哲学的ゾンビ（Philosophical Zombie）]]
+- [[/episodes/ch00073]]（p.2746）
+- [[/allusions/Literature/L_External/マリーの部屋（Mary's Room・カラーの思考実験）]]
+- [[/allusions/Literature/L_External/哲学的ゾンビ（Philosophical Zombie）]]
 
 ## 確度
 - 【確定】クオリア（感覚質）は実在の哲学・認知科学の概念。

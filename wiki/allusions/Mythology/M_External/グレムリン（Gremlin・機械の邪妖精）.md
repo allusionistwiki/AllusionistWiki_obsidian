@@ -25,5 +25,5 @@ modified: 2026-09-22
 - **本作での使われ方**：【確定・pp.1605–1606】
 
 ## 関連
-- [[バタードキャット（Buttered Cat・選択的重力の猫）]]
-- [[episodes/ch00038]]
+- [[/allusions/Literature/L_External/バタードキャット（Buttered Cat・選択的重力の猫）]]
+- [[/episodes/ch00038]]

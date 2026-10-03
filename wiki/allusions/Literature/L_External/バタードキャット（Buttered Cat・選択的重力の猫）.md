@@ -25,5 +25,5 @@ modified: 2026-09-22
 - **本作での使われ方**：【確定・pp.1482–1483】
 
 ## 関連
-- [[episodes/ch00035]]
-- [[episodes/ch00036]]
+- [[/episodes/ch00035]]
+- [[/episodes/ch00036]]
