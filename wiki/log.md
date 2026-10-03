@@ -1992,3 +1992,8 @@ eplace_file）や shell のリテラルから直接参照不可。**ASCII パス
 - Phase A（`adffdd87`）: characters/terminology 同一語 18 ペアを characters/ 主へ統合（terminology 側は参照節スタブ）、曖昧裸リンク 438 件をパス修飾、裸 [[chNNNNN]] 16 件を episodes/ へ、グランギニョル重複統合（L_External 主）
 - Phase B+C（`89270de6`）: 外側の 第N話 2965 件を [[episodes/chNNNNN|第NNNNN話]] へ正規化（episodes/reflections 本文・log.md は対象外）／terminology/index +146・allusions _index +35・episodes/index +24 行・status +53 行・characters/index.md 新規（320 件）・groups/ 再建（842 語を 5 グループへ分類、その他・雑 新設）
 - 検証: wikilink 切れ 0・曖昧裸リンク 0・外側 第N話 0・groups 未リンク 0・fix_typo クリーン
+## 2026-10-03 公開サイトの表記ゆれ/リンク不一致対応（`c4c6c458`）
+- 指摘: https://allusionistwiki.github.io/AllusionistWiki/episodes/ の話一覧に旧番号ラベル（断章 17 件の 第00125話→ch00092 等）・列数不整合・重複行・死んだ raw リンクが残留
+- episodes/index.md 話一覧 221 行・status.md 話一覧 221 行を boundaries.json + raw 実ファイルから完全再生成（ch 昇順・ラベル=第NNNNN話＋作品内コード・raw 0 切れ）
+- status.md 進捗表 221 行 11 列正規化・重複排除、末尾混入の旧表 27 行削除。episodes/index 進捗セクションを 221 話生成済み/ch00222〜272 生成待ちへ更新
+- 検証: 表すべて ch 昇順・重複なし・ラベル/リンク一致・wikilink 切れ 0・CHNNNN 残 0・typo クリーン
