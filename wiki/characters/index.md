@@ -359,3 +359,4 @@ modified: 2026-10-03
 - [[/characters/箒星（夜談の呪術師）]]
 - [[/characters/道具屋（夜談の呪術師）]]
 - [[/characters/ジアメア（夜談の呪術師）]]
+- [[/characters/上級聖騎士（第四階層の掌握者）]]
