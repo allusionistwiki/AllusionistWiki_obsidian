@@ -39,3 +39,4 @@ modified: 2026-10-03
 - [[/characters/groups/星見の塔／杖の派閥]]（星見の塔のサブグループ・2件）
 - [[/characters/groups/転生保険会社（あの世界の保険屋）]]
 - [[/characters/groups/アストラル夜談の呪術師たち]]
+- [[/characters/groups/大神院／智神の盾]]

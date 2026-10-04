@@ -360,3 +360,8 @@ modified: 2026-10-03
 - [[/characters/道具屋（夜談の呪術師）]]
 - [[/characters/ジアメア（夜談の呪術師）]]
 - [[/characters/上級聖騎士（第四階層の掌握者）]]
+- [[/characters/冬の魔女]]
+- [[/characters/アズの妹]]
+- [[/characters/序列二十九位の異獣憑き（ラーゼフの部下）]]
+- [[/characters/自殺志願者（ラーゼフの知る唯一）]]
+- [[/characters/聖女様（松明の騎士団副団長）]]
