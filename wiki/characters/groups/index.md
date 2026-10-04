@@ -38,3 +38,4 @@ modified: 2026-10-03
 - [[/terminology/groups/組織と市場|用語グループ: 組織と市場]]
 - [[/characters/groups/星見の塔／杖の派閥]]（星見の塔のサブグループ・2件）
 - [[/characters/groups/転生保険会社（あの世界の保険屋）]]
+- [[/characters/groups/アストラル夜談の呪術師たち]]
