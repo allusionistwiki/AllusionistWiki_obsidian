@@ -365,3 +365,8 @@ modified: 2026-10-03
 - [[/characters/序列二十九位の異獣憑き（ラーゼフの部下）]]
 - [[/characters/自殺志願者（ラーゼフの知る唯一）]]
 - [[/characters/聖女様（松明の騎士団副団長）]]
+- [[/characters/最悪の魔女（古代世界の魂）]]
+- [[/characters/長老（村一番の呪術師）]]
+- [[/characters/九体の異形]]
+- [[/characters/若き英雄（第十五魔将討伐）]]
+- [[/characters/新入居の隣人（アズの宿舎の隣室）]]
