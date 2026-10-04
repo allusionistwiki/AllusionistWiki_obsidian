@@ -346,3 +346,6 @@ modified: 2026-10-03
 - [[/characters/ペリグランティア製薬の魔女たち]]
 - [[/characters/物書き（リーナの知り合い）]]
 - [[/characters/ノシュトリ（お姉様）]]
+- [[/characters/ヴァレリアンヌ]]
+- [[/characters/漆黒のシャクティ]]
+- [[/characters/謎の声（章末の誘い手）]]
