@@ -351,3 +351,5 @@ modified: 2026-10-03
 - [[/characters/謎の声（章末の誘い手）]]
 - [[/characters/老人（【公社】の幹部格）]]
 - [[/characters/くまのぬいぐるみを抱えた少女（【公社】の少女）]]
+- [[/characters/上司（転生保険会社の部長）]]
+- [[/characters/青嶺瑠璃（あおれるり）]]

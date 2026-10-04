@@ -37,3 +37,4 @@ modified: 2026-10-03
 - [[/terminology/groups/種と勢力・外世界人|用語グループ: 種と勢力・外世界人]]（種族・勢力は用語側にもある）
 - [[/terminology/groups/組織と市場|用語グループ: 組織と市場]]
 - [[/characters/groups/星見の塔／杖の派閥]]（星見の塔のサブグループ・2件）
+- [[/characters/groups/転生保険会社（あの世界の保険屋）]]
