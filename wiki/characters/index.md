@@ -342,3 +342,4 @@ modified: 2026-10-03
 - [[/characters/用心棒（モロレク雇い）]]
 - [[/characters/王獣カッサリオ]]
 - [[/characters/異獣憑きの騎士（松明の騎士）]]
+- [[/characters/流体の少女（自動機銃乗っ取りの言語魔術師？）]]
