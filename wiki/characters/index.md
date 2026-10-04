@@ -349,3 +349,5 @@ modified: 2026-10-03
 - [[/characters/ヴァレリアンヌ]]
 - [[/characters/漆黒のシャクティ]]
 - [[/characters/謎の声（章末の誘い手）]]
+- [[/characters/老人（【公社】の幹部格）]]
+- [[/characters/くまのぬいぐるみを抱えた少女（【公社】の少女）]]
