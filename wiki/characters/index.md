@@ -381,3 +381,4 @@ modified: 2026-10-03
 - [[/characters/ナト（鴉）]]
 - [[/characters/イルス（医療修道士）]]
 - [[/characters/第五階層で殉死した友人（ペイルとナトの友）]]
+- [[/characters/鴉（ナトの使い魔）]]
