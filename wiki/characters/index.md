@@ -383,3 +383,8 @@ modified: 2026-10-03
 - [[/characters/第五階層で殉死した友人（ペイルとナトの友）]]
 - [[/characters/鴉（ナトの使い魔）]]
 - [[/characters/太陰の王]]
+- [[/characters/プリエステラの父（長老の甥）]]
+- [[/characters/ティリビナの長老]]
+- [[/characters/ミルーニャの父]]
+- [[/characters/ミルーニャの母（本妻）]]
+- [[/characters/舌獣イキュー]]
