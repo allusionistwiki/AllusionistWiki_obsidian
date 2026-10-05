@@ -390,3 +390,5 @@ modified: 2026-10-03
 - [[/characters/舌獣イキュー]]
 - [[/characters/医療修道士（イルスの救い手）]]
 - [[/characters/明暗の妄想姉妹]]
+- [[/characters/ダイロ（大機竜の少年）]]
+- [[/characters/クィ（竜神信教の少女）]]
