@@ -389,3 +389,4 @@ modified: 2026-10-03
 - [[/characters/ミルーニャの母（本妻）]]
 - [[/characters/舌獣イキュー]]
 - [[/characters/医療修道士（イルスの救い手）]]
+- [[/characters/明暗の妄想姉妹]]
