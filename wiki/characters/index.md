@@ -378,3 +378,6 @@ modified: 2026-10-03
 - [[/characters/男性乗客（影喰いと罵る男）]]
 - [[/characters/リーナ（女子大生）]]
 - [[/characters/女子大生二人（リーナとその友人）]]
+- [[/characters/ナト（鴉）]]
+- [[/characters/イルス（医療修道士）]]
+- [[/characters/第五階層で殉死した友人（ペイルとナトの友）]]
