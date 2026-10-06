@@ -40,3 +40,11 @@ modified: 2026-10-03
 - [[/characters/groups/転生保険会社（あの世界の保険屋）]]
 - [[/characters/groups/アストラル夜談の呪術師たち]]
 - [[/characters/groups/大神院／智神の盾]]
+- [[/characters/groups/星見の塔／黒百合の子供たち]]（2026-10-06 新設）
+- [[/characters/groups/街路樹の民（ティリビナ人）]]（2026-10-06 新設）
+- [[/characters/groups/アルタネイフ家]]（2026-10-06 新設）
+- [[/characters/groups/マロゾロンド教]]（2026-10-06 新設）
+- [[/characters/groups/ドラトリア王族]]（2026-10-06 新設）
+- [[/characters/groups/竜神信教]]（2026-10-06 新設）
+- [[/characters/groups/トライデント（使い魔の座）]]（2026-10-06 新設）
+- [[/characters/groups/星見の塔／虹のホルケナウ]]（2026-10-06 新設）
