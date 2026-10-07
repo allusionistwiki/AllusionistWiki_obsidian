@@ -48,6 +48,8 @@ modified: 2026-10-03
 - [[/characters/groups/街路樹の民（ティリビナ人）]]（2026-10-06 新設）
 - [[/characters/groups/アルタネイフ家]]（2026-10-06 新設）
 - [[/characters/groups/マロゾロンド教]]（2026-10-06 新設）
+- [[/characters/groups/トライデントホールディングス（メガコーポ）]]（ch00112 新設）
+- [[/characters/groups/九首の真竜]]（ch00113 新設）
 - [[/characters/groups/ドラトリア王族]]（2026-10-06 新設）
 - [[/characters/groups/竜神信教]]（2026-10-06 新設）
 - [[/characters/groups/トライデント（使い魔の座）]]（2026-10-06 新設）
