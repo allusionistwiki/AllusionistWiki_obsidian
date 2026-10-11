@@ -134,3 +134,4 @@ modified: 2026-09-22
 
 - [[/allusions/Mythology/M_External/ヘレネの誘拐とトロイア戦争（パリス・メネラオス）]] — ch00230の誘拐婚原典（【確定】）
 - [[/allusions/Mythology/M_External/チャカ・ズールー（ズールー王国の伝承）]] — ch00230のティシムガンド伝承（【相当有力】）
+- [[/allusions/Mythology/M_External/神々の盤上遊戯（天なる神々の地上観戦）]] — ch00234の天上の盤上遊戯（【相当有力】）
