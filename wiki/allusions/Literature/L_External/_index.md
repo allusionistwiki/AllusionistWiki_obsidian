@@ -179,3 +179,5 @@ modified: 2026-09-22
 - [[/allusions/Literature/L_External/写真の魂奪取（カメラ恐怖症）]] — ch00233の奪魂機と観光客（【相当有力】）
 - [[/allusions/Literature/L_External/パンとサーカス（panem et circenses）]] — ch00234の祝祭＝暗黙の了解の呪術（【相当有力】）
 - [[/allusions/Literature/L_External/ゲーム実況による認識工作（Let's Play の呪術化）]] — ch00235のコルセスカ実況配信（【確定】）
+
+- [[/allusions/Literature/L_External/三十枚銀貨（ユダの銀貨）]] — ch00238のRMT＝裏切り代価の置換（【確定】）
