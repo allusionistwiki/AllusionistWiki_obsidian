@@ -159,4 +159,6 @@ modified: 2026-09-22
 
 - [[/allusions/Literature/L_External/マクガフィン（ヒッチコック）]] — ch00222のトランクケース＝中身の空でよい装置（【相当有力】）
 
-- [[/allusions/Literature/L_External/転生ジャンルのメタフィクション（転活アプリ）]] — ch00223の『ウィズメモリー』＝転生の自己言及的商品化（【相当有力】）
+- [[/allusions/Literature/L_External/転生ジャンルのメタフィクション（転活アプリ）]] — ch00223の『ウィズメモリー』＝転生の自己言及的商品化（【相当有力】）
+
+- [[/allusions/Literature/L_External/命の系統樹（ダーウィンの樹）]] — ch00224の時間樹＝進化史の記憶の読み解き（【相当有力】）

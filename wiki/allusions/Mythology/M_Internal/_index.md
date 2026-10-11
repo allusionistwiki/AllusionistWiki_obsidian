@@ -13,3 +13,4 @@ modified: 2026-09-24
 <!-- 新規ページにここに追加。例：OO_の作中再帰.md -->
 - [[/allusions/Mythology/M_Internal/翼無きレメスと槍神]] — 作中の影聖遺物と槍神信仰の内部対応（既存）
 - [[/allusions/Mythology/M_Internal/青空の神話（槍神とキュトス）]]
+- [[/allusions/Mythology/M_Internal/シャルマキヒュ神話（武将と娘たちの神格化）]] — ch00224の頌歌と神格化神話（【推測・要検証】）

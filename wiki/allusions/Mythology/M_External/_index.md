@@ -111,4 +111,6 @@ modified: 2026-09-22
 
 - [[/allusions/Mythology/M_External/ハデスとペルセフォネの誘拐婚]] — ch00222の豚好きハデス→ch00230誘拐婚の起点（【相当有力】）
 
-- [[/allusions/Mythology/M_External/フェアリーリング（妖精の輪）]] — ch00223の菌輪門＝円環生贄の門（【相当有力】）
+- [[/allusions/Mythology/M_External/フェアリーリング（妖精の輪）]] — ch00223の菌輪門＝円環生贄の門（【相当有力】）
+
+- [[/allusions/Mythology/M_External/三十枚銀貨（ユダの裏切り）]] — ch00224の友売却＋首吊り＋足元の銀貨（ユダの最期）（【確定】）

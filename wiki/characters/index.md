@@ -408,6 +408,11 @@ modified: 2026-10-03
 
 - [[/characters/よぼよぼの老人（影の触手）]]
 
-- [[/characters/エリカ（銀フードの白神）]]
-- [[/characters/ジャンザビオン]]
-- [[/characters/ハタラドゥール]]
+- [[/characters/エリカ（銀フードの白神）]]
+
+- [[/characters/ジャンザビオン]]
+
+- [[/characters/ハタラドゥール]]
+
+- [[/characters/ダルヤル]]
+- [[/characters/蛍火豹ハロス]]
