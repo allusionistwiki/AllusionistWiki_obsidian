@@ -418,4 +418,8 @@ modified: 2026-10-03
 
 - [[/characters/蛍火豹ハロス]]
 
-- [[/characters/トロメリア]]
+- [[/characters/トロメリア]]
+
+- [[/characters/掃除屋（キノコ人の少年）]]
+- [[/characters/塗壁（ドガマル）]]
+- [[/characters/ンティア・ペリグラ]]

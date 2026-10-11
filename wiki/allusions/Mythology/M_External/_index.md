@@ -115,4 +115,11 @@ modified: 2026-09-22
 
 - [[/allusions/Mythology/M_External/三十枚銀貨（ユダの裏切り）]] — ch00224の友売却＋首吊り＋足元の銀貨（ユダの最期）（【確定】）
 
-- [[/allusions/Mythology/M_External/コキュートス（ダンテ『神曲』地獄篇）]] — ch00225の瀕死潜伏（三途の川両岸見張り）（【相当有力】）
+- [[/allusions/Mythology/M_External/コキュートス（ダンテ『神曲』地獄篇）]] — ch00225の瀕死潜伏（三途の川両岸見張り）（【相当有力】）
+
+- [[/allusions/Mythology/M_External/塗壁（日本の妖怪）]] — ch00226の岩肌種大男の通り名（【確定】）
+
+- [[/allusions/Mythology/M_External/地震なまず（ナマズによる地震）]] — ch00226の「地震はトロルが起こす」言震工作（【相当有力】）
+
+- [[/allusions/Mythology/M_External/原初の巨人の身体からの世界創造]] — ch00226のグラント神具論（パンゲオンの肉体）（【相当有力】）
+
