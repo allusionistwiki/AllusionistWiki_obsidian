@@ -167,3 +167,4 @@ modified: 2026-09-22
 
 - [[/allusions/Mythology/M_External/プトレマイオス（Almagest・地心天球儀）]] — ch00225のトロメリア＝観測系存在論（【確定】）
 
+- [[/allusions/Literature/L_External/薔薇物語（ファガンノンの庭園寓話）]] — ch00228の呪文連鎖の庭園見立て（【相当有力】）

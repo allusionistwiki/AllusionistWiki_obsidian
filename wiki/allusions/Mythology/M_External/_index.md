@@ -123,5 +123,9 @@ modified: 2026-09-22
 
 - [[/allusions/Mythology/M_External/原初の巨人の身体からの世界創造]] — ch00226のグラント神具論（パンゲオンの肉体）（【相当有力】）
 
-- [[/allusions/Mythology/M_External/百鬼夜行（日本の妖怪行列）]] — ch00227のシナモリアキラ決定戦の異名群（【確定】）
-- [[/allusions/Mythology/M_External/レギオン（群鬼・我が名はレギオン）]] — ch00227の百因子内包の異名（【確定】）
+- [[/allusions/Mythology/M_External/百鬼夜行（日本の妖怪行列）]] — ch00227のシナモリアキラ決定戦の異名群（【確定】）
+
+- [[/allusions/Mythology/M_External/レギオン（群鬼・我が名はレギオン）]] — ch00227の百因子内包の異名（【確定】）
+
+- [[/allusions/Mythology/M_External/アンタイオス（大地に接して力を得る巨人）]] — ch00228の『岩穿ちの剣』（【相当有力】）
+- [[/allusions/Mythology/M_External/フローラ（ローマの花の女神）]] — ch00228の宣名『植物想』（【相当有力】）
