@@ -181,3 +181,4 @@ modified: 2026-09-22
 - [[/allusions/Literature/L_External/ゲーム実況による認識工作（Let's Play の呪術化）]] — ch00235のコルセスカ実況配信（【確定】）
 
 - [[/allusions/Literature/L_External/三十枚銀貨（ユダの銀貨）]] — ch00238のRMT＝裏切り代価の置換（【確定】）
+- [[/allusions/Literature/L_External/弱者の戦略（Strategy of the Underdog）]] — ch00240のティリビナ人テロ戦術の命名（【確定】）
