@@ -173,3 +173,5 @@ modified: 2026-09-22
 - [[/allusions/Literature/L_External/グノーシスのシュζυγία（双生のアイオン）]] — ch00229の双生児の岩の仔（【推測・要検証】）
 
 - [[/allusions/Literature/L_External/リビア（古代の三大陸観・エジプト以西）]] — ch00230のリビコッコ語源（【相当有力】）
+
+- [[/allusions/Literature/L_External/ネペンテス（忘却の薬・オデュッセイア）]] — ch00231の忘却の宣名圧（【確定】）
