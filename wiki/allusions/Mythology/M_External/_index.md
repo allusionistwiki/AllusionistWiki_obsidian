@@ -129,3 +129,5 @@ modified: 2026-09-22
 
 - [[/allusions/Mythology/M_External/アンタイオス（大地に接して力を得る巨人）]] — ch00228の『岩穿ちの剣』（【相当有力】）
 - [[/allusions/Mythology/M_External/フローラ（ローマの花の女神）]] — ch00228の宣名『植物想』（【相当有力】）
+
+- [[/allusions/Mythology/M_External/逆転世界（逆さまの森・下なる世界）]] — ch00229のスーリウムのオブジェ反転（【相当有力】）

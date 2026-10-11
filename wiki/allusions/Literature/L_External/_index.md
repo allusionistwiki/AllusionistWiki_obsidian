@@ -168,3 +168,6 @@ modified: 2026-09-22
 - [[/allusions/Mythology/M_External/プトレマイオス（Almagest・地心天球儀）]] — ch00225のトロメリア＝観測系存在論（【確定】）
 
 - [[/allusions/Literature/L_External/薔薇物語（ファガンノンの庭園寓話）]] — ch00228の呪文連鎖の庭園見立て（【相当有力】）
+
+- [[/allusions/Literature/L_External/国家擬人化（ナショナル・ペルソナ）]] — ch00229のヘレネの擬人化呪法（【相当有力】）
+- [[/allusions/Literature/L_External/グノーシスのシュζυγία（双生のアイオン）]] — ch00229の双生児の岩の仔（【推測・要検証】）
