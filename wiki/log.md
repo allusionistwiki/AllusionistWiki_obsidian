@@ -68,3 +68,4 @@ modified: 2026-10-08
 - episode所属反映3（ch00171-173）、status 3行更新。
 
 - 2026-10-11: デプロイ連続失敗の修正 — characters/groups/index.md の frontmatter 閉じ `---` 欠落（Quartz ビルドの frontmatter パース失敗）を修復。新規ページ23件の created/modified 欠落を tools/inject_dates.py --apply で補完。
+- 2026-10-12: kaku_raw/ 作成 — カクヨム連載（works/16816927859268545348）全 589 話を tools/make_raw_from_kakuyomu.py で抽出（公開順採番 ch00001-ch00589・1段落1行・ヘッダに ep ID/公開日時/章/URL）。目次は作品ページ __NEXT_DATA__ の tableOfContentsV2 → tools/data/kaku_toc.json。検証: 589 ファイル連続採番・欠損0、本文 4,668,046 字（カクヨム集計 4,556,481 との差 111,565 は全角/半角空白のみ）。kaku_raw/ は gitignore（非公開）。backlog/20261012_kaku_raw_from_kakuyomu.md 対応済み・削除。
