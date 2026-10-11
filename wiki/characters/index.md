@@ -420,6 +420,14 @@ modified: 2026-10-03
 
 - [[/characters/トロメリア]]
 
-- [[/characters/掃除屋（キノコ人の少年）]]
-- [[/characters/塗壁（ドガマル）]]
-- [[/characters/ンティア・ペリグラ]]
+- [[/characters/掃除屋（キノコ人の少年）]]
+
+- [[/characters/塗壁（ドガマル）]]
+
+- [[/characters/ンティア・ペリグラ]]
+
+- [[/characters/雪女（シナモリアキラ）]]
+- [[/characters/レギオン]]
+- [[/characters/ヘリオトロープ]]
+- [[/characters/根守り（キノコ人の少年）]]
+- [[/characters/葬儀屋（エリカの兄）]]
