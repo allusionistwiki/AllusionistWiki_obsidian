@@ -392,3 +392,19 @@ modified: 2026-10-03
 - [[/characters/明暗の妄想姉妹]]
 - [[/characters/ダイロ（大機竜の少年）]]
 - [[/characters/クィ（竜神信教の少女）]]
+- [[/characters/ハデス（豚好きハデス）]]
+
+- [[/characters/サハリック]]
+
+- [[/characters/アドガレンス]]
+
+- [[/characters/ミェス]]
+
+- [[/characters/ポーリエ]]
+
+- [[/characters/ツインテールの少女]]
+
+- [[/characters/太めの男（蛍光棒のアイドルオタク探索者）]]
+
+- [[/characters/よぼよぼの老人（影の触手）]]
+

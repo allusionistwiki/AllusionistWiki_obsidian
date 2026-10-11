@@ -137,3 +137,4 @@ Phase 0（⑤ 完走）→ Phase 1（⑥a）→ Phase 2（⑥b）→ Phase 3（�
 - ✅ **Phase 5 完了・push 済み（`a7e2844`）**: wiki 内 RAW2/ 参照 1424 件（642 ファイル）→ raw/ へ。旧 raw/ 241 削除 → RAW2/ を raw/ へ改名（ローカル・gitignore 対象）。raw/ md-link 185 件すべて実在
 - ✅ **Phase 6a 完了・push 済み（`0b5a48b`）**: 切れリンク整理 — リダイレクト 82・プレーン化 364・バックスラッシュ 7。wiki 全体 BROKEN 0（log.md 履歴 28 件は対象外）。fix_typo --scan クリーン
 - 🔄 **Phase 0（最後）着手**: ch00221〜ch00272 の 52 話を RAW2 から 1話完結で順次生成
+- 2026-10-12: **Phase 0 Step 1: ch00222 生成完了・push 済み**。episode＋reflections＋キャラ新規8＋キャラ追記20＋用語新規20＋用語追記6＋引喩新規9（M_External5/L_External4）。Open_Questions +5・recursion-map +6 辺。linkcheck BROKEN 0（先行参照 ch00223/ch00230 はプレーン化）。typo scan: U+5535 6件（既存・意図的）＋U+5699 4件（原文「嚙み砕く」引用・忠実）。次: ch00223。

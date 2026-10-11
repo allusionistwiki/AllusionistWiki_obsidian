@@ -151,3 +151,7 @@ modified: 2026-09-22
 - [[/allusions/Literature/L_External/黄火疫（コレラ・cholera）]] — ch00180の上級シナモリアキラ宣名「熱と乾きの王、黄色胆汁の悪夢、荒々しきコレラ黄炎の死」・六淫（燥・火）がパンデミック化身として具現化（【確定】）
 - [[/allusions/Literature/L_External/黄金時代（死後に到来した絶頂期）]] — ch00138のマラードの「ラフディの絶頂期はむしろ死後に到来した」（【相当有力】）
 - [[/allusions/Literature/L_External/黒死病（Black Death・交易と病拡大）]]
+- [[/allusions/Literature/L_External/呪文竜（ハリー・ポッターの呪文詠唱）]] — ch00222の呪文竜解放＝Incantato（【確定】）
+- [[/allusions/Literature/L_External/マジックミサイル（D&D）]] — ch00222の妖精矢ルビ＝必中の魔力の矢（【確定】）
+- [[/allusions/Literature/L_External/ブラクラ（Blasters are for losers）]] — ch00222の罵倒増殖呪文（【確定】）
+- [[/allusions/Literature/L_External/マクガフィン（ヒッチコック）]] — ch00222のトランクケース＝中身の空でよい装置（【相当有力】）
