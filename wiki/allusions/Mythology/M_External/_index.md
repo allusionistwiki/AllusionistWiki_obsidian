@@ -113,4 +113,6 @@ modified: 2026-09-22
 
 - [[/allusions/Mythology/M_External/フェアリーリング（妖精の輪）]] — ch00223の菌輪門＝円環生贄の門（【相当有力】）
 
-- [[/allusions/Mythology/M_External/三十枚銀貨（ユダの裏切り）]] — ch00224の友売却＋首吊り＋足元の銀貨（ユダの最期）（【確定】）
+- [[/allusions/Mythology/M_External/三十枚銀貨（ユダの裏切り）]] — ch00224の友売却＋首吊り＋足元の銀貨（ユダの最期）（【確定】）
+
+- [[/allusions/Mythology/M_External/コキュートス（ダンテ『神曲』地獄篇）]] — ch00225の瀕死潜伏（三途の川両岸見張り）（【相当有力】）

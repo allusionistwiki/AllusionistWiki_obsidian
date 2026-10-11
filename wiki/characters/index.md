@@ -414,5 +414,8 @@ modified: 2026-10-03
 
 - [[/characters/ハタラドゥール]]
 
-- [[/characters/ダルヤル]]
-- [[/characters/蛍火豹ハロス]]
+- [[/characters/ダルヤル]]
+
+- [[/characters/蛍火豹ハロス]]
+
+- [[/characters/トロメリア]]
