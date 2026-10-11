@@ -131,3 +131,6 @@ modified: 2026-09-22
 - [[/allusions/Mythology/M_External/フローラ（ローマの花の女神）]] — ch00228の宣名『植物想』（【相当有力】）
 
 - [[/allusions/Mythology/M_External/逆転世界（逆さまの森・下なる世界）]] — ch00229のスーリウムのオブジェ反転（【相当有力】）
+
+- [[/allusions/Mythology/M_External/ヘレネの誘拐とトロイア戦争（パリス・メネラオス）]] — ch00230の誘拐婚原典（【確定】）
+- [[/allusions/Mythology/M_External/チャカ・ズールー（ズールー王国の伝承）]] — ch00230のティシムガンド伝承（【相当有力】）
