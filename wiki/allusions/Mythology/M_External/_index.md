@@ -101,8 +101,14 @@ modified: 2026-09-22
 - [[/allusions/Mythology/M_External/金剛杵（vajra・仏教の法器）]]
 - [[/allusions/Mythology/M_External/銀の森の魔女（眠れる姫・冬の魔女の伝承）]]
 - [[/allusions/Mythology/M_External/黒き聖餐（サバト・トリウィアー）と三相女神]]
-- [[/allusions/Mythology/M_External/カトブレパス（殺す睨み）]] — ch00222の豹＝プリニウス『博物誌』の殺す睨みの獣（【確定】）
-- [[/allusions/Mythology/M_External/マンティコア（ペルシャの獣）]] — ch00222の虎＝クテシアス『ペルシカ』の複合獣（【確定】）
-- [[/allusions/Mythology/M_External/ヴァルキリー（戦死した英雄の花嫁）]] — ch00222の戦乙女＝花嫁主題（ノース神話）（【相当有力】）
-- [[/allusions/Mythology/M_External/蟹座のカールノス（巨人戦）]] — ch00222のサハリック＝星抱く蟹の王（【相当有力】）
-- [[/allusions/Mythology/M_External/ハデスとペルセフォネの誘拐婚]] — ch00222の豚好きハデス→ch00230誘拐婚の起点（【相当有力】）
+- [[/allusions/Mythology/M_External/カトブレパス（殺す睨み）]] — ch00222の豹＝プリニウス『博物誌』の殺す睨みの獣（【確定】）
+
+- [[/allusions/Mythology/M_External/マンティコア（ペルシャの獣）]] — ch00222の虎＝クテシアス『ペルシカ』の複合獣（【確定】）
+
+- [[/allusions/Mythology/M_External/ヴァルキリー（戦死した英雄の花嫁）]] — ch00222の戦乙女＝花嫁主題（ノース神話）（【相当有力】）
+
+- [[/allusions/Mythology/M_External/蟹座のカールノス（巨人戦）]] — ch00222のサハリック＝星抱く蟹の王（【相当有力】）
+
+- [[/allusions/Mythology/M_External/ハデスとペルセフォネの誘拐婚]] — ch00222の豚好きハデス→ch00230誘拐婚の起点（【相当有力】）
+
+- [[/allusions/Mythology/M_External/フェアリーリング（妖精の輪）]] — ch00223の菌輪門＝円環生贄の門（【相当有力】）
