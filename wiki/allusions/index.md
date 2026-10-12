@@ -23,3 +23,6 @@ modified: 2026-09-24
 - [[/mysteries/index]] — 未解決の謎・伏線のタスク管理（Open_Questions.md／Resolved.md／Foreshadowing/）。
 
 <!-- 新規引喩ページは、元ネタが実世界なら external／作中内部なら internal に、カテゴリ別 Mythology／Literature へ追加。 -->
+- [[/allusions/Literature/L_External/血液型占いと四気質説]]（ch00272）
+- [[/allusions/Mythology/M_External/死の天使とセラフィム（セルアデス）]]（ch00272）
+- [[/allusions/Literature/L_External/永劫回帰とニーチェ（穴掘りニースフリル）]]（ch00272）
