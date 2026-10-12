@@ -30,7 +30,8 @@ UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
 WORK_ID = "16816927859268545348"
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUT_DIR = os.path.join(ROOT, "kaku_raw", "幻想再帰のアリュージョニスト")
+RAW_A = os.path.join(ROOT, "..", "AllusionistWiki_raw", "raw")  # A クラス原文 repo（private）
+OUT_DIR = os.path.join(RAW_A, "novel", "kakuyomu", f"{WORK_ID}_幻想再帰のアリュージョニスト")
 TOC_JSON = os.path.join(ROOT, "tools", "data", "kaku_toc.json")
 
 

@@ -44,6 +44,22 @@ raw を権利クラス2層に分割する。**「原文=一律非公開」から
 - 命名＝URL slug 統一: `AllusionistWiki` / `AllusionistWiki2` / `YuragiWiki`（repo 名 = サイトパス = wiki 名）。LLMWiki2 系は wiki2 として `AllusionistWiki2` へのリネームを推奨（GitHub は同一 org 内リネームで旧 URL からリダイレクトされる）。
 - 相互リンク: ポータル↔wiki↔wiki は同一 origin 絶対パス（`/AllusionistWiki2/...`）。Obsidian 内は 1 vault 複数ルートの `[[...]]`。
 - 将来の wiki 増設手順: ①vault repo 作成（`<WikiName>`）→ ②サイト repo（Quartz + submodule）→ ③ポータルにカード追加 → ④`tools/data/wikis.json` に登録。
+- **LLMWiki2 の位置づけ（2026-10-12 ユーザー予定）**: 現行の公開層（allusionistwiki.github.io/AllusionistLLMWiki2）は「解析フック」程度の価値に留まるため、**L1 層（解析レイヤー）へ移行する**。トップ index 層に並ぶ独立 wiki としては扱わない。→ `AllusionistWiki2` へのリネームは行わず、L1 層移行の設計（L0=raw／L1=機械抽出・クレーム層／L2=人間検証済み wiki、の階層）を決める際に併せて整理する。
+
+### パイプライン階層（2026-10-12 ユーザー定義・L0〜L7）
+
+| 層 | 内容 | 既存資産の対応（目安） |
+|---|---|---|
+| L0 | raw 原文 | AllusionistWiki_raw（A・private）／YuragiWiki raw（B・公開） |
+| L1 | 機械抽出メイン | LLMWiki2_Work（facts/candidates）＋現 LLMWiki2 公開フックを移行 |
+| L2 | 名前統合・prefix 修正 | 抽出実体の正規化（別名統合、接頭辞整理） |
+| L3 | 整合性検証 | クレームの矛盾・重複検証 |
+| L4 | LLM 単話内容整理 | 1話ごとの機械整理 |
+| L5 | 各話統合内容整理 | 複数話にまたがる機械整理 |
+| L6 | 内容統合 | 全体統合 |
+| L7 | 公開層（人間訂正・整理） | AllusionistWiki 公開サイト（現行 wiki/） |
+
+- 上位層は下位層の派生物。公開（トップ index 層に載る）は L7 のみ。L1〜L6 は各 wiki の下層データとして repo 内に保持（Work 系=公開維持の方針と整合）。
 
 ## 2026-10-12: 公開サイトの複数 wiki 配信（allusionistwiki.github.io 構成）
 

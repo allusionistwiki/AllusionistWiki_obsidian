@@ -24,7 +24,7 @@ import win32crypt  # pywin32
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
 COMM = "373088"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUT_ROOT = os.path.join(ROOT, "raw_Yuragi_Sinnwa", "mixi")
+OUT_ROOT = os.path.join(ROOT, "..", "YuragiWiki", "raw", "bbs", "mixi", COMM)
 DELAY = 2.5
 
 

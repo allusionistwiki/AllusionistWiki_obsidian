@@ -56,7 +56,7 @@ def safe_title(t):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--outdir', default=os.path.join(VAULT, 'RAW2'))
+    ap.add_argument('--outdir', default=os.path.join(CODE, 'AllusionistWiki_raw', 'raw', 'novel', 'pdf', 'pdf01_幻想再帰のアリュージョニスト'))
     args = ap.parse_args()
 
     outdir = args.outdir

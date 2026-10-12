@@ -1,0 +1,132 @@
+{
+ "_comment": "raw 台帳。folder は各 repo（AllusionistWiki_raw / YuragiWiki）のルートからの相対。rights: private=非公開原文 / public-attributed=公開・出典明記（著作権は投稿者帰属）",
+ "updated": "2026-10-12",
+ "works": [
+  {
+   "source": "pdf",
+   "id": "pdf01",
+   "title": "幻想再帰のアリュージョニスト",
+   "folder": "raw/novel/pdf/pdf01_幻想再帰のアリュージョニスト",
+   "episodes": 272,
+   "rights": "private",
+   "last_fetched": "2026-09-26"
+  },
+  {
+   "source": "kakuyomu",
+   "id": "16816452220933743184",
+   "title": "ハニーウィッチ・ユーフォリア",
+   "folder": "raw/novel/kakuyomu/16816452220933743184_ハニーウィッチ・ユーフォリア",
+   "episodes": 20,
+   "rights": "private",
+   "last_fetched": "2026-10-12"
+  },
+  {
+   "source": "kakuyomu",
+   "id": "16816927859268545348",
+   "title": "幻想再帰のアリュージョニスト",
+   "folder": "raw/novel/kakuyomu/16816927859268545348_幻想再帰のアリュージョニスト",
+   "episodes": 589,
+   "rights": "private",
+   "last_fetched": "2026-10-12"
+  },
+  {
+   "source": "kakuyomu",
+   "id": "16817330665009933020",
+   "title": "クラス転移で俺だけ勇者、クラスメイトは『外れ』で『無能』の『役立たず』？！ ～絶対に復讐されたくないかませ勇者の悪役回避～",
+   "folder": "raw/novel/kakuyomu/16817330665009933020_クラス転移で俺だけ勇者、クラスメイトは『外れ』で『無能』の『役立たず』？！ ～絶対に復讐されたくないかませ勇者の悪役回避～",
+   "episodes": 48,
+   "rights": "private",
+   "last_fetched": "2026-10-12"
+  },
+  {
+   "source": "kakuyomu",
+   "id": "16818023211891535109",
+   "title": "水着網タイツは人魚のなごり",
+   "folder": "raw/novel/kakuyomu/16818023211891535109_水着網タイツは人魚のなごり",
+   "episodes": 19,
+   "rights": "private",
+   "last_fetched": "2026-10-12"
+  },
+  {
+   "source": "kakuyomu",
+   "id": "16818093074369090987",
+   "title": "翻訳騎士とおかしな聖女",
+   "folder": "raw/novel/kakuyomu/16818093074369090987_翻訳騎士とおかしな聖女",
+   "episodes": 14,
+   "rights": "private",
+   "last_fetched": "2026-10-12"
+  },
+  {
+   "source": "kakuyomu",
+   "id": "16818792439022130265",
+   "title": "異世界ファンタジーゲームに一緒に転生した幼馴染が俺と自分のカップリングにドハマりしている～逆現パロのロールプレイ～",
+   "folder": "raw/novel/kakuyomu/16818792439022130265_異世界ファンタジーゲームに一緒に転生した幼馴染が俺と自分のカップリングにドハマりしている～逆現パロのロールプレイ～",
+   "episodes": 42,
+   "rights": "private",
+   "last_fetched": "2026-10-12"
+  },
+  {
+   "source": "kakuyomu",
+   "id": "2912051605227232439",
+   "title": "探索者協会物語",
+   "folder": "raw/novel/kakuyomu/2912051605227232439_探索者協会物語",
+   "episodes": 67,
+   "rights": "private",
+   "last_fetched": "2026-10-12"
+  },
+  {
+   "source": "syosetu",
+   "id": "n5130ha",
+   "title": "ハニーウィッチ・ユーフォリア",
+   "folder": "raw/novel/syosetu/n5130ha_ハニーウィッチ・ユーフォリア",
+   "episodes": 6,
+   "rights": "private",
+   "last_fetched": "2026-10-12"
+  },
+  {
+   "source": "syosetu",
+   "id": "n9073ca",
+   "title": "幻想再帰のアリュージョニスト",
+   "folder": "raw/novel/syosetu/n9073ca_幻想再帰のアリュージョニスト",
+   "episodes": 499,
+   "rights": "private",
+   "last_fetched": "2026-10-12"
+  },
+  {
+   "source": "syosetu",
+   "id": "n9836mu",
+   "title": "探索者協会物語",
+   "folder": "raw/novel/syosetu/n9836mu_探索者協会物語",
+   "episodes": 11,
+   "rights": "private",
+   "last_fetched": "2026-10-12"
+  },
+  {
+   "source": "syosetu",
+   "id": "n9948mu",
+   "title": "異世界ファンタジーゲームに一緒に転生した幼馴染が俺と自分のカップリングにドハマりしている～逆現パロのロールプレイ～",
+   "folder": "raw/novel/syosetu/n9948mu_異世界ファンタジーゲームに一緒に転生した幼馴染が俺と自分のカップリングにドハマりしている～逆現パロのロールプレイ～",
+   "episodes": 11,
+   "rights": "private",
+   "last_fetched": "2026-10-12"
+  },
+  {
+   "source": "jbbs",
+   "id": "movie-7039",
+   "title": "ゆらぎの神話 BBS（したらば movie/7039）",
+   "folder": "raw/bbs/jbbs/movie-7039",
+   "episodes": 179,
+   "rights": "public-attributed",
+   "last_fetched": "2026-10-12"
+  },
+  {
+   "source": "mixi",
+   "id": "373088",
+   "title": "架空の神話を作ろう（mixi コミュ BBS）",
+   "folder": "raw/bbs/mixi/373088",
+   "episodes": 5,
+   "rights": "public-attributed",
+   "last_fetched": "2026-10-12"
+  }
+ ]
+}

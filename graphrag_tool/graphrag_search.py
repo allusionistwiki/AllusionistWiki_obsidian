@@ -38,13 +38,16 @@ from collections import defaultdict, Counter, deque
 # 設定
 # --------------------------------------------------------------------------- #
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # wiki vault ルート（スクリプトの親）
+# 索引対象: vault の wiki/ ＋ 兄弟 repo の原文（A=AllusionistWiki_raw / B=YuragiWiki）
+RAW_ROOTS = (os.path.join("..", "AllusionistWiki_raw", "raw"),
+             os.path.join("..", "YuragiWiki", "raw"))
 INDEX_DIR = os.path.join(REPO_ROOT, ".graphrag")                # 生成出力（gitignore 対象）
 INDEX_PATH = os.path.join(INDEX_DIR, "index.json")
 
 # インデックスから除外するディレクトリ
 SKIP_DIRS = {".git", ".obsidian", ".agents", "_example_pre_rebuild", "graphrag_tool"}
 # インデックス対象のトップフォルダ
-INDEXABLE_TOP = ("wiki", "raw")
+INDEXABLE_TOP = ("wiki",) + RAW_ROOTS
 
 # Semantic retrieval (co-occurrence expansion + RRF) default ON. --no-semantic to disable.
 SEMANTIC_ENABLED = True

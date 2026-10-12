@@ -26,7 +26,8 @@ import sys
 sys.stdout.reconfigure(encoding="utf-8")
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUT_DIR = os.path.join(ROOT, "kaku_raw", "幻想再帰のアリュージョニスト")
+OUT_DIR = os.path.join(ROOT, "..", "AllusionistWiki_raw", "raw", "novel", "kakuyomu",
+                       "16816927859268545348_幻想再帰のアリュージョニスト")
 INDEX_MARK = "【¶索引】"
 
 

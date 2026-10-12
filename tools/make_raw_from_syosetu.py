@@ -29,7 +29,7 @@ UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like 
 DELAY = 2.5
 SPLIT_LINES = 250
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUT_ROOT = os.path.join(ROOT, "syosetu_raw")
+OUT_ROOT = os.path.join(ROOT, "..", "AllusionistWiki_raw", "raw", "novel", "syosetu")
 
 
 def fetch(url: str) -> str:

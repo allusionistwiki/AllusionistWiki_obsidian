@@ -11,13 +11,22 @@
 
 ## 1. ディレクトリ構造
 ```
+Code/                                  # 兄弟配置（相対パスの基準。§8.8）
+├── 幻想再帰のアリュージョニスト-wiki/  # ★本 vault（公開・CC BY-NC-SA + MIT）
+├── AllusionistWiki_raw/               # A クラス原文 repo（private・非公開）
+│   └── raw/
+│       ├── novel/pdf/<work_code>_<小説名>/chNNNNN__<タイトル>.md
+│       ├── novel/kakuyomu/<serial_id>_<小説名>/chNNNNN__<タイトル>.md
+│       └── novel/syosetu/<ncode>_<小説名>/chNNNNN_<タイトル>[_NN].md
+└── YuragiWiki/                        # B クラス repo（公開・CC0・著作権は投稿者帰属）
+    └── raw/bbs/{jbbs/<板>/<NNN>_<スレ名>/Thread.md, mixi/<comm_id>/<トピック名>/…}
+
 幻想再帰のアリュージョニスト-wiki/
 ├── CLAUDE.md            # この設計書（本ファイル）
 ├── DESIGN_NOTES.md      # 設計判断の記録・議論履歴
-├── raw/                 # 原文抽出（不変・読み取り専用・追記のみ）
-│   └── <話数>_<タイトル>_[分割ID].md
 ├── assets/              # 画像などローカル保存
 ├── tools/               # 再利用ツール（親ツールのみ。JSON等は tools/data/、§8.2）
+│   └── data/raw_manifest.json  # 全原文の台帳（source/id/folder/取得数/rights、§8.8）
 ├── backlog/             # 追加機能・要望の受付箱（未着手のみ、§9）
 └── wiki/                # Obsidian vault（ここに書く）
     ├── status.md        # トップカタログ・状態管理（最新話一覧＋各話ごとの進捗）
@@ -119,7 +128,7 @@
 >
 > **analogies/ と mysteries/ は、コンテキスト圧縮後に毎回必ず読み直す**（§8.5）。対象＝`wiki/analogies/recursion-map.md`、`wiki/mysteries/index.md`・`Open_Questions.md`・`Resolved.md`・`Foreshadowing/_index.md`。これらは「これまで溜めた相似・仮説・未回収伏線」の累積状態であり、要約や記憶に頼らず必ずファイルから読む（読んでいないと重複登録と矛盾を書く）。
 
-1. **ingest（原文抽出・不変保存）**：`pypdf.PdfReader().extract_text()` で原文抽出（ToUnicode適用済みで文字化けしない）。PDF leaf N = 印刷頁 N−1。raw/ に `話数_タイトル_[分割ID].md` で保存。**本文は不変**（追記のみ・既存本文改禁止、§6）。ヘッダは `【p{leaf}】`。1話が長大なら `_01`,`_02`…で分割（概ね25〜30ページまたはシーン区切り）。
+1. **ingest（原文抽出・不変保存）**：`pypdf.PdfReader().extract_text()` で原文抽出（ToUnicode適用済みで文字化けしない）。PDF leaf N = 印刷頁 N−1。原文は vault 外の兄弟 repo に保存（**A クラス＝小説原文 → `../AllusionistWiki_raw/raw/novel/<source>/<ID>_<小説名>/`（private）**、**B クラス＝ゆらぎ系 BBS 記述 → `../YuragiWiki/raw/bbs/<site>/<板・comm_id>/`（公開・出典明記）**、§8.8）。PDF は `chNNNNN__<タイトル>[_分割ID].md`。**本文は不変**（追記のみ・既存本文改禁止、§6）。ヘッダは `【p{leaf}】`。1話が長大なら `_01`,`_02`…で分割（概ね25〜30ページまたはシーン区切り）。取得完了ごとに `tools/data/raw_manifest.json` の該当行（取得数・最終取得日）を更新。
 2. **区切り検出**：太字タイトルが目印。本作は `幕間　『…』` と `第X章 / N－NN タイトル`。抽出テキストの単独行を正規表現で検出（`幕間|第\d+|N－\d+`）。
 3. **関連ページ探索（graphrag・検索補助）**：本話の主要エンティティ（人物・用語・勢力・引喩候補）をクエリに `graphrag_tool/graphrag_search.py` で検索し、**既存ページ・関連エンティティ・既登録の相似/謎**を把握する（§8.7）。これは**発見の補助**であり、事実判定の根拠にはならない（根拠は必ず raw 原文）。重複登録・既存ページの見落とし・既知の伏線との矛盾を防ぐ。
 4. **episodeページ生成**（episodes/CHNNNN.md）：要約→登場人物→引喩・アナロジー→感想概要→疑問ノート。要約は時系列順で解釈を挿入せず、各項目に典拠頁（pp./raw）を付与。
@@ -230,3 +239,10 @@
 - **毎セッション必ず確認する**：セッション開始時・コンテキスト圧縮後（§8.5）に `backlog/` を読み、`in-progress` の件は**進捗欄の最後の行から再開**し、`pending` の件は作業に取りかかる（優先順位はユーザーに確認）。
 - **対応したら削除する**：完了したファイルは `backlog/` から削除し、`wiki/log.md` に 1 行追記して記録する（例：`backlog/20260926_xxx.md 対応済み・削除`）。
 - 作業中の中間成果物（ダンプ・一時スクリプト）は置かない（`_temp/` へ）。backlog に残るのは**指示・計画・進捗の記録のみ**。
+
+## 8.8 原文の権利クラス・兄弟 repo 構成（2026-10-12 改訂、詳細は DESIGN_NOTES.md）
+- 原文は vault に置かない。**A クラス（小説原文: PDF・カクヨム・なろう）= `../AllusionistWiki_raw/`（GitHub private）**、**B クラス（ゆらぎ系 BBS 記述: したらば・mixi）= `../YuragiWiki/`（公開・出典明記・著作権は投稿者に帰属）**。
+- 兄弟配置（`Code/` 直下に vault・raw・YuragiWiki を並べる）が相対パスの基準。ツールは `ROOT/..` から辿る（絶対パスハードコード禁止、§8.2）。
+- 台帳: `tools/data/raw_manifest.json`（source / id / title / folder / episodes / rights / last_fetched）。取得・再取得のたびに更新し、新話検出は manifest とサイト話数の突合で行う。
+- wiki からの原文参照は `ソースID + chNNNNN + ¶N`（PDF は頁 `p{leaf}`、BBS はコメント連番）。raw へのファイル相対リンクは wiki 本文に作らない（private repo 露出・切れリンク防止。episodes の「源 raw」欄の直接リンクはローカル参照用）。
+- graphrag は `wiki/` ＋ 両 raw repo を単一インデックス化する（`INDEXABLE_TOP`、検索結果の原文引用を wiki 編集の根拠に使う際は必ずファイルそのものを読む、§8.7）。
