@@ -1,5 +1,14 @@
 # DESIGN_NOTES.md — 設計判断の記録
 
+## 2026-10-12: 公開サイトの複数 wiki 配信（allusionistwiki.github.io 構成）
+
+### 決定
+- **1 org 直下に wiki ごとに repo を置く project pages 構成**: `allusionistwiki.github.io/AllusionistWiki`（現行・baseUrl 設定済み）／`allusionistwiki.github.io/YuragiWiki`（新 repo `YuragiWiki`）／将来 `…/AllusionistWiki2`。
+- **wiki 間リンクは同一 origin の絶対パスで張れる**（例: `/YuragiWiki/characters/トリシューラ/` ↔ `/AllusionistWiki/episodes/CH0001/`）。github.io 同一ドメインなので CORS・相対パス問題なし。
+- Quartz の `[[wikilink]]` 解決は 1 repo の content ツリー内に限る。repo を跨ぐ相互リンクは **サイト URL 直書き**（frontmatter `crosswiki:` 欄 or 本文リンク）。変換表は `tools/data/wikis.json`（wiki 名 → baseUrl）を台帳とし、ツールが生成する相互リンクはここから引く。
+- `yuragiwiki.github.io` 案は GitHub アカウント（slug）追加が前提で、相互リンクが cross-origin 完全 URL になるため不採用（完全独立の看板が欲しくなった時点で再検討）。
+- vault 側は 1 vault 複数ルート（`wiki/`・`yuragi/`）を維持: Obsidian 内は `[[...]]` で相互参照、公開サイトでは URL 相互リンク。graphrag は vault 全体＋共有 raw を単一インデックス。
+
 ## 2026-10-12: 複数 wiki 構成 × raw 配置（マルチ wiki 戦略）
 
 ### 論点
