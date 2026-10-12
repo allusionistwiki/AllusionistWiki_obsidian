@@ -70,6 +70,32 @@ raw を権利クラス2層に分割する。**「原文=一律非公開」から
 3. **来歴（lineage）を第一級にする**: 各産出物に `layer`（L1〜L7）と `derived_from`（上位層の ID 参照）を持たせ、現行 frontmatter の `review_status`（llm_verified/human_verified）は層番号に統合（L7=human 校了）。
 4. **フィードバック辺を許す**: パイプラインは厳密には非線形（L3 検証失敗→L1 再抽出、L7 人間訂正→L2 名前統合の改訂）。各層に版（run 番号・日時）を持たせ、再実行は層スナップショットの追記で管理する。
 
+### Work repo のスナップショット構成（2026-10-12 確定・git 管理）
+
+**git がそのままスナップショット機構**。追加専用（append-only）の run フォルダ + latest ポインタ + 再生成可能な派生ビューの3点セット。
+
+```
+AllusionistWiki_work/               # wiki あたり 1 repo（公開）
+└── work/
+    ├── L1/
+    │   ├── runs/                   # ★追加専用・不変。1パイプライン実行 = 1フォルダ = 1コミット
+    │   │   ├── 20261012T1530_a1f3/ # 実行ID = 日時+content hash 接頭辞
+    │   │   │   ├── run.json        # 実行メタ: 日時・入力(raw manifest 版/上位層 run ID)・ツール+版・パラメータ
+    │   │   │   └── ch00001.json …  # 産出物は**話単位ファイル**（ diffs を小さく保つ。単一巨大 JSON 禁止）
+    │   │   └── 20261019T0310_c4e8/
+    │   ├── latest.txt              # 現行 run ID へのポインタ（1行ファイル。symlink は使わない）
+    │   └── current/                # latest から再生成できる派生ビュー（読みやすさ用・gitignore 可）
+    ├── L2/  …（同構造。runs/ + latest.txt + entities 台帳）
+    ├── L3/ … L6/
+    └── index/                      # 層間 join（fact→entity→claim）。runs から再構築可能・gitignore 可
+```
+
+運用則:
+- **旧 run は不変**（書き換え禁止）。訂正・再実行・フィードバック（L3→L1 等）は必ず**新しい run として追記**し、`run.json.derived_from` で元 run ID を参照する。監査証跡 = git 履歴そのもの。
+- コミット規約: `L1: run 20261012T1530_a1f3 (ch00271-280)` — 層・run ID・対象話を1行で。
+- git がスナップショット/版管理の本体。DB・LFS は不要（産出物はテキスト JSON）。`current/` と `index/` は runs から再生成可能なので commit 任意（既定は commit して閲覧利便を優先）。
+- 層間の join は run ID + ファイル内 ID で行う（repo を跨がない: Work は wiki あたり1個、L0/L7 は兄弟 repo の manifest ID 経由）。
+
 ## 2026-10-12: 公開サイトの複数 wiki 配信（allusionistwiki.github.io 構成）
 
 ### 決定
