@@ -602,3 +602,4 @@ Obsidian vault。[../CLAUDE.md](../CLAUDE.md) が設計書(schema)。
 - グループ：[[/terminology/groups/呪術と力体系]] · [[/terminology/groups/宇宙論と世界構造]] · [[/terminology/groups/種と勢力・外世界人]] · [[/terminology/groups/組織と市場]]
 - 単語（一覧）：[[/terminology/index]]（432語をスクリプト生成で全リンク接続）
 |ch00248|✅|✅|✅|✅|✅|✅|✅|✅|✅|⏳|
+|ch00249|✅|✅|✅|✅|✅|✅|✅|✅|✅|⏳|
