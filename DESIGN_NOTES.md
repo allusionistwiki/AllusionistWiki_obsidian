@@ -9,12 +9,12 @@
 | AllusionistWiki | wiki1 の Quartz サイト（/AllusionistWiki） | 公開 |
 | AllusionistLLMWiki2_Obsidian | wiki2 vault（リバイス版） | 公開 |
 | AllusionistLLMWiki2 | wiki2 の Quartz サイト（/AllusionistLLMWiki2） | 公開 |
-| AllusionistLLMWiki2_Work | LLM パイプライン作業データ（facts/candidates/locks） | 公開→**非公開化推奨**（原文派生事実を含む） |
+| AllusionistLLMWiki2_Work | LLM パイプライン作業データ（facts/candidates/locks） | 公開（維持・2026-10-12 決定: 非公開化は再現性を失うため行わない） |
 
 ### 方針
 - **トップ index 層 = org 特別 repo `allusionistwiki.github.io`**（org ルートサイト）。各 wiki のカード（概要・統計・更新）を並べるポータル。wiki 側トップにも `/`（ポータル）へのリンクを置く。
 - **wiki 数 = repo 数×2 の現状を、1 wiki あたり vault 1 + サイト 1 の対に固定**（新規 wiki 増設時もこの対）。サイト repo は vault repo を **git submodule** で取り込み、content の複写をしない（単一ソースの原則）。
-- 作業データ系（Work）は原文派生テキストを含むため **private 化**。公開 repo には出さない。
+- 作業データ系（Work）は**公開維持**（2026-10-12 ユーザー決定: 非公開化は解析の再現性を失うため行わない）。原文そのもの（raw）との線引きは「raw=非公開・原文派生の構造化データ=公開」で統一する。
 - 命名＝URL slug 統一: `AllusionistWiki` / `AllusionistWiki2` / `YuragiWiki`（repo 名 = サイトパス = wiki 名）。LLMWiki2 系は wiki2 として `AllusionistWiki2` へのリネームを推奨（GitHub は同一 org 内リネームで旧 URL からリダイレクトされる）。
 - 相互リンク: ポータル↔wiki↔wiki は同一 origin 絶対パス（`/AllusionistWiki2/...`）。Obsidian 内は 1 vault 複数ルートの `[[...]]`。
 - 将来の wiki 増設手順: ①vault repo 作成（`<WikiName>`）→ ②サイト repo（Quartz + submodule）→ ③ポータルにカード追加 → ④`tools/data/wikis.json` に登録。
