@@ -96,6 +96,16 @@ AllusionistWiki_work/               # wiki あたり 1 repo（公開）
 - git がスナップショット/版管理の本体。DB・LFS は不要（産出物はテキスト JSON）。`current/` と `index/` は runs から再生成可能なので commit 任意（既定は commit して閲覧利便を優先）。
 - 層間の join は run ID + ファイル内 ID で行う（repo を跨がない: Work は wiki あたり1個、L0/L7 は兄弟 repo の manifest ID 経由）。
 
+### 生成物増殖の抑制（2026-10-12 追補）
+
+不変 run の追記を続けると体積が増えるため、3段の抑制を入れる:
+
+1. **run は差分単位（増分実行）**: 既定の run は「触れた話だけ」収める（`ch00271.json` のみ 等）。全層の全話再実行は行わない。全量が必要なのはベースライン実行のみ。
+2. **git の content-addressing が自然に重複排除**: 内容が同一のファイルは run をまたいで blob 共有（589話再実行で 90% 同一なら増加分は実質 10% 分のみ）。テキスト JSON なので repo 増殖は緩やか。
+3. **compaction（Old フォルダの正式化）**: 層ごとに一定間隔で**ベースライン run**（全量の正）を取り、それに取り込まれた旧 run は `work/L1/archive/` へ物理移動する（削除はしない — git 履歴と来歴は残る）。HEAD ツリーには現行 run 系と archive への参照だけが残るので、チェックアウト体積は頭打ち。
+   - 参照解決は**パスでなく run ID**（`runs/index.json`: run_id → {path, status: active|superseded, derived_from}）で行う。これにより archive への移動が来歴参照を壊さない。
+   - 公開サイトには latest + current + index のみ掲載（archive は repo 側に保持＝監査用）。
+
 ## 2026-10-12: 公開サイトの複数 wiki 配信（allusionistwiki.github.io 構成）
 
 ### 決定
