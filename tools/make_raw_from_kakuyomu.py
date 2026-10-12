@@ -12,7 +12,7 @@
   * 目次は作品ページの __NEXT_DATA__（Apollo state の tableOfContentsV2）から取得し、
     publishedAt 昇順（＝カクヨムの公開順＝読む順）で chNNNNN に採番する。
   * 本文は各エピソードページの <div id="a-episodeBody"> 内の <p> を 1 行 1 段落で保存。
-  * 出力: kaku_raw/chNNNNN__<タイトル>.md（raw/ と同じく非公開・gitignore 対象）
+  * 出力: kaku_raw/幻想再帰のアリュージョニスト/chNNNNN__<タイトル>.md（raw/ と同じく非公開・gitignore 対象）
   * 目次スナップショット: tools/data/kaku_toc.json
   * レート制限: リクエスト間 sleep（既定 1.2 秒）。
 """
@@ -30,7 +30,7 @@ UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
 WORK_ID = "16816927859268545348"
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUT_DIR = os.path.join(ROOT, "kaku_raw")
+OUT_DIR = os.path.join(ROOT, "kaku_raw", "幻想再帰のアリュージョニスト")
 TOC_JSON = os.path.join(ROOT, "tools", "data", "kaku_toc.json")
 
 
@@ -87,11 +87,16 @@ def get_toc() -> list:
 
 TAG_RE = re.compile(r"<[^>]+>")
 IMG_RE = re.compile(r"<img\b[^>]*src=\"([^\"]+)\"[^>]*>")
-P_RE = re.compile(r"<p\b[^>]*>(.*?)</p>", re.S)
+P_RE = re.compile(r'<p\b[^>]*?id="p(\d+)"[^>]*>(.*?)</p>', re.S)
+P_ANY_RE = re.compile(r"<p\b[^>]*>(.*?)</p>", re.S)
 
 
 def extract_body(page: str) -> list:
-    """a-episodeBody div 内の <p> を 1 段落 1 行のリストで返す。"""
+    """a-episodeBody div 内の <p> を (段落番号, テキスト) のリストで返す。
+
+    段落番号はカクヨム本文の <p id="pN"> の N（空段落込みの通し番号）。
+    id が無い <p> は連番で採番する（#pN アンカーと同じ数え方）。
+    """
     m = re.search(r'<div[^>]*class="[^"]*js-episode-body[^"]*"[^>]*>', page)
     if not m:
         raise RuntimeError("episode body div not found")
@@ -107,20 +112,24 @@ def extract_body(page: str) -> list:
         pos = pos + nxt.end()
     seg = page[seg_start:pos]
 
-    lines = []
-    for pm in P_RE.finditer(seg):
+    paras = []
+    seq = 0
+    for pm in P_ANY_RE.finditer(seg):
+        seq += 1
+        idm = re.search(r'id="p(\d+)"', pm.group(0))
+        pid = int(idm.group(1)) if idm else seq
         raw = pm.group(1)
         # 画像は [IMAGE: url] プレースホルダへ
         raw = IMG_RE.sub(lambda mm: f"[IMAGE: {htmlmod.unescape(mm.group(1))}]", raw)
         # <br> は段落内改行 → 改行のまま
         raw = re.sub(r"<br\s*/?>", "\n", raw)
         txt = htmlmod.unescape(TAG_RE.sub("", raw))
-        txt = txt.replace("\r\n", "\n")
-        lines.append(txt)
-    # 末尾の連続空行を整理
-    while lines and not lines[-1].strip():
-        lines.pop()
-    return lines
+        txt = txt.replace(chr(13)+chr(10), chr(10))
+        paras.append((pid, txt))
+    # 末尾の連続空段落を整理
+    while paras and not paras[-1][1].strip():
+        paras.pop()
+    return paras
 
 
 def sanitize_title(title: str) -> str:
@@ -163,10 +172,16 @@ def main() -> int:
             f"【公開 {e['publishedAt']}】",
             f"【章 {e['chapterTitle']}】" if e["chapterTitle"] else "【章 （なし）】",
             f"【URL {url}】",
+            f"【段落数 {len(paras)}】",
             "",
         ]
+        body = [txt for _, txt in paras]
+        idx = ["【¶索引】"]
+        for pid, txt in paras:
+            prev = txt.replace("\n", "⏎").strip()
+            idx.append(f"¶{pid} {prev[:14] if prev else '（空）'}")
         with open(path, "w", encoding="utf-8") as f:
-            f.write("\n".join(header + paras) + "\n")
+            f.write("\n".join(header + body) + "\n\n" + "\n".join(idx) + "\n")
         made += 1
         if made % 10 == 0:
             print(f"[fetch] {n}/{len(eps)}: {fname} ({len(paras)} paras)")

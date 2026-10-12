@@ -2,7 +2,7 @@
 
 _生成日: 2026-10-12 ・ raw 272話 / kaku_raw 589連載回_
 
-> `raw/` は syosetu 話数（PDF 由来・chNNNNN）、`kaku_raw/` は kakuyomu 連載回（chNNNNN・長大章を①②…に分割）。
+> `raw/` は syosetu 話数（PDF 由来・chNNNNN）、`kaku_raw/幻想再帰のアリュージョニスト/` は kakuyomu 連載回（chNNNNN・長大章を①②…に分割）。
 > 両者は**別採番**のため、本文テキストの連続性＋タイトル照合で対応付けた。
 > 検証ラベル: `title` = 章タイトル一致で検証済み / `pos` = 本文位置の連続性のみ（章タイトルが syosetu/kakuyomu で異なるため）。
 > 章の切れ目は kakuyomu 連載回の途中で生じるため、隣接行の先頭・末尾 ch が 1 件重複する（境界共有）。
