@@ -1,5 +1,39 @@
 # DESIGN_NOTES.md — 設計判断の記録
 
+## 2026-10-12: 複数 wiki 構成 × raw 配置（マルチ wiki 戦略）
+
+### 論点
+「アリュージョニストwiki1 / wiki2 / 揺らぎwiki …」の複数 wiki 構成を予定。raw を wiki 外に置くか、アリュージョニストwiki に全部入れるか。
+
+### 決定
+1. **raw は wiki の外・共有 private repo（`AllusionistWiki_raw`）に置く**。wiki 内に raw を入れない。
+   - 理由①: raw は wiki 間で共有される（揺らぎ BBS はアリュージョニスト分析の一部であり、同一原文を複数 wiki が参照する）。wiki 内配置は原文の複写・同期ズレ・権利管理の分散を招く。
+   - 理由②: 公開/非公開の線は repo 単位で引く。wiki repo は全面公開・raw repo は全面 private にすると gitignore 運用が単純（raw を wiki repo に入れると「公開 repo 内の非公開ファイル」が増え、backup・同期が wiki 数だけ必要になる）。
+   - 理由③: 参照はファイルパスではなく **manifest ID（ソースID + chNNNNN + ¶N）** で行う。wiki 側は raw の相対パスに依存しない → raw ツリーの移動・再編が wiki を壊さない。
+2. **wiki 本体は「1 vault・複数 wiki ルート」で開始する**（`wiki/` の隣に `wiki2/`・`yuragi/` を置く）。
+   - Obsidian の wikilink・graph・graphrag は vault 内でしか繋がらない。アリュージョニスト wiki1/wiki2/揺らぎwiki は相互参照が厚くなる（同じ作者・同じ世界観・BBS の交差）ため、vault を割ると知識グラフが切れる。
+   - 分割の基準は「相互参照が不要になったら（別作品・別コミュニティ・別ライセンスになったら）repo/vault を切る」。
+3. **共有層は vault ルートに集約**: `tools/`・`graphrag_tool/`・`tools/data/raw_manifest.json` は全 wiki 共通。graphrag の `INDEXABLE_TOP` に各 wiki ルート（`wiki`,`wiki2`,`yuragi`）と共有 raw ルート（`../AllusionistWiki_raw/raw`）を追加する。
+4. **公開サイト（Quartz）**: 1 サイトで複数 wiki をルート配信（`/allusionist/`・`/yuragi/` …）。相互リンクはサイト URL で繋ぐ。
+
+### 目標レイアウト
+```
+Code/
+├── AllusionistWiki_obsidian/        # vault（公開・CC BY-NC-SA + MIT）
+│   ├── wiki/                        # wiki1（現行アリュージョニスト）
+│   ├── wiki2/                       # wiki2（将来）
+│   ├── yuragi/                      # 揺らぎwiki（将来）
+│   ├── tools/  graphrag_tool/       # 全 wiki 共通
+│   └── CLAUDE.md                    # wiki ルート共通の規約
+├── AllusionistWiki_raw/             # private repo（原文・rights reserved）
+│   └── raw/（novel/{pdf,kakuyomu,syosetu} + bbs/{jbbs,mixi}）
+└── AllusionistWiki/                 # Quartz サイト（複数 wiki をルート配信）
+```
+
+### 典拠・命名
+- wiki からの原文参照: `[ソースID:chNNNNN¶N]`（PDF は頁 `p{leaf}`、BBS はコメント連番）。manifest（`tools/data/raw_manifest.json`）が ID→フォルダ対応の唯一の台帳。
+- wiki ルート間は `[[...]]`（同一 vault 内）で繋ぎ、raw へのリンクは作らない（切れリンク防止・非公開経路の露出防止）。
+
 ## 2026-10-12: raw 一元化・マルチソース戦略（raw/ 再編）
 
 ### 背景

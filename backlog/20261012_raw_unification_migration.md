@@ -18,3 +18,4 @@
 
 ## 進捗
 - 2026-10-12: 戦略策定・DESIGN_NOTES.md 作成・本カード作成。実行はユーザー承認待ち。
+- 2026-10-12: マルチ wiki 戦略を DESIGN_NOTES.md に追記（raw は wiki 外の共有 private repo、wiki は 1 vault 複数ルート開始、参照は manifest ID 基準）。本カードの移行先は `../AllusionistWiki_raw/raw/`（vault 外 private repo）に確定。
