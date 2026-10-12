@@ -22,6 +22,9 @@ outputs/
 raw/
 RAW2/
 kaku_raw/
+kaku_raw_others/
+syosetu_raw/
+raw_Yuragi_Sinnwa/
 
 # ---- 公開用: 作業ダンプ・原文サンプルは非公開 ----
 _temp/
