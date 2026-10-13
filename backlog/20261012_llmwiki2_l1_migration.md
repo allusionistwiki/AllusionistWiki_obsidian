@@ -21,4 +21,4 @@
 - 2026-10-12: 受付。階層モデル・全層公開方針を DESIGN_NOTES.md に記録。実行は L1 層設計の詰めから。
 - 2026-10-12: 層構成評価を DESIGN_NOTES に追記（層=データスナップショット／Work は 1 repo・層フォルダ／lineage 第一級／フィードバック辺許容）。
 - 2026-10-12: **Work repo 実装**: `allusionistwiki/AllusionistWiki_work`（公開）作成・push。L1 ベースライン run `20261012T0000_baseline`（= LLMWiki2_Work@054f7a2a をそのまま取り込み、run.json 来歴付き）、L2〜L6 スケルトン、`work/index/runs-index.json`（run ID 参照）＋ `L1/latest.txt`。旧 LLMWiki2_Work repo は履歴として公開維持（新 repo が継承）。
-- 次の一手: LLMWiki2 現行公開サイト（claims 等）の `/AllusionistWiki/l1/` 格下げ、L2（名前統合）の初 run 設計、ポータルカードの L1〜L7 構造更新。
+- 次の一手: L2（名前統合）の初 run 実行（設計は Work repo L2/README 完了済）、L3〜L6 の run 設計、human_verified 昇格の進行。
