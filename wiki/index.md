@@ -13,6 +13,7 @@ modified: 2026-10-03
 
 | 層 | 内容 |
 |---|---|
+| [★ポータル（全 Wiki 統合索引）](https://allusionistwiki.github.io/) | 本組織の全 Wiki（本家 Wiki / L1 解析層 / ゆらぎの神話 Wiki）横断の入口 |
 | [[/status]] | ★トップカタログ・進捗管理（最新話一覧＋各話ステータス） |
 | [[/episodes/index|エピソード一覧]] | 1話ごとの要約・登場人物・引喩・感想・疑問ノート |
 | [[/characters/index|人物 index]] | 人物・組織・勢力の事実ページ全一覧（320件） |
