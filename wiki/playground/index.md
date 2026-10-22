@@ -39,9 +39,25 @@ description: 正規層（事実ページ）に載せる前の仮説・マクロ�
 
 - （作成されたページがここに自動で現れます）
 
+### WikiLab 側の仮説ページ（相互リンク・原文照合済み `promotion-candidate`）
+
+WikiLab（実験場）側に存在し、原文照合を経て `promotion-candidate` 状態にある仮説ページへの相互リンクです。これらは本リポジトリのページではなく Lab の Playground 層のページであり、**本層と同じく事実として引用は不可**です（正規層への昇格後は正規層ページを参照してください）。
+
+| ページ | 内容 | 状態 |
+|---|---|---|
+| [kouzetsu](https://allusionistwiki.github.io/AllusionistWikiLab/playground/kouzetsu) | 【口舌】の正体（原文 ¶ 照合で確定化した事実と、未検証の推察） | `promotion-candidate` |
+| [rakulraal-seat](https://allusionistwiki.github.io/AllusionistWikiLab/playground/rakulraal-seat) | 第一位のラクルラールの座は誰が勝ち取ったのか（4 章ラスト・イツノとマラコーダの会話／原文 ¶ 照合） | `promotion-candidate` |
+| [relations-six](https://allusionistwiki.github.io/AllusionistWikiLab/playground/relations-six) | 六人の関係性マップ（ベアトリーチェの融合先と、アズーリア・レオ・青嶺瑠璃の繋がり／原文 ¶ 照合・Lab Issue #31） | `promotion-candidate` |
+| [gogmagog](https://allusionistwiki.github.io/AllusionistWikiLab/playground/gogmagog) | 5-15・5-26 の「ゴグマゴグ」（イギリス伝承の巨人 Gogmagog と聖書のゴグとマゴグの照合／原文 ¶・p 照合済み・Lab Issue #63→#65） | `promotion-candidate` |
+
+> [!INFO] 照合メモ
+> ゴグマゴグについて、原文（kakuyomu・syosetu・PDF の三典拠）に 5-15「終わりの日、北の果てからゴグマゴグが押し寄せる」（5-15 未来回想、それは破綻した青写真）および 5-26「極北より来たれ死の地霊（ゴグマゴグ）」（5-26 舞台裏の死角④）の該当箇所を確認済み。
+
 ## 来歴（provenance）
 
 | 項目 | 値 |
 |---|---|
-| 設計 | WikiLab（実験場）での Playground 運用（Issue #19）の本番移植。2026-10-20 |
+| 設計移植 | WikiLab Playground 運用（2026-10-16 起案 Issue #19）の本番導入（2026-10-20） |
 | 運用検証 | https://allusionistwiki.github.io/AllusionistWikiLab/playground/index/ |
+| 相互リンク節 | 「一覧」に WikiLab 側の仮説ページ 4 件（口舌・第一位の座・六人の関係性・ゴグマゴグ）への参照注記を追加（2026-10-22・Issue #1 編集依頼） |
+| 典拠確認 | 4 ページの存在と `status: promotion-candidate` は Lab リポジトリ main のフロントマターおよび Lab 公開サイト一覧で確認（2026-10-22）。Lab Issue #19/#31/#63→#65/#71 の来歴および起案日 2026-10-16 は依頼本文（Issue #1）記載に基づく |
