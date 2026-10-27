@@ -29,8 +29,12 @@ description: Issue #3 編集提案（Tally 自動起票）への応答。アエ�
 - ch00097 ¶348–349: 鳥が一ヶ所に集い「アエタイトと呼ばれる石に戻った霊鳥」が回収される
 - ch00097 ¶326: 「陛下、**ウルトラマリン様**のアエタイトをお持ちですか」
 
-> [!WARNING] アクセスメモ
-> 参照許可リストのうち `AllusionistWiki_obsidian`（vault 本体）は実行環境から **Permission denied で読めず**、本層の既存ページとの突合は未実施です（status: exploring, source not verified）。分析は L1 vault（AllusionistLLMWiki2）と出版 Wiki content（AllusionistWiki2）を読み、それらに依拠しています。
+> [!WARNING] アクセスメモ（2026-10-27 解消）
+> 執筆当時（2026-10-23）、参照許可リストの `AllusionistWiki_obsidian`（vault 本体）は llm-task 実行環境から **Permission denied** で読めず、本層の既存ページとの突合は未実施だった。2026-10-27 にローカル環境で vault 本体（`wiki/`）と出版 Wiki content（v1/v2）を直接読み、突合を実施した:
+> - vault 既存の事実ページ（`wiki/terminology/単語（一覧）/アエタイト`、`wiki/episodes/ch00096・ch00097・ch00099`、`wiki/reflections/by-episode/ch00099`）は、本ページが依拠する事実（¶197・¶198・¶199・¶210・¶326・¶332–335・¶348–349・¶406、百十一羽、鳥葬、ウルトラマリンの献上）と一致 — **矛盾なし（source-verified）**。
+> - vault・v1・v2 の既存層に鷲石（aetites）解析は不在 → 比喩①の新規性は維持され `promotion-candidate` 地位も維持。
+> - `mysteries/Open_Questions.md` の未回収課題「怪鳥アキラと霊鳥アキラの関係」（断章5-1↔6-2、同一か？）に対し、比喩①の「鷲が運ぶ石（aetites）」系譜は同一性の方向の証拠を供給する。昇格実装時の反映先として記録。
+> 分析の依拠（L1 vault・出版 Wiki content・外部典拠）は §8 来歴のとおり。
 
 ## 1. 既存分析（正規層）の棚卸し
 
