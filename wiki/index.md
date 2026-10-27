@@ -40,6 +40,22 @@ modified: 2026-10-03
 
 > 設計思想：純粋な事実ページは「原文典拠付き」を保ち、感想/解釈と厳格に分離する。推測や原文にない情報を足さない。詳細は [CLAUDE.md 設計書](https://github.com/allusionistwiki/AllusionistWiki_obsidian/blob/main/CLAUDE.md) 参照。
 
+## サイト索引（全ディレクトリ）
+
+> サイドバーのインデックスツリーは廃し、この入口ページ下部に統合しました。
+
+- [[status\|トップカタログ・進捗]]
+- [エピソード一覧](./episodes/)
+- [登場人物](./characters/)
+- [用語集](./terminology/)
+- [引喩索引](./allusions/)
+- [謎と伏線](./mysteries/)
+- [再帰マップ](./analogies/recursion-map/)
+- [感想層](./reflections/)
+- [追加と考察（Playground）](./playground/)
+- [依頼・報告](./reports/)
+- [直近更新記事](./recent-updates/) ／ [直近コミット](./recent-commits/)
+
 ## 関連サイト
 
 | サイト | 内容 |
